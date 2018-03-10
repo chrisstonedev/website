@@ -1,8 +1,15 @@
-<a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+<!--<a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
   <div class="d-flex w-100 justify-content-between">
     <h5 class="mb-1">{{ project.name }}</h5>
     <small>{{ thing1 }}</small>
   </div>
   <p class="mb-1">{{ thing2 }}</p>
   <small>{{ thing3 }}</small>
+</a>-->
+<a style="cursor: pointer" class="list-group-item">
+  <h4 class="list-group-item-heading">{{ character.name }}</h4>
+  <div>
+    <button class="btn btn-primary" (click)="onAssign('light')">Light</button>
+    <button class="btn btn-danger" (click)="onAssign('dark')">Dark</button>
+  </div>
 </a>
