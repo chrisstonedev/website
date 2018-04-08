@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 
-import { StarWarsService } from '../star-wars.service';
+import { ProjectsService } from '../projects.service';
 
 @Component({
   selector: 'app-item',
@@ -9,18 +9,17 @@ import { StarWarsService } from '../star-wars.service';
   encapsulation: ViewEncapsulation.None
 })
 export class ItemComponent implements OnInit {
-  @Input() character;
-  swService: StarWarsService;
+  @Input() project;
+  projectsService: ProjectsService;
 
-  constructor(swService: StarWarsService) {
-    this.swService = swService;
+  constructor(projectsService: ProjectsService) {
+    this.projectsService = projectsService;
   }
 
   ngOnInit() {
   }
 
-  onAssign(side) {
-    // this.character.side = side;
-    this.swService.onSideChosen({name: this.character.name, side: side});
+  goToGitHub() {
+    this.projectsService.onSideChosen(this.project.link);
   }
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
-import { StarWarsService } from '../star-wars.service';
+import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -14,11 +14,11 @@ export class ContactComponent implements OnInit {
     {display: 'Light', value: 'light'},
     {display: 'Dark', value: 'dark'},
   ];
-  swService: StarWarsService;
+  contactService: ContactService;
   defaultName = 'Obi-Wan';
 
-  constructor(swService: StarWarsService) {
-    this.swService = swService;
+  constructor(contactService: ContactService) {
+    this.contactService = contactService;
   }
 
   ngOnInit() {
@@ -29,6 +29,6 @@ export class ContactComponent implements OnInit {
       return;
     }
     console.log(submittedForm);
-    this.swService.addCharacter(submittedForm.value.name, submittedForm.value.side);
+    this.contactService.addCharacter(submittedForm.value.name, submittedForm.value.side);
   }
 }
