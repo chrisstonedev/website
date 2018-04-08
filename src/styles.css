@@ -21,7 +21,7 @@ body{
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #d0d0df;
 }
 .container {
   padding: 30px;
@@ -52,6 +52,10 @@ ul {
     max-width: 50%;
   }
 }
+.nav-item {
+  background-color: #b0c4de;
+  color: #fff!important;
+}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff;
   background-color: #007bff;
@@ -68,7 +72,7 @@ a {
   display: block;
   padding: .5rem 1rem;
 }
-p {
+p, dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -82,22 +86,22 @@ a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none;
 }
-.list-group-item:last-child {
-  margin-bottom: 0;
-  border-bottom-right-radius: .25rem;
-  border-bottom-left-radius: .25rem;
-}
-.list-group-item:first-child {
-  border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem;
-}
 .list-group-item {
-  cursor: pointer;
   position: relative;
   display: block;
   padding: .75rem 1.25rem;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, .125);
+  overflow: auto;
+}
+.list-group-item:first-child {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+.list-group-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: .25rem;
 }
 .h4, h4 {
   font-size: 1.5rem;
@@ -179,4 +183,8 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
+}
+dl {
+  float: left;
+  padding-right: 15px;
 }

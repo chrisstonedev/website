@@ -1,6 +1,22 @@
-<a class="list-group-item">
+<div class="list-group-item">
   <h4 class="list-group-item-heading">{{ project.name }}</h4>
-  <div>
-    <button *ngIf="project.link" class="btn btn-primary" (click)="goToGitHub()">GitHub</button>
-  </div>
-</a>
+  <dl>
+    <dt *ngIf="project.platform">Platform</dt>
+    <dd *ngIf="project.platform">
+      {{ project.platform }}
+    </dd>
+    <dt *ngIf="project.availability">Availability</dt>
+    <dd *ngIf="project.availability">
+      <button class="btn btn-primary" (click)="openPublished()">
+        {{ project.availability }}
+      </button>
+    </dd>
+    <dt *ngIf="project.link">Source</dt>
+    <dd *ngIf="project.link">
+      <button class="btn btn-primary" (click)="openSource()">
+        {{ project.source }}
+      </button>
+    </dd>
+  </dl>
+  <p>{{ project.description }}</p>
+</div>

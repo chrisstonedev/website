@@ -19,7 +19,11 @@ export class ItemComponent implements OnInit {
   ngOnInit() {
   }
 
-  goToGitHub() {
-    this.projectsService.onSideChosen(this.project.link);
+  openPublished() {
+    this.projectsService.openLink(this.project.availabilityLink);
+  }
+
+  openSource() {
+    this.projectsService.openLink(this.project.link);
   }
 }
