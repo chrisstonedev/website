@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { Component, ViewEncapsulation, Input } from '@angular/core';
 
 import { ProjectsService } from '../projects.service';
 
@@ -8,15 +8,12 @@ import { ProjectsService } from '../projects.service';
   styleUrls: ['./item.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class ItemComponent implements OnInit {
+export class ItemComponent {
   @Input() project;
   projectsService: ProjectsService;
 
   constructor(projectsService: ProjectsService) {
     this.projectsService = projectsService;
-  }
-
-  ngOnInit() {
   }
 
   openPublished() {
