@@ -9,18 +9,10 @@ import { ProjectsService } from '../projects.service';
   encapsulation: ViewEncapsulation.None
 })
 export class ItemComponent {
-  @Input() project;
+  @Input() project: any;
   projectsService: ProjectsService;
 
   constructor(projectsService: ProjectsService) {
     this.projectsService = projectsService;
-  }
-
-  openPublished() {
-    this.projectsService.openLink(this.project.availabilityLink);
-  }
-
-  openSource() {
-    this.projectsService.openLink(this.project.link);
   }
 }

@@ -1,22 +1,24 @@
-<div class="list-group-item">
-  <h4 class="list-group-item-heading">{{ project.name }}</h4>
-  <dl>
-    <dt *ngIf="project.platform">Platform</dt>
-    <dd *ngIf="project.platform">
-      {{ project.platform }}
-    </dd>
-    <dt *ngIf="project.availability">Availability</dt>
-    <dd *ngIf="project.availability">
-      <button class="btn btn-primary" (click)="openPublished()">
-        {{ project.availability }}
-      </button>
-    </dd>
-    <dt *ngIf="project.link">Source</dt>
-    <dd *ngIf="project.link">
-      <button class="btn btn-primary" (click)="openSource()">
-        {{ project.source }}
-      </button>
-    </dd>
-  </dl>
-  <p>{{ project.description }}</p>
-</div>
+  <div class="card">
+    <img
+      class="card-img-top"
+      [src]="project.image"
+      [alt]="project.name"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ project.name }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ project.platform }}</h6>
+      <p class="card-text">{{ project.description }}</p>
+      <a
+        *ngIf="project.availability"
+        class="card-link"
+        [href]="project.availabilityLink"
+        target="_blank"
+        >{{ project.availability }}</a>
+      <a
+        *ngIf="project.source"
+        class="card-link"
+        [href]="project.source"
+        target="_blank"
+        >View source</a>
+    </div>
+  </div>

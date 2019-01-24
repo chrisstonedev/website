@@ -1,5 +1,3 @@
-<div class="list-group">
-  <app-item
-    *ngFor="let project of projects"
-    [project]="project"></app-item>
+<div class="row">
+  <app-item class="col-md-4 my-3" *ngFor="let project of projects" [project]="project"></app-item>
 </div>
