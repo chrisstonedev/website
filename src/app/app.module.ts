@@ -13,7 +13,6 @@ import { ListComponent } from './projects/list/list.component';
 import { ItemComponent } from './projects/item/item.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { ContactService } from './contact/contact.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,7 @@ import { ContactService } from './contact/contact.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [ContactService, LogService, ProjectsService],
+  providers: [LogService, ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
