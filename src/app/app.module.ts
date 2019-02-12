@@ -13,6 +13,9 @@ import { ListComponent } from './projects/list/list.component';
 import { ItemComponent } from './projects/item/item.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { PageComponent } from './blog/page/page.component';
+import { PostComponent } from './blog/post/post.component';
+import { BlogService } from './blog/blog.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { ContactComponent } from './contact/contact.component';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    PageComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,11 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [LogService, ProjectsService],
+  providers: [
+    LogService,
+    ProjectsService,
+    BlogService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
