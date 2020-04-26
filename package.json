@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
-    "lint": "ng lint",
+    "lint": "eslint -c .eslintrc.js --ext .ts .",
     "e2e": "ng e2e"
   },
   "private": true,
@@ -38,7 +38,10 @@
     "@types/jasmine": "^3.3.13",
     "@types/jasminewd2": "^2.0.6",
     "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
     "codelyzer": "^5.1.2",
+    "eslint": "^6.8.0",
     "jasmine-core": "~3.3.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "^5.0.2",
@@ -48,7 +51,6 @@
     "karma-jasmine-html-reporter": "^1.4.2",
     "protractor": "^5.4.2",
     "ts-node": "^8.0.3",
-    "tslint": "^5.18.0",
     "typescript": "~3.8.3"
   }
 }
