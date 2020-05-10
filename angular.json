@@ -90,6 +90,10 @@
               "src/favicon.ico"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     },
