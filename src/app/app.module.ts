@@ -12,9 +12,6 @@ import { ListComponent } from './projects/list/list.component';
 import { ItemComponent } from './projects/item/item.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { PageComponent } from './blog/page/page.component';
-import { PostComponent } from './blog/post/post.component';
-import { BlogService } from './blog/blog.service';
 
 @NgModule({
   declarations: [
@@ -24,9 +21,7 @@ import { BlogService } from './blog/blog.service';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent,
-    PageComponent,
-    PostComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -35,8 +30,7 @@ import { BlogService } from './blog/blog.service';
   ],
   providers: [
     LogService,
-    ProjectsService,
-    BlogService
+    ProjectsService
   ],
   bootstrap: [AppComponent]
 })
