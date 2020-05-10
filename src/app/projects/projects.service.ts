@@ -25,7 +25,7 @@ export class ProjectsService {
     image: 'assets/hashitout.png',
     availability: 'Download app',
     availabilityLink: 'assets/HashItOut.zip',
-    source: 'https://github.com/christopher-stone/hash-it-out',
+    source: 'https://github.com/chrisstonedev/hash-it-out',
     description: 'Windows application that quickly returns MD5 and '
       + 'SHA-1 checksums for any provided file. Target values can be '
       + 'copied and pasted to the side with an indicator appearing to '
