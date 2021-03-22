@@ -2,10 +2,11 @@ import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
 
 import { LogService } from '../log.service';
+import { Project } from './project';
 
 @Injectable()
 export class ProjectsService {
-  private projects = [{
+  private projects: Project[] = [{
     name: 'GymRatTrax',
     platform: 'Java Android application',
     image: 'assets/gymrattrax.png',

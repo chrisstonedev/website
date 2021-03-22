@@ -8,20 +8,22 @@ import { LogService } from './log.service';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { ProjectsService } from './projects/projects.service';
-import { ListComponent } from './projects/list/list.component';
-import { ItemComponent } from './projects/item/item.component';
+import { ProjectsListComponent } from './projects/projects-list/projects-list.component';
+import { ProjectsListItemComponent } from './projects/projects-list/projects-list-item/projects-list-item.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent,
-    ItemComponent,
+    ProjectsListComponent,
+    ProjectsListItemComponent,
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,

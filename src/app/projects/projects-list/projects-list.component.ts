@@ -5,11 +5,11 @@ import { ProjectsService } from '../projects.service';
 
 @Component({
   selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css'],
+  templateUrl: './projects-list.component.html',
+  styleUrls: ['./projects-list.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class ListComponent implements OnInit {
+export class ProjectsListComponent implements OnInit {
   projects = [];
   activatedRoute: ActivatedRoute;
   projectsService: ProjectsService;
