@@ -16,6 +16,11 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true
   }
 }

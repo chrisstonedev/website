@@ -1,5 +1,28 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-@import "~font-awesome/css/font-awesome.css";
-body{
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.css';
+body {
   background-color: #d0d0df;
+}
+.card-link {
+  cursor: pointer;
+}
+.card-link:hover {
+  transform: translateY(-10px);
+  transition: 0.2s;
+}
+.card-link:hov a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+a:hover,
+a:focus {
+  color: #ff8a00;
+  outline: none;
+}
+.image-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.card-img-detail {
+  width: 100%;
 }

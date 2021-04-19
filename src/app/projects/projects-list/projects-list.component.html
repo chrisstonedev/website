@@ -1,3 +1,19 @@
+<div class="card form-check py-3 px-5">
+  <input
+    class="form-check-input"
+    type="checkbox"
+    [(ngModel)]="filterOpenSource"
+    (ngModelChange)="filterChange()"
+    id="flexCheckDefault"
+  />
+  <label class="form-check-label" for="flexCheckDefault">
+    Show only open source projects
+  </label>
+</div>
 <div class="row">
-  <app-item class="col-md-4 my-3" *ngFor="let project of projects" [project]="project"></app-item>
+  <app-item
+    class="col-md-4 my-3"
+    *ngFor="let project of filteredProjects"
+    [project]="project"
+  ></app-item>
 </div>

@@ -6,20 +6,24 @@ import { Project } from '../project';
 @Component({
   selector: 'app-project-detail',
   templateUrl: './project-detail.component.html',
-  styleUrls: ['./project-detail.component.css']
+  styleUrls: ['./project-detail.component.css'],
 })
 export class ProjectDetailComponent implements OnInit {
   project: Project;
 
-  constructor(private activatedRoute: ActivatedRoute,
-              private router: Router,
-              private projectsService: ProjectsService) {
-  }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+    private projectsService: ProjectsService
+  ) {}
 
   ngOnInit(): void {
-    const id = this.activatedRoute.snapshot.paramMap.get("id");
+    const id = this.activatedRoute.snapshot.paramMap.get('id');
     const projects = this.projectsService.getProjects();
-    this.project = projects.find(p => p.name === id);
+    this.project = projects.find((p) => p.id === id);
+    if (this.project === undefined) {
+      this.onBack();
+    }
   }
 
   onBack(): void {

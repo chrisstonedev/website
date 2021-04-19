@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { LogService } from './log.service';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { ProjectsService } from './projects/projects.service';
@@ -23,17 +22,10 @@ import { ProjectDetailComponent } from './projects/project-detail/project-detail
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
-  providers: [
-    LogService,
-    ProjectsService
-  ],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  providers: [ProjectsService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
