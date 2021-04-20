@@ -1,9 +1,9 @@
 <div class="row">
-  <div class="card">
-    <a [routerLink]="['/projects']" class="my-2">👈 Back</a>
+  <div class="card text-white bg-dark col-12">
+    <div [routerLink]="['/projects']" class="card-header">👈 Back</div>
     <div class="image-grid-container">
-      <img class="card-img-detail" [src]="project.image" [alt]="project.name" />
-      <img class="card-img-detail" [src]="project.image" [alt]="project.name" />
+      <div></div>
+      <!-- Empty div keeps first column of grid empty (until I come back with another design idea). -->
       <img class="card-img-detail" [src]="project.image" [alt]="project.name" />
     </div>
     <div class="card-body">
@@ -12,14 +12,13 @@
       <p class="card-text">{{ project.description }}</p>
       <a
         *ngIf="project.availability"
-        class="card-link"
+        class="btn btn-primary bg-ikb mr-3"
         [href]="project.availabilityLink"
         target="_blank"
         >{{ project.availability }}</a
-      >
-      <a
+      ><a
         *ngIf="project.source"
-        class="card-link"
+        class="btn btn-primary bg-ikb"
         [href]="project.source"
         target="_blank"
         >View source</a

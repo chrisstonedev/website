@@ -3,132 +3,120 @@
     "id": "website",
     "name": "Website",
     "platform": "TypeScript Angular app",
-    "image": "assets/comingsoon.png",
-    "image2": "assets/comingsoon.png",
-    "image3": "assets/comingsoon.png",
+    "image": "assets/website.png",
     "availability": "",
     "availabilityLink": "",
     "source": "https://github.com/chrisstonedev/website",
-    "description": "Profile and portfolio website written in Angular. In fact, this is where you are right now."
+    "description": "Sole developer of this very website you are on now. Developed iteratively to describe my development skills and, in a meta twist, is the very highlight of my TypeScript and Angular experience."
   },
   {
     "id": "sprint-planning-timer",
     "name": "Sprint Planning Timer",
     "platform": "Kotlin Android app",
-    "image": "assets/comingsoon.png",
-    "image2": "assets/comingsoon.png",
-    "image3": "assets/comingsoon.png",
+    "image": "assets/sprintplanning.png",
     "availability": "",
     "availabilityLink": "",
     "source": "https://github.com/chrisstonedev/sprint-planning-timer-android",
     "description": "I needed a way to keep track of how many items we needed to cover in sprint planning and backlog refinement meetings and make sure that we are still on track to finish the meeting in time. I used this as an opportunity to continue learning Kotlin and Android development."
   },
   {
-    "id": "onefreight",
-    "name": "oneFreight",
+    "id": "transfer-plus",
+    "name": "Transfer Plus",
     "platform": "C# Windows Forms app",
-    "image": "assets/comingsoon.png",
-    "image2": "assets/comingsoon.png",
-    "image3": "assets/comingsoon.png",
+    "image": "assets/transferplus.png",
     "availability": "",
     "availabilityLink": "",
     "source": "",
-    "description": "Volunteered to help in multiple cross-team projects. Served as lead developer of new initiative program while continuing to contribute in core product scrum team. Hired, managed, and mentored new development team for the program after it succeeded its initiative phase and received additional funding from the business."
+    "description": "As a software engineer, I often volunteered or was selected to help in multiple cross-team projects. This led to my eventual selection for the initial development of a new initiative project. While I continued to pick up sprint tasks in the Ticket Entry team, I was the one developer who was always consistently assigned to this team. Once I became Team Lead in the company, I hired, managed, and mentored a brand new development team for the program after it succeeded its initiative phase and received additional funding from the business, continuing to provide code review and coding contributions."
   },
   {
     "id": "self-check-in",
     "name": "Self Check-In",
     "platform": "C# WPF app",
-    "image": "assets/comingsoon.png",
-    "image2": "assets/comingsoon.png",
-    "image3": "assets/comingsoon.png",
+    "image": "assets/selfcheckinuserflow.png",
     "availability": "",
     "availabilityLink": "",
     "source": "",
-    "description": "Designed architecture and led development of a touchscreen interface for Ticket Entry. Wrote front-end as a WPF application that can connect with external serial/COM and Ethernet/IP devices, and wrote the server back-end that handles database calls and communicates with the client over HTTP sockets. Additionally, created and presented a Xamarin.Forms proof-of-concept mobile application for future consideration."
+    "description": "Self Check-In is a touchscreen interface for Ticket Entry for which I designed the architecture and led development. Designed as a pair of client/server applications, the server program runs in the background while running Ticket Entry and shares data via a shared database connection, while the client program has its own installer and can be run on any computer. To this point, all C# applications on the team were written in Windows Forms, but the need for an impressive user interface for the touchscreen client program led to the prototype and eventual final decision to write it in WPF, making use of specially shaped controls, theming options, and dynamically sized text. The client program connects to the server by way of an IP socket with the ability to recover on its own in the event of low or disconnected network. The client can also support card readers over an IP port or over a serial connection, which is helpful for when drivers have an RF card they can use to pull up their order. In one prototype, I had even created and presented a Xamarin.Forms proof-of-concept mobile application for future consideration."
   },
   {
     "id": "communicator",
     "name": "Communicator",
     "platform": "C# Windows Forms app",
-    "image": "assets/comingsoon.png",
-    "image2": "assets/comingsoon.png",
-    "image3": "assets/comingsoon.png",
+    "image": "assets/ticketpostredesign.png",
     "availability": "",
     "availabilityLink": "",
     "source": "",
-    "description": "Wrote background application to push transactional data to internal and third-party systems using a variety of interfaces including REST APIs, legacy Component Services applications, and Azure Event Hubs and Storage Account uploads."
+    "description": "Needing a way for Ticket Entry to perform network operations in the background, I created Communicator from scratch. The initial release was for a very specific web service push to another internal service on the team, presented to the user as a queue of messages that successfully send or that failed in some way and need to be retried. Over time, the program has been expanded to also send data to third-party systems across a variety of interfaces including REST APIs, legacy Component Services applications, direct database calls via connection string, and Azure Event Hubs and Storage Account uploads."
   },
   {
     "id": "audit-log",
     "name": "Audit Log",
     "platform": "C# Windows Forms app",
-    "image": "assets/comingsoon.png",
-    "image2": "assets/comingsoon.png",
-    "image3": "assets/comingsoon.png",
+    "image": "assets/auditlog.png",
     "availability": "",
     "availabilityLink": "",
     "source": "",
-    "description": "Created and maintained first C# projects in a previously-all-VB6 product, starting with this standalone Windows Forms applications. Using a Model-View-Presenter pattern, I was able to create our team's first unit tests using MSTest V2 and Moq. Later improved performance by introducing background worker threads and asynchronous functions to load hundreds of thousands of log records in seconds."
+    "description": "Audit Log is a record of important events that are logged automatically by Ticket Entry and its dependencies, and it is the first C# Windows Forms application added to our team's solution, and I created it from scratch. Taking inspiration from similar forms we had in VB6, I migrated code from one language to another as it was for the initial release. The next major revision I made involved a refactor of the entire application so that, instead of using the same patterns we used in VB6, it would adopt the Model-View-Presenter Passive View pattern; this way, I was also able to write our team's first unit tests, using MSTest V2 and Moq. I continued to improve the program iteratively, whether it was at the back-end (performance improvements by introducing background worker threads and asynchronous functions to load hundreds of thousands of log records in seconds) or at the front-end (leveraging Infragistics controls to provide better design and filtering experiences)."
   },
   {
     "id": "ticket-entry",
     "name": "Ticket Entry",
     "platform": "Visual Basic 6.0 desktop app",
-    "image": "assets/comingsoon.png",
-    "image2": "assets/comingsoon.png",
-    "image3": "assets/comingsoon.png",
+    "image": "assets/ticketentry.png",
     "availability": "",
     "availabilityLink": "",
     "source": "",
-    "description": "Contributed in program written in Visual Basic 6.0 that interfaces with devices such as scales, printers, LED signs, signature pads, fingerprint scanners, and more, all connected by serial port, IP port, or USB. Connects to various enterprise accounting software."
+    "description": "My first experience working on a software team as a full-time employee, I joined the Ticket Entry team as its second software engineer, and, within a few years, became the Team Lead, continuing to contribute while managing four software engineers and one QA tester. Written completely in Visual Basic 6.0 at the time that I joined the team, it interfaces with devices such as scales, printers, LED signs, signature pads, fingerprint scanners, and more, all connected by serial port, IP port, or USB. It also connects to various enterprise accounting software and has dependencies on other modules maintained by other teams in the company. As I spent more time on the team learning the software and contributing to it, I created a COM-visible C# library that contains methods that this VB6 program can call. As a result, we can perform more advanced functionality and use modern unit testing tools as we work on technical debt reduction over time, without having to wait for the entire project to be migrated to C# first."
   },
   {
     "id": "gymrattrax",
     "name": "GymRatTrax",
     "platform": "Java Android application",
     "image": "assets/gymrattrax.png",
-    "image2": "assets/gymrattrax.png",
-    "image3": "assets/gymrattrax.png",
     "availability": "Download app",
     "availabilityLink": "https://play.google.com/store/apps/details?id=com.gymrattrax.scheduler&hl=en",
     "source": "https://github.com/GymRatTrax/GymRatTrax-FitnessScheduler",
-    "description": "Started as a senior academic project, I worked as team leader and lead developer on this project. GymRatTrax is a personal fitness scheduler application made to replace a fitness planner with features such as adaptive suggestions, reverse calorie search, and robust statistics. This is the first Android application I have developed that has been published to the Google Play Store."
+    "description": "My first experience working on a team collaboratively and my first time serving as a team leader, GymRatTrax was my senior academic project. It is a personal fitness scheduler application made to replace a fitness planner with features such as adaptive suggestions, reverse calorie search, and robust statistics. I ran weekly Kanban sprints for the team using GitHub Issues to make sure we were staying on track to meet planned milestone deadlines. This is the first Android application I have developed that has been published to the Google Play Store. In addition to leading the development, I coordinated our other tasks on the project including documentation, class presentations and deliverables, and our presentation at a public showcase event."
   },
   {
     "id": "hash-it-out",
     "name": "Hash It Out",
     "platform": "C# WPF app",
     "image": "assets/hashitout.png",
-    "image2": "assets/hashitout.png",
-    "image3": "assets/hashitout.png",
     "availability": "Download app",
     "availabilityLink": "assets/HashItOut.zip",
     "source": "https://github.com/chrisstonedev/hash-it-out",
-    "description": "Windows application that quickly returns MD5 and SHA-1 checksums for any provided file. Target values can be copied and pasted to the side with an indicator appearing to quickly tell the user if the value match or not."
+    "description": "Wanting a quick way to get the MD5 and SHA-1 checksum for any file, I developed this Windows application that can be installed to add quick access in the context menu while browsing files. Target values can be copied and pasted to the side with an indicator appearing to quickly tell the user if the values match or not."
   },
   {
     "id": "bookshop",
     "name": "Bookshop",
     "platform": "PHP web app",
     "image": "assets/bookshop.png",
-    "image2": "assets/bookshop.png",
-    "image3": "assets/bookshop.png",
     "availability": "Live demo",
     "availabilityLink": "http://cjstone.net/bookshop/",
     "source": "https://github.com/chrisstonedev/bookshop-demo",
-    "description": "The design of an online store with inventory and checkout functionality with secure registration and login procedures. Data integrity and user security are maintained while preventing common vulnerabilities (e.g. SQLI and XSS)."
+    "description": "Developed as part of a coursework assignment to implement user security in software while guarding against common vulnerabilities such as SQLI and XSS, the design resembles an online store with inventory and checkout functionality with secure registration and login procedures."
   },
   {
     "id": "physics-units",
     "name": "Physics Units",
     "platform": "JavaScript web app",
     "image": "assets/physics.png",
-    "image2": "assets/physics.png",
-    "image3": "assets/physics.png",
     "availability": "Live demo",
     "availabilityLink": "http://cjstone.net/physics/",
     "source": "https://github.com/chrisstonedev/physics-units",
-    "description": "A simple web tool in which basic SI units, such as kilograms and meters, can be multiplied and divided to reveal advanced derived units, such as Newtons and Joules. When derived units are discovered, they can be used themselves as shortcuts. Keyboard shortcuts can also be used."
+    "description": "Fascinated in physics class with how four basic SI units could be derived into so many other useful contexts, I created this very simple JavaScript tool. Click on a unit to multiply or divide by that unit. Starting with only the four basic units (e.g. kilograms, meters), can you activate the other derived units (e.g. Newtons, Joules)? See how many you can recall from memory before you look them up online. Keyboard shortcuts can also be used."
+  },
+  {
+    "id": "imminent-development",
+    "name": "Imminent Development",
+    "platform": "Music project",
+    "image": "assets/imminentdevelopment.png",
+    "availability": "Download \"Time and Again\"",
+    "availabilityLink": "/assets/timeandagain.mp3",
+    "source": "",
+    "description": "Before my software career started, I had a passion for music writing. Armed with a basic understanding of music theory, I wrote, recorded, and produced several songs between 2008 and 2012. I have always wanted to learn to play a music instrument, and I still do. To get around my lack of performance ability, I would record samples and then program and sequence them accordingly. I performed at high school talent showss and released a single in digital stores (since delisted)."
   }
 ]

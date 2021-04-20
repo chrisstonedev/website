@@ -7,6 +7,7 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "ng test",
+    "deploy": "ng deploy",
     "tc-test": "ng test --reporters=teamcity --watch=false",
     "lint": "eslint -c .eslintrc.js --ext .ts .",
     "e2e": "ng e2e"

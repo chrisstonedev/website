@@ -1,9 +1,15 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~font-awesome/css/font-awesome.css';
-body {
-  background-color: #d0d0df;
+html {
+  width: 100%;
+  width: 100vw;
 }
-.card-link {
+body {
+  background-color: #20203f;
+  color: #d0d0df;
+}
+.card-link,
+.card-header {
   cursor: pointer;
 }
 .card-link:hover {
@@ -21,8 +27,11 @@ a:focus {
 }
 .image-grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 .card-img-detail {
   width: 100%;
+}
+.bg-ikb {
+  background-color: #211dc3;
 }
