@@ -1,0 +1,3 @@
+[submodule "src/assets/physics-units"]
+	path = src/assets/physics-units
+	url = https://github.com/chrisstonedev/physics-units

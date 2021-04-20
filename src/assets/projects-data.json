@@ -95,7 +95,7 @@
     "platform": "PHP web app",
     "image": "assets/bookshop.png",
     "availability": "Live demo",
-    "availabilityLink": "http://cjstone.net/bookshop/",
+    "availabilityLink": "",
     "source": "https://github.com/chrisstonedev/bookshop-demo",
     "description": "Developed as part of a coursework assignment to implement user security in software while guarding against common vulnerabilities such as SQLI and XSS, the design resembles an online store with inventory and checkout functionality with secure registration and login procedures."
   },
@@ -105,7 +105,7 @@
     "platform": "JavaScript web app",
     "image": "assets/physics.png",
     "availability": "Live demo",
-    "availabilityLink": "http://cjstone.net/physics/",
+    "availabilityLink": "/projects/physics-units/demo",
     "source": "https://github.com/chrisstonedev/physics-units",
     "description": "Fascinated in physics class with how four basic SI units could be derived into so many other useful contexts, I created this very simple JavaScript tool. Click on a unit to multiply or divide by that unit. Starting with only the four basic units (e.g. kilograms, meters), can you activate the other derived units (e.g. Newtons, Joules)? See how many you can recall from memory before you look them up online. Keyboard shortcuts can also be used."
   },
