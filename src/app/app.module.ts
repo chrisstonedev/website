@@ -12,7 +12,7 @@ import { ProjectsListItemComponent } from './projects/projects-list/projects-lis
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
-import { ProjectDemoComponent } from './projects/project-demo/project-demo.component';
+import { PhysicsDemoComponent } from './projects/project-detail/physics-demo/physics-demo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { ProjectDemoComponent } from './projects/project-demo/project-demo.compo
     AboutComponent,
     ContactComponent,
     ProjectDetailComponent,
-    ProjectDemoComponent,
+    PhysicsDemoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [ProjectsService],

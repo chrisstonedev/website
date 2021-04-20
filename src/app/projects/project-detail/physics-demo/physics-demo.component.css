@@ -1,0 +1,36 @@
+input {
+  background: darkblue;
+  border: 3px inset darkblue;
+  color: lightblue;
+}
+.body {
+  background: black;
+  color: white;
+}
+input.control {
+  font-size: 20pt;
+  width: 50%;
+  padding: 15px 0;
+  font-weight: bold;
+}
+input.base {
+  font-size: 16pt;
+  width: 25%;
+  padding: 10px 0;
+}
+input.derived {
+  font-size: 12pt;
+  width: 7.69%;
+  padding: 7px 0;
+}
+label {
+  font-size: 20pt;
+  display: block;
+  text-align: center;
+  height: 30pt;
+  line-height: 30pt;
+}
+div#popup {
+  margin: 0 auto;
+  width: 70%;
+}

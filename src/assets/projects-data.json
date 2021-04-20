@@ -27,7 +27,7 @@
     "availability": "",
     "availabilityLink": "",
     "source": "",
-    "description": "As a software engineer, I often volunteered or was selected to help in multiple cross-team projects. This led to my eventual selection for the initial development of a new initiative project. While I continued to pick up sprint tasks in the Ticket Entry team, I was the one developer who was always consistently assigned to this team. Once I became Team Lead in the company, I hired, managed, and mentored a brand new development team for the program after it succeeded its initiative phase and received additional funding from the business, continuing to provide code review and coding contributions."
+    "description": "As a software engineer, I often volunteered or was selected to help in multiple cross-team projects. This led to my eventual selection for the initial development of a new initiative project. While I continued to pick up sprint tasks in the Ticket Entry team, I was the one developer who was always consistently assigned to this team. Once I became Team Lead in the company, I hired, managed, and mentored a new development team for the program after it succeeded its initiative phase and received additional funding from the business, continuing to provide code review and coding contributions."
   },
   {
     "id": "self-check-in",
@@ -94,7 +94,7 @@
     "name": "Bookshop",
     "platform": "PHP web app",
     "image": "assets/bookshop.png",
-    "availability": "Live demo",
+    "availability": "",
     "availabilityLink": "",
     "source": "https://github.com/chrisstonedev/bookshop-demo",
     "description": "Developed as part of a coursework assignment to implement user security in software while guarding against common vulnerabilities such as SQLI and XSS, the design resembles an online store with inventory and checkout functionality with secure registration and login procedures."
@@ -107,7 +107,17 @@
     "availability": "Live demo",
     "availabilityLink": "/projects/physics-units/demo",
     "source": "https://github.com/chrisstonedev/physics-units",
-    "description": "Fascinated in physics class with how four basic SI units could be derived into so many other useful contexts, I created this very simple JavaScript tool. Click on a unit to multiply or divide by that unit. Starting with only the four basic units (e.g. kilograms, meters), can you activate the other derived units (e.g. Newtons, Joules)? See how many you can recall from memory before you look them up online. Keyboard shortcuts can also be used."
+    "description": "Fascinated in physics class with how four basic SI units could be derived into so many other useful contexts, I created this very simple JavaScript tool. Click on a unit to multiply or divide by that unit. Starting with only the four basic units (e.g., kilograms, meters), can you activate the other derived units (e.g., Newtons, Joules)? See how many you can recall from memory before you look them up online. Keyboard shortcuts can also be used."
+  },
+  {
+    "id": "mcls",
+    "name": "MCLS, et al.",
+    "platform": "HTML websites",
+    "image": "assets/mcls.png",
+    "availability": "",
+    "availabilityLink": "",
+    "source": "",
+    "description": "I worked for a custom contact lens small business for three years and assumed several roles over that time, including administrative assistance and warehouse shipping, but the ultimate position to which I had worked up was graphic and web designer. I used Adobe products to design the simulated appearance that various custom contact lenses would have on an eye, as well as the brochures and posters on which these images would be placed in order to print to distribute. These images were also used online for information and for sales and distribution. I maintained a total of eight websites across different brands and markets. Three used ePages, two used Joomla!, and three were pure handwritten HTML. Two of the websites that were pure HTML were created by me, and I wrote the HTML, CSS, and JavaScript in a text editor to make single-page sites with infographics and contact forms along with hooks into shopping cart functionality. I used jQuery on pages in two of the pre-existing websites to create interactive displays."
   },
   {
     "id": "imminent-development",
@@ -117,6 +127,6 @@
     "availability": "Download \"Time and Again\"",
     "availabilityLink": "/assets/timeandagain.mp3",
     "source": "",
-    "description": "Before my software career started, I had a passion for music writing. Armed with a basic understanding of music theory, I wrote, recorded, and produced several songs between 2008 and 2012. I have always wanted to learn to play a music instrument, and I still do. To get around my lack of performance ability, I would record samples and then program and sequence them accordingly. I performed at high school talent showss and released a single in digital stores (since delisted)."
+    "description": "Before my software career started, I had a passion for writing music. Armed with a basic understanding of music theory, I wrote, recorded, and produced several songs between 2006 and 2012. I have always wanted to learn to play a music instrument really well, and I still do. To get around my lack of performance ability, I would record samples and then program and sequence them accordingly. I performed at high school talent shows and released a single in digital stores for purchase (no longer available)."
   }
 ]
