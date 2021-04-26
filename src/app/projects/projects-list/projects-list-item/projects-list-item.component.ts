@@ -7,7 +7,8 @@ import { Project } from '../../project';
   selector: 'app-item',
   templateUrl: './projects-list-item.component.html',
   styleUrls: ['./projects-list-item.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  providers: [ProjectsService],
 })
 export class ProjectsListItemComponent {
   @Input() project: Project;

@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('personal-website App', () => {
+describe('Chris Stone Website App', () => {
   let page: AppPage;
 
   beforeEach(() => {
@@ -9,6 +9,6 @@ describe('personal-website App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Christopher Stone');
+    expect(page.getParagraphText()).toEqual('Chris Stone');
   });
 });

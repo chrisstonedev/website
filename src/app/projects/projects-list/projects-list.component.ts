@@ -9,6 +9,7 @@ import { Project } from '../project';
   templateUrl: './projects-list.component.html',
   styleUrls: ['./projects-list.component.css'],
   encapsulation: ViewEncapsulation.None,
+  providers: [ProjectsService],
 })
 export class ProjectsListComponent implements OnInit {
   projects: Project[] = [];

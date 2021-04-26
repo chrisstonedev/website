@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { ProjectDetailComponent } from './project-detail.component';
+import { ActivatedRoute } from '@angular/router';
 
 describe('ProjectDetailComponent', () => {
   let component: ProjectDetailComponent;
@@ -8,9 +10,21 @@ describe('ProjectDetailComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProjectDetailComponent ]
-    })
-    .compileComponents();
+      declarations: [ProjectDetailComponent],
+      imports: [RouterTestingModule],
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            snapshot: {
+              paramMap: {
+                get: () => 'gymrattrax',
+              },
+            },
+          },
+        },
+      ],
+    }).compileComponents();
   });
 
   beforeEach(() => {

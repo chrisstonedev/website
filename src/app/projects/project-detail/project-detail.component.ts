@@ -7,6 +7,7 @@ import { Project } from '../project';
   selector: 'app-project-detail',
   templateUrl: './project-detail.component.html',
   styleUrls: ['./project-detail.component.css'],
+  providers: [ProjectsService],
 })
 export class ProjectDetailComponent implements OnInit {
   project: Project;

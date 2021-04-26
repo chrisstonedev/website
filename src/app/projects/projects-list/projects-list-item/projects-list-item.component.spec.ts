@@ -1,21 +1,26 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ProjectsListItemComponent } from './projects-list-item.component';
+import { Project } from '../../project';
+import projectData from '../../../../assets/projects-data.json';
 
 describe('ProjectsListItemComponent', () => {
   let component: ProjectsListItemComponent;
   let fixture: ComponentFixture<ProjectsListItemComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ProjectsListItemComponent ]
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [ProjectsListItemComponent],
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ProjectsListItemComponent);
     component = fixture.componentInstance;
+    const list: Project[] = projectData;
+    component.project = list[0];
     fixture.detectChanges();
   });
 
