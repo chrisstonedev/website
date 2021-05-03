@@ -105,7 +105,7 @@
     "platform": "JavaScript web app",
     "image": "assets/physics.png",
     "availability": "Live demo",
-    "availabilityLink": "/projects/physics-units/demo",
+    "availabilityLink": "projects/physics-units/demo",
     "source": "https://github.com/chrisstonedev/physics-units",
     "description": "Fascinated in physics class with how four basic SI units could be derived into so many other useful contexts, I created this very simple JavaScript tool. Click on a unit to multiply or divide by that unit. Starting with only the four basic units (e.g., kilograms, meters), can you activate the other derived units (e.g., Newtons, Joules)? See how many you can recall from memory before you look them up online. Keyboard shortcuts can also be used."
   },
@@ -125,7 +125,7 @@
     "platform": "Music project",
     "image": "assets/imminentdevelopment.png",
     "availability": "Download \"Time and Again\"",
-    "availabilityLink": "/assets/timeandagain.mp3",
+    "availabilityLink": "assets/timeandagain.mp3",
     "source": "",
     "description": "Before my software career started, I had a passion for writing music. Armed with a basic understanding of music theory, I wrote, recorded, and produced several songs between 2006 and 2012. I have always wanted to learn to play a music instrument really well, and I still do. To get around my lack of performance ability, I would record samples and then program and sequence them accordingly. I performed at high school talent shows and released a single in digital stores for purchase (no longer available)."
   }
