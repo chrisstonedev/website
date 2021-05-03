@@ -1,14 +1,14 @@
-RewriteEngine on
+<IfModule mod_rewrite.c>
+  RewriteEngine On
 
-# Go to the request resource if available.
-RewriteCond %{REQUEST_FILENAME} -s [OR]
-RewriteCond %{REQUEST_FILENAME} -l [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^.*$ - [NC,L]
+  # Redirection to HTTPS:
+  RewriteCond %{HTTPS} !on
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
-# If the resource does not exist (404), go to home page.
-RewriteRule ^(.*) ./index.html [NC,L]
-
-# Force HTTPS/SSL connection.
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  # Redirection of requests to index.html
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -s [OR]
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+  RewriteRule ^.*$ - [NC,L]
+  RewriteRule ^(.*) index.html [NC,L]
+</IfModule>
