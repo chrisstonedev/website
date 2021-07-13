@@ -14,23 +14,27 @@ import { Project } from '../project';
 export class ProjectsListComponent implements OnInit {
   projects: Project[] = [];
   filteredProjects: Project[] = [];
-  activatedRoute: ActivatedRoute;
-  projectsService: ProjectsService;
   filterOpenSource = false;
 
   constructor(
-    activatedRoute: ActivatedRoute,
-    projectsService: ProjectsService
+    private activatedRoute: ActivatedRoute,
+    private projectsService: ProjectsService
   ) {
-    this.activatedRoute = activatedRoute;
-    this.projectsService = projectsService;
   }
 
   ngOnInit() {
     this.activatedRoute.params.subscribe(() => {
-      this.projects = this.projectsService.getProjects();
-      this.filteredProjects = this.projectsService.getProjects();
+      this.loadProjects();
     });
+  }
+
+  loadProjects() {
+    this.projects = this.projectsService.getProjects();
+    this.filteredProjects = this.projectsService.getProjects();
+  }
+
+  getAllProjects(): Project[] {
+    return this.projectsService.getProjects();
   }
 
   filterChange() {
