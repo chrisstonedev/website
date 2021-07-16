@@ -31,6 +31,6 @@ a:focus {
 .card-img-detail {
   width: 100%;
 }
-.bg-ikb {
-  background-color: #211dc3;
+:root {
+  --color-ikb: #211dc3;
 }

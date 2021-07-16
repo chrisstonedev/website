@@ -34,3 +34,6 @@ div#popup {
   margin: 0 auto;
   width: 70%;
 }
+.card-back {
+  margin-bottom: 0.5rem !important;
+}

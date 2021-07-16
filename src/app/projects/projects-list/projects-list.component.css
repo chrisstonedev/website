@@ -1,0 +1,10 @@
+.form-check {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+app-item {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}

@@ -8,17 +8,17 @@
     </div>
     <div class="card-body">
       <h5 class="card-title">{{ project.name }}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">{{ project.platform }}</h6>
+      <h6 class="card-subtitle text-muted">{{ project.platform }}</h6>
       <p class="card-text">{{ project.description }}</p>
       <a
         *ngIf="project.availability"
-        class="btn btn-primary bg-ikb mr-3"
+        class="btn btn-primary btn-availability"
         [href]="project.availabilityLink"
         [target]="project.availability === 'Live demo' ? '' : '_blank'"
         >{{ project.availability }}</a
       ><a
         *ngIf="project.source"
-        class="btn btn-primary bg-ikb"
+        class="btn btn-primary"
         [href]="project.source"
         target="_blank"
         >View source</a

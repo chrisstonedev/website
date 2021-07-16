@@ -1,0 +1,11 @@
+button {
+  background-color: var(--color-ikb) !important;
+  margin-top: 0.5rem !important;
+}
+button:hover {
+  background-color: #0069d9 !important;
+  border-color: #0062cc !important;
+}
+h6 {
+  margin-bottom: 0.5rem !important;
+}
