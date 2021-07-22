@@ -4,13 +4,13 @@
 >
   <img class="card-img-top" [src]="project.image" [alt]="project.name" />
   <div class="card-body">
-    <h5 class="card-title">
+    <h5>
       {{ project.name }}
       <span *ngIf="project.source.length > 0" class="badge bg-success"
         >Open source</span
       >
     </h5>
-    <h6 class="card-subtitle text-muted">{{ project.platform }}</h6>
+    <h6>{{ project.platform }}</h6>
     <button
       type="submit"
       class="btn btn-primary"

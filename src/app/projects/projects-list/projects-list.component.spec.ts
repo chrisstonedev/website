@@ -20,17 +20,11 @@ describe('ProjectsListComponent', () => {
     })
   );
 
-  // beforeEach(() => {
-  //   fixture = TestBed.createComponent(ProjectsListComponent);
-  //   component = fixture.componentInstance;
-  //   fixture.detectChanges();
-  // });
-
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should do something else that is good', () => {
+  it('should load all projects', () => {
     let projectList: Project[] = [
       {
         id: 'website',
