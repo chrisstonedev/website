@@ -2,35 +2,38 @@ html {
   width: 100%;
   width: 100vw;
 }
+
 body {
   background-color: #20203f;
   color: #d0d0df;
   overflow-x: hidden;
 }
+
 .card-link,
 .card-header {
   cursor: pointer;
 }
+
 .card-link:hover {
   transform: translateY(-10px);
   transition: 0.2s;
 }
-.card-link:hov a {
-  text-decoration: none;
-  transition: 0.2s;
-}
+
 a:hover,
 a:focus {
   color: #ff8a00;
   outline: none;
 }
+
 .image-grid-container {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
 }
+
 .card-img-detail {
   width: 100%;
 }
+
 :root {
   --color-ikb: #211dc3;
 }

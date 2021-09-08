@@ -7,23 +7,37 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
 import { PhysicsDemoComponent } from './projects/project-detail/physics-demo/physics-demo.component';
-
-const routes = [
-  { path: '', component: HomeComponent },
-  { path: 'projects', component: ProjectsListComponent },
-  { path: 'projects/:id', component: ProjectDetailComponent },
-  { path: 'projects/physics-units/demo', component: PhysicsDemoComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '**', redirectTo: '/' }
-];
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent, data: { animationState: 'Home' } },
+      {
+        path: 'about',
+        component: AboutComponent,
+        data: { animationState: 'About' }
+      },
+      {
+        path: 'projects',
+        component: ProjectsListComponent,
+        data: { animationState: 'Projects' }
+      },
+      { path: 'projects/:id', component: ProjectDetailComponent },
+      {
+        path: 'projects/physics-units/demo',
+        component: PhysicsDemoComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent,
+        data: { animationState: 'Contact' }
+      },
+      { path: '**', redirectTo: '/' }
+    ]),
+    BrowserAnimationsModule
   ],
-  exports: [
-    RouterModule
-  ]
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+}
