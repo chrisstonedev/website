@@ -1,0 +1,18 @@
+#taglines {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#tagline-crafter {
+  background-color: #002;
+  padding: 5px 10px;
+}
+
+#tagline-puzzle, #tagline-learner, #tagline-team {
+  background-color: #003;
+  padding: 5px 10px;
+
+  visibility: hidden;
+  position: absolute;
+}
