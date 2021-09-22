@@ -5,10 +5,9 @@
       <p>Development team lead with the technical and management skills to drive teams forward.</p>
       <p>Seeking technical challenges and always eager to learn more.</p>
       <div #refTaglines id='taglines'>
-        <div id='tagline-crafter'>Software crafter</div>
-        <div id='tagline-puzzle'>Analytical puzzle solver</div>
-        <div id='tagline-learner'>Eager learner</div>
-        <div id='tagline-team'>Versatile team player</div>
+        <ng-container *ngFor='let tagline of taglines'>
+          <div class='tagline' [id]='tagline.id'>{{tagline.text}}</div>
+        </ng-container>
       </div>
     </div>
     <div class='col-md-4'>

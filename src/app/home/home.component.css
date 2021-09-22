@@ -4,15 +4,15 @@
   border-radius: 8px;
 }
 
-#tagline-crafter {
-  background-color: #002;
+.tagline {
+  background-color: #013;
   padding: 5px 10px;
+
+  position: absolute;
+  visibility: hidden;
 }
 
-#tagline-puzzle, #tagline-learner, #tagline-team {
-  background-color: #003;
-  padding: 5px 10px;
-
-  visibility: hidden;
-  position: absolute;
+.tagline:first-of-type {
+  position: static;
+  visibility: visible;
 }

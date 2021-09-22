@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { animate, AnimationBuilder, AnimationFactory, group, query, style } from '@angular/animations';
+import { animate, AnimationBuilder, group, query, style } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +7,14 @@ import { animate, AnimationBuilder, AnimationFactory, group, query, style } from
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  tagline = 0;
+  currentTaglineIndex = -1;
   @ViewChild('refTaglines') refTaglines: ElementRef;
-  private taglineIds: string[] = ['#tagline-puzzle', '#tagline-crafter', '#tagline-learner', '#tagline-team'];
+  taglines = [
+    { id: 'tagline-puzzle', text: 'Software crafter' },
+    { id: 'tagline-crafter', text: 'Analytical puzzle solver' },
+    { id: 'tagline-learner', text: 'Eager learner' },
+    { id: 'tagline-team', text: 'Versatile team player' }
+  ];
 
   constructor(private animationBuilder: AnimationBuilder) {
   }
@@ -18,40 +23,27 @@ export class HomeComponent implements OnInit {
     this.toggleState();
   }
 
-  private buildAndPlayAnimation(tagline: number) {
-    let animationFactory: AnimationFactory;
-
-    animationFactory = this.animationBuilder.build([
+  private buildAndPlayAnimation(taglineIndex: number) {
+    const animationFactory = this.animationBuilder.build([
       group([
-        query(this.taglineIds[tagline], [
+        query('#' + this.taglines[taglineIndex].id, [
           style({
-            position: 'absolute',
+            left: 0,
             opacity: 1,
-            top: 0,
+            position: 'absolute',
             right: 0,
-            left: 0
+            top: 0
           }),
-          animate('.5s', style({
-            opacity: 0,
-            visibility: 'hidden'
-          })),
-          style({
-            top: 'auto',
-            bottom: 'auto',
-            right: 'auto',
-            height: '*'
-          })
+          animate('.5s', style({ opacity: 0 }))
         ]),
-        query(this.taglineIds[this.nextTagline(tagline)], [
+        query('#' + this.taglines[this.nextTagline(taglineIndex)].id, [
           style({
-            position: 'static',
+            background: taglineIndex % 2 === 0 ? '#013' : '#014',
             opacity: 0,
+            position: 'static',
             visibility: 'visible'
           }),
-          animate('.5s', style({
-            opacity: 1,
-            height: '*'
-          }))
+          animate('.5s', style({ opacity: 1 }))
         ])
       ])
     ]);
@@ -61,13 +53,13 @@ export class HomeComponent implements OnInit {
 
   private toggleState() {
     const keepGoing = () => {
-      this.tagline = this.nextTagline(this.tagline);
-      this.buildAndPlayAnimation(this.tagline);
+      this.currentTaglineIndex = this.nextTagline(this.currentTaglineIndex);
+      this.buildAndPlayAnimation(this.currentTaglineIndex);
     };
-    setInterval(keepGoing, 2000);
+    setInterval(keepGoing, 3000);
   }
 
   private nextTagline(tagline: number) {
-    return (tagline + 1) % this.taglineIds.length;
+    return (tagline + 1) % this.taglines.length;
   }
 }
