@@ -1,17 +1,30 @@
 <div class='container'>
   <div class='row'>
+    <a class='atlanta-code-camp' href='https://atlantacodecamp.com/2021' target='_blank'>
+      <div class='atlanta-code-camp-container'>
+        <div class='atlanta-code-camp-text'>
+          <div class='atlanta-code-camp-title'>See me at Atlanta Code Camp 2021!</div>
+          <div class='atlanta-code-camp-description'>
+            <p>I will be giving a talk on technical debt at this year's Atlanta Code Camp at Kennesaw State University.
+              Resources from the presentation will be added here after the session.</p>
+            <p>Click here for more details on the event and for information on how to register.</p>
+          </div>
+        </div>
+        <img alt='Chris Stone will be presenting at Atlanta Code Camp 2021' src='assets/atlantacodecamp.jpeg' />
+      </div>
+    </a>
     <div class='col-md-8'>
+      <div #refTaglines id='taglines'>
+        <ng-container *ngFor='let tagline of taglines'>
+          <div [id]='tagline.id' class='tagline'>{{tagline.text}}</div>
+        </ng-container>
+      </div>
       <p>Full-stack software engineer with experience in desktop, web, cloud, and mobile.</p>
       <p>Development team lead with the technical and management skills to drive teams forward.</p>
       <p>Seeking technical challenges and always eager to learn more.</p>
-      <div #refTaglines id='taglines'>
-        <ng-container *ngFor='let tagline of taglines'>
-          <div class='tagline' [id]='tagline.id'>{{tagline.text}}</div>
-        </ng-container>
-      </div>
     </div>
     <div class='col-md-4'>
-      <img src='assets/chris.png' class='card-img-detail' alt='Photo of Chris Stone' />
+      <img alt='Photo of Chris Stone' class='card-img-detail' src='assets/chris.png' />
     </div>
   </div>
 </div>

@@ -1,0 +1,96 @@
+#taglines {
+  border-radius: 8px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  position: relative;
+
+  .tagline {
+    background-color: #013;
+    padding: 5px 10px;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+
+    &:first-of-type {
+      position: static;
+      visibility: visible;
+    }
+  }
+}
+
+//@media (min-width: 576px) {
+//  .container, .container-sm {
+//    max-width: 540px
+//  }
+//}
+//
+//@media (min-width: 768px) {
+//  .container, .container-md, .container-sm {
+//    max-width: 720px
+//  }
+//}
+//
+//@media (min-width: 992px) {
+//  .container, .container-lg, .container-md, .container-sm {
+//    max-width: 960px
+//  }
+//}
+//
+//@media (min-width: 1200px) {
+//  .container, .container-lg, .container-md, .container-sm, .container-xl {
+//    max-width: 1140px
+//  }
+//}
+
+.atlanta-code-camp {
+  color: white;
+  margin-bottom: 24px;
+
+  &:hover {
+    color: #aff;
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+  .atlanta-code-camp-container {
+    background: #1468;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .atlanta-code-camp-text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: center;
+      padding: 16px;
+
+      .atlanta-code-camp-title {
+        font-size: x-large;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .atlanta-code-camp-container {
+    flex-direction: column;
+
+    img {
+      border-radius: 0 0 20px 20px;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .atlanta-code-camp-container {
+    flex-direction: row;
+
+    img {
+      border-radius: 0 20px 20px 0;
+      height: 300px;
+    }
+  }
+}
