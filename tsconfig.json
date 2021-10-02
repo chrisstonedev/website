@@ -18,9 +18,16 @@
       "dom"
     ],
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "cypress"
+    ]
   },
   "angularCompilerOptions": {
     "strictTemplates": true
-  }
+  },
+  "include": [
+    "./node_modules/cypress",
+    "cypress/**/*.ts"
+  ]
 }
