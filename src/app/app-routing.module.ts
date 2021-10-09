@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
 import { PhysicsDemoComponent } from './projects/project-detail/physics-demo/physics-demo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SpeakingComponent } from './speaking/speaking.component';
 
 @NgModule({
   imports: [
@@ -27,6 +28,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       {
         path: 'projects/physics-units/demo',
         component: PhysicsDemoComponent
+      },
+      {
+        path: 'speaking',
+        component: SpeakingComponent,
+        data: { animationState: 'Speaking' }
       },
       {
         path: 'contact',
