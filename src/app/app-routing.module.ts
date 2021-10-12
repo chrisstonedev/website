@@ -1,30 +1,31 @@
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { ProjectsListComponent } from './projects/projects-list/projects-list.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { ProjectDetailComponent } from './projects/project-detail/project-detail.component';
-import { PhysicsDemoComponent } from './projects/project-detail/physics-demo/physics-demo.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SpeakingComponent } from './speaking/speaking.component';
+import {HomeComponent} from './home/home.component';
+import {ProjectsListComponent} from './projects/projects-list/projects-list.component';
+import {AboutComponent} from './about/about.component';
+import {ContactComponent} from './contact/contact.component';
+import {ProjectDetailComponent} from './projects/project-detail/project-detail.component';
+import {PhysicsDemoComponent} from './projects/project-detail/physics-demo/physics-demo.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {SpeakingComponent} from './speaking/speaking.component';
+import {SpeakingTalkComponent} from "./speaking/speaking-talk/speaking-talk.component";
 
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, data: { animationState: 'Home' } },
+      {path: '', component: HomeComponent, data: {animationState: 'Home'}},
       {
         path: 'about',
         component: AboutComponent,
-        data: { animationState: 'About' }
+        data: {animationState: 'About'}
       },
       {
         path: 'projects',
         component: ProjectsListComponent,
-        data: { animationState: 'Projects' }
+        data: {animationState: 'Projects'}
       },
-      { path: 'projects/:id', component: ProjectDetailComponent },
+      {path: 'projects/:id', component: ProjectDetailComponent},
       {
         path: 'projects/physics-units/demo',
         component: PhysicsDemoComponent
@@ -32,14 +33,15 @@ import { SpeakingComponent } from './speaking/speaking.component';
       {
         path: 'speaking',
         component: SpeakingComponent,
-        data: { animationState: 'Speaking' }
+        data: {animationState: 'Speaking'}
       },
+      {path: 'speaking/:id', component: SpeakingTalkComponent},
       {
         path: 'contact',
         component: ContactComponent,
-        data: { animationState: 'Contact' }
+        data: {animationState: 'Contact'}
       },
-      { path: '**', redirectTo: '/' }
+      {path: '**', redirectTo: '/'}
     ]),
     BrowserAnimationsModule
   ],

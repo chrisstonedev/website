@@ -1,0 +1,27 @@
+a {
+  color: #88f;
+
+  &:hover {
+    color: #bbf;
+  }
+}
+
+.back-link {
+  background: #014;
+  cursor: pointer;
+  margin-bottom: 24px;
+  padding: 5px 10px;
+
+  &:hover {
+    background: #125;
+    color: white;
+  }
+}
+
+.badge {
+  margin-left: 8px;
+}
+
+.github-badge {
+  max-width: 400px;
+}
