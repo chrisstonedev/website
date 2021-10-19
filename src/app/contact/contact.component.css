@@ -1,6 +1,13 @@
-.list-group-item{
+.list-group-item {
   font-size: large;
 }
-i{
+
+i {
   padding: 0 1em 0 .5em;
+}
+
+svg {
+  fill: white;
+  margin-right: 8px;
+  width: 24px;
 }
