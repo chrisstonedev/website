@@ -1,0 +1,18 @@
+.list-group-item {
+  font-size: large;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  margin-left: 16px;
+
+  &:hover {
+    background: #495057 !important;
+    transform: translateX(-16px);
+    transition: 0.2s;
+  }
+}
+
+svg {
+  fill: white;
+  margin-right: 24px;
+  width: 24px;
+}

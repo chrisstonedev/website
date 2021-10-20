@@ -1,0 +1,12 @@
+<div [routerLink]="['/portfolio', project.id]"
+     class="card card-link text-white bg-dark">
+  <img [alt]="project.name" [src]="project.image" class="card-img-top"/>
+  <div class="card-body">
+    <h5>{{ project.name }}</h5>
+    <h6>{{ project.platform }}</h6>
+    <button [routerLink]="['/portfolio', project.id]"
+            class="btn btn-primary"
+            type="submit">Details
+    </button>
+  </div>
+</div>

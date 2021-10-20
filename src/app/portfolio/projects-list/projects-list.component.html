@@ -1,0 +1,8 @@
+<div class="card text-white bg-dark mb-2">
+  These open source projects demonstrate things that I have learned outside job experience to continue my skills.
+</div>
+<div class="row">
+  <app-item *ngFor="let project of projects"
+            [project]="project"
+            class="col-md-4"></app-item>
+</div>

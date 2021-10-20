@@ -7,13 +7,13 @@ import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
 import {HeaderComponent} from './header/header.component';
-import {ProjectsService} from './projects/projects.service';
-import {ProjectsListComponent} from './projects/projects-list/projects-list.component';
-import {ProjectsListItemComponent} from './projects/projects-list/projects-list-item/projects-list-item.component';
-import {AboutComponent} from './about/about.component';
+import {PortfolioService} from './portfolio/portfolio.service';
+import {ProjectsListComponent} from './portfolio/projects-list/projects-list.component';
+import {ProjectsListItemComponent} from './portfolio/projects-list/projects-list-item/projects-list-item.component';
+import {WorkComponent} from './work/work.component';
 import {ContactComponent} from './contact/contact.component';
-import {ProjectDetailComponent} from './projects/project-detail/project-detail.component';
-import {PhysicsDemoComponent} from './projects/project-detail/physics-demo/physics-demo.component';
+import {ProjectDetailComponent} from './portfolio/project-detail/project-detail.component';
+import {PhysicsDemoComponent} from './portfolio/project-detail/physics-demo/physics-demo.component';
 import {SpeakingComponent} from './speaking/speaking.component';
 import {SpeakingTalkComponent} from './speaking/speaking-talk/speaking-talk.component';
 
@@ -24,7 +24,7 @@ import {SpeakingTalkComponent} from './speaking/speaking-talk/speaking-talk.comp
     ProjectsListItemComponent,
     HeaderComponent,
     HomeComponent,
-    AboutComponent,
+    WorkComponent,
     ContactComponent,
     ProjectDetailComponent,
     PhysicsDemoComponent,
@@ -37,7 +37,7 @@ import {SpeakingTalkComponent} from './speaking/speaking-talk/speaking-talk.comp
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [ProjectsService],
+  providers: [PortfolioService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

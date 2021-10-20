@@ -1,12 +1,13 @@
-import { Injectable } from '@angular/core';
-import { Project } from './project';
+import {Injectable} from '@angular/core';
+import {Project} from './project';
 import projectData from '../../assets/projects-data.json';
 
 @Injectable()
-export class ProjectsService {
+export class PortfolioService {
   private projects: Project[] = projectData;
 
-  constructor() {}
+  constructor() {
+  }
 
   getProjects() {
     return this.projects;

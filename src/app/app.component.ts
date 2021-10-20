@@ -1,20 +1,20 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
 
-import { ProjectsService } from './projects/projects.service';
-import { routeTransitionAnimations } from './route-transition-animations';
+import {PortfolioService} from './portfolio/portfolio.service';
+import {routeTransitionAnimations} from './route-transition-animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [ProjectsService],
+  providers: [PortfolioService],
   animations: [routeTransitionAnimations]
 })
 export class AppComponent {
-  projectsService: ProjectsService;
+  projectsService: PortfolioService;
 
-  constructor(projectsService: ProjectsService) {
+  constructor(projectsService: PortfolioService) {
     this.projectsService = projectsService;
   }
 

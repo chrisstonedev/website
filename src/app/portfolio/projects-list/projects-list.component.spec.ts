@@ -1,22 +1,22 @@
-import { TestBed, waitForAsync } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import { ProjectsService } from '../projects.service';
-import { Project } from '../project';
+import {TestBed, waitForAsync} from '@angular/core/testing';
+import {RouterTestingModule} from '@angular/router/testing';
+import {PortfolioService} from '../portfolio.service';
+import {Project} from '../project';
 
-import { ProjectsListComponent } from './projects-list.component';
+import {ProjectsListComponent} from './projects-list.component';
 
 describe('ProjectsListComponent', () => {
   let component: ProjectsListComponent;
-  let projectService: ProjectsService;
+  let projectService: PortfolioService;
 
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        providers: [ProjectsService, ProjectsListComponent],
+        providers: [PortfolioService, ProjectsListComponent],
         imports: [RouterTestingModule],
       }).compileComponents();
       component = TestBed.inject(ProjectsListComponent);
-      projectService = TestBed.inject(ProjectsService);
+      projectService = TestBed.inject(PortfolioService);
     })
   );
 
@@ -134,7 +134,7 @@ describe('ProjectsListComponent', () => {
         platform: 'JavaScript web app',
         image: 'assets/physics.png',
         availability: 'Live demo',
-        availabilityLink: 'projects/physics-units/demo',
+        availabilityLink: 'portfolio/physics-units/demo',
         source: 'https://github.com/chrisstonedev/physics-units',
         description: '',
       },
@@ -171,7 +171,6 @@ describe('ProjectsListComponent', () => {
     expect(projectService.getProjects).toHaveBeenCalled();
     expect(projectServiceSpy).toHaveBeenCalled();
     expect(something.length).toEqual(13);
-    expect(component.projects.length).toEqual(13);
-    expect(component.filteredProjects.length).toEqual(13);
+    expect(component.projects.length).toEqual(6);
   });
 });

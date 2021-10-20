@@ -1,6 +1,11 @@
 ul {
   margin-right: auto !important;
 }
+
 nav {
   background-color: var(--color-ikb) !important;
+}
+
+.navbar-brand:not(.active) {
+  color: #fffb;
 }

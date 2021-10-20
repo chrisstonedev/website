@@ -105,7 +105,7 @@
     "platform": "JavaScript web app",
     "image": "assets/physics.png",
     "availability": "Live demo",
-    "availabilityLink": "projects/physics-units/demo",
+    "availabilityLink": "portfolio/physics-units/demo",
     "source": "https://github.com/chrisstonedev/physics-units",
     "description": "Fascinated in physics class with how four basic SI units could be derived into so many other useful contexts, I created this very simple JavaScript tool. Click on a unit to multiply or divide by that unit. Starting with only the four basic units (e.g., kilograms, meters), can you activate the other derived units (e.g., Newtons, Joules)? See how many you can recall from memory before you look them up online. Keyboard shortcuts can also be used."
   },

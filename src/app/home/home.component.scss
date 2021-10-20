@@ -1,3 +1,22 @@
+.event-banner-link {
+  background: #1468;
+  border-radius: 20px;
+  color: white;
+  padding: 8px 24px 0;
+  margin-bottom: 24px;
+  text-decoration: none;
+
+  &:hover {
+    color: #aff;
+    opacity: 0.8;
+  }
+
+  .event-banner-title {
+    font-size: x-large;
+    margin-bottom: 16px;
+  }
+}
+
 #taglines {
   border-radius: 8px;
   margin-bottom: 24px;
@@ -18,55 +37,6 @@
   }
 }
 
-.atlanta-code-camp {
-  color: white;
+.profile-picture {
   margin-bottom: 24px;
-  text-decoration: none;
-
-  &:hover {
-    color: #aff;
-    opacity: 0.8;
-  }
-
-  .atlanta-code-camp-container {
-    background: #1468;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-    .atlanta-code-camp-text {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      justify-content: center;
-      padding: 16px;
-
-      .atlanta-code-camp-title {
-        font-size: x-large;
-      }
-    }
-  }
-}
-
-@media (max-width: 991px) {
-  .atlanta-code-camp-container {
-    flex-direction: column;
-
-    img {
-      border-radius: 0 0 20px 20px;
-      width: 100%;
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .atlanta-code-camp-container {
-    flex-direction: row;
-
-    img {
-      border-radius: 0 20px 20px 0;
-      height: 300px;
-    }
-  }
 }

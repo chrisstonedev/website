@@ -1,20 +1,20 @@
-import { Component, ViewEncapsulation, Input } from '@angular/core';
+import {Component, Input, ViewEncapsulation} from '@angular/core';
 
-import { ProjectsService } from '../../projects.service';
-import { Project } from '../../project';
+import {PortfolioService} from '../../portfolio.service';
+import {Project} from '../../project';
 
 @Component({
   selector: 'app-item',
   templateUrl: './projects-list-item.component.html',
   styleUrls: ['./projects-list-item.component.css'],
   encapsulation: ViewEncapsulation.None,
-  providers: [ProjectsService],
+  providers: [PortfolioService],
 })
 export class ProjectsListItemComponent {
   @Input() project: Project;
-  projectsService: ProjectsService;
+  projectsService: PortfolioService;
 
-  constructor(projectsService: ProjectsService) {
+  constructor(projectsService: PortfolioService) {
     this.projectsService = projectsService;
   }
 }

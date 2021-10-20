@@ -1,12 +1,12 @@
-import { ProjectsService } from './projects.service';
+import {PortfolioService} from './portfolio.service';
 
-import { TestBed, waitForAsync, inject } from '@angular/core/testing';
+import {inject, TestBed, waitForAsync} from '@angular/core/testing';
 
-describe('ProjectsService', () => {
+describe('PortfolioService', () => {
   beforeEach(
     waitForAsync(() => {
       TestBed.configureTestingModule({
-        providers: [ProjectsService],
+        providers: [PortfolioService],
       });
     })
   );
@@ -14,7 +14,7 @@ describe('ProjectsService', () => {
   it(
     'should return a Projects list with 13 users',
     waitForAsync(
-      inject([ProjectsService], (service: ProjectsService) => {
+      inject([PortfolioService], (service: PortfolioService) => {
         const response = service.getProjects();
         expect(response.length).toBe(13);
       })
