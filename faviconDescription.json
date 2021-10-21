@@ -1,0 +1,61 @@
+{
+  "masterPicture": "favicon.png",
+  "iconsPath": "/",
+  "design": {
+    "ios": {
+      "pictureAspect": "noChange",
+      "assets": {
+        "ios6AndPriorIcons": false,
+        "ios7AndLaterIcons": false,
+        "precomposedIcons": false,
+        "declareOnlyDefaultIcon": true
+      },
+      "appName": "Chris Stone"
+    },
+    "desktopBrowser": {
+      "design": "raw"
+    },
+    "windows": {
+      "pictureAspect": "noChange",
+      "backgroundColor": "#20203f",
+      "onConflict": "override",
+      "assets": {
+        "windows80Ie10Tile": false,
+        "windows10Ie11EdgeTiles": {
+          "small": false,
+          "medium": true,
+          "big": false,
+          "rectangle": false
+        }
+      },
+      "appName": "Chris Stone"
+    },
+    "androidChrome": {
+      "pictureAspect": "shadow",
+      "themeColor": "#20203f",
+      "manifest": {
+        "name": "Chris Stone",
+        "display": "standalone",
+        "orientation": "notSet",
+        "onConflict": "override",
+        "declared": true
+      },
+      "assets": {
+        "legacyIcon": false,
+        "lowResolutionIcons": false
+      }
+    },
+    "safariPinnedTab": {
+      "pictureAspect": "blackAndWhite",
+      "threshold": 75,
+      "themeColor": "#211dc3"
+    }
+  },
+  "settings": {
+    "scalingAlgorithm": "Bilinear",
+    "errorOnImageTooSmall": false,
+    "readmeFile": false,
+    "htmlCodeFile": true,
+    "usePathAsIs": false
+  }
+}

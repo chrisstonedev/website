@@ -9,7 +9,7 @@ describe('Home Page Tests', () => {
     });
   });
 
-  it('should display Atlanta Code Camp banner ad', () => {
-    cy.get('.atlanta-code-camp-title').should('exist');
+  it('should display banner ad', () => {
+    cy.get('.event-banner-link').should('exist');
   })
 })
