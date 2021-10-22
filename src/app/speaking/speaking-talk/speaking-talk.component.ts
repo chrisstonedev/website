@@ -8,6 +8,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class SpeakingTalkComponent implements OnInit {
   firstTalk = 'technical-debt';
+  private forceRedeploy = 1;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -16,6 +17,7 @@ export class SpeakingTalkComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.forceRedeploy++;
     const id = this.activatedRoute.snapshot.paramMap.get('id');
     if (id !== this.firstTalk) {
       this.onBack();
