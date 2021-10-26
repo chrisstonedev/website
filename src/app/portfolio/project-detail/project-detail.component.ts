@@ -20,12 +20,14 @@ export class ProjectDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const id = this.activatedRoute.snapshot.paramMap.get('id');
-    const projects = this.projectsService.getProjects();
-    this.project = projects.find((p) => p.id === id);
-    if (this.project === undefined) {
-      this.onBack();
-    }
+    this.activatedRoute.data.subscribe(data => {
+      const slug = data.slug;
+      const projects = this.projectsService.getProjects();
+      this.project = projects.find((p) => p.id === slug);
+      if (this.project === undefined) {
+        this.onBack();
+      }
+    })
   }
 
   onBack(): void {
