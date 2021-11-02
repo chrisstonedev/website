@@ -11,13 +11,15 @@ export class ApiService {
   }
 
   getConferences(): Observable<Conference[]> {
-    return this.transferStateService.useScullyTransferState('conferences',
-      this.http.get<Conference[]>('/.netlify/functions/getConferences', {
+    const conferences = this.transferStateService.useScullyTransferState('conferences',
+      this.http.get<any[]>('/.netlify/functions/getConferences', {
         headers: {
           'Content-Type': 'application/json'
         }
       })
     );
+    console.log('conferences', conferences);
+    return conferences;
   }
 
   getCounter(): Observable<Counter> {
