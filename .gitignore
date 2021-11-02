@@ -64,6 +64,3 @@ scullyStats.json
 
 # Local Netlify folder
 .netlify
-
-# Sanity
-sanity/node_modules

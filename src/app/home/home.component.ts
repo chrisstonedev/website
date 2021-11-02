@@ -1,6 +1,5 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {animate, AnimationBuilder, group, query, style} from '@angular/animations';
-import {ApiService} from "../api.service";
 
 @Component({
   selector: 'app-home',
@@ -16,22 +15,12 @@ export class HomeComponent implements OnInit {
     {id: 'tagline-learner', text: 'Eager learner'},
     {id: 'tagline-team', text: 'Versatile team player'}
   ];
-  clickerCount = 0;
 
-  constructor(private animationBuilder: AnimationBuilder,
-              private apiService: ApiService) {
+  constructor(private animationBuilder: AnimationBuilder) {
   }
 
   ngOnInit(): void {
     this.toggleState();
-    this.apiService.getCounter().subscribe(x => this.clickerCount = x.count);
-  }
-
-  incrementClicker() {
-    this.apiService.incrementCounter().subscribe(success => {
-      if (success)
-        this.clickerCount++;
-    });
   }
 
   private buildAndPlayAnimation(taglineIndex: number) {

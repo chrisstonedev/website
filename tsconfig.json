@@ -19,8 +19,10 @@
     ],
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "types": [
-      "cypress"
+      "cypress",
+      "node"
     ]
   },
   "angularCompilerOptions": {

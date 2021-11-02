@@ -1,10 +1,10 @@
 [build]
   command = "npm run scully:build"
-  functions = "./functions"
+  functions = ""
   publish = "dist/static/"
 [dev]
   command = "npm run start"
-  functions = "./functions"
+  functions = ""
   publish = "src"
 [[redirects]]
   from = "/*"

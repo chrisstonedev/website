@@ -19,7 +19,8 @@
     "typeRoots": [
       "../node_modules/@types"
     ],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
   },
   "exclude": [
     "./**/*spec.ts"

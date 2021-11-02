@@ -31,7 +31,6 @@
     "@angular/platform-browser": "^12.2.11",
     "@angular/platform-browser-dynamic": "^12.2.11",
     "@angular/router": "^12.2.11",
-    "@sanity/client": "^2.21.7",
     "@scullyio/init": "^2.0.1",
     "@scullyio/ng-lib": "^2.0.0",
     "@scullyio/scully": "^2.0.0",
