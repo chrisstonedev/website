@@ -1,5 +1,6 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { animate, AnimationBuilder, group, query, style } from '@angular/animations';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {animate, AnimationBuilder, group, query, style} from '@angular/animations';
+import {ApiService} from "../api.service";
 
 @Component({
   selector: 'app-home',
@@ -10,17 +11,28 @@ export class HomeComponent implements OnInit {
   currentTaglineIndex = -1;
   @ViewChild('refTaglines') refTaglines: ElementRef;
   taglines = [
-    { id: 'tagline-puzzle', text: 'Software crafter' },
-    { id: 'tagline-crafter', text: 'Analytical puzzle solver' },
-    { id: 'tagline-learner', text: 'Eager learner' },
-    { id: 'tagline-team', text: 'Versatile team player' }
+    {id: 'tagline-puzzle', text: 'Software crafter'},
+    {id: 'tagline-crafter', text: 'Analytical puzzle solver'},
+    {id: 'tagline-learner', text: 'Eager learner'},
+    {id: 'tagline-team', text: 'Versatile team player'}
   ];
+  clickerCount = 0;
 
-  constructor(private animationBuilder: AnimationBuilder) {
+  constructor(private animationBuilder: AnimationBuilder,
+              private apiService: ApiService) {
   }
 
   ngOnInit(): void {
     this.toggleState();
+    this.apiService.getCounter().subscribe(x => this.clickerCount = x.count);
+  }
+
+  incrementClicker() {
+    this.apiService.incrementCounter().subscribe(success => {
+      console.log(success);
+      if (success)
+        this.clickerCount++;
+    });
   }
 
   private buildAndPlayAnimation(taglineIndex: number) {
@@ -34,7 +46,7 @@ export class HomeComponent implements OnInit {
             right: 0,
             top: 0
           }),
-          animate('.5s', style({ opacity: 0 }))
+          animate('.5s', style({opacity: 0}))
         ]),
         query('#' + this.taglines[this.nextTagline(taglineIndex)].id, [
           style({
@@ -43,7 +55,7 @@ export class HomeComponent implements OnInit {
             position: 'static',
             visibility: 'visible'
           }),
-          animate('.5s', style({ opacity: 1 }))
+          animate('.5s', style({opacity: 1}))
         ])
       ])
     ]);

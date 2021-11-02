@@ -9,12 +9,11 @@
           <h2>Buried in Technical Debt? Making the Right Investments in Your Code</h2>
           <p>This talk has been presented at the following conferences:</p>
           <ul>
-            <li><a href='https://atlantacodecamp.com/2021' target='_blank'>
-              Atlanta Code Camp 2021</a>
-              <span class="badge bg-primary">In-person</span></li>
-            <li><a href='https://www.utahgeekevents.com/events/big-mountain-data-dev-2021/' target='_blank'>
-              Big Mountain Data & Dev 2021</a>
-              <span class="badge bg-success">Virtual</span></li>
+            <li *ngFor="let conference of conferences">
+              <a [href]='getUrl(conference.name)' target='_blank'>{{conference.name}}</a>
+              <span [ngClass]="{'bg-primary': conference.type === 'in-person', 'bg-success': conference.type === 'virtual'}" class="badge bg-primary">{{conference.type}}</span>
+              <em> {{conference.date}}</em>
+            </li>
           </ul>
         </div>
       </div>
@@ -64,13 +63,6 @@
             href="https://docs.google.com/presentation/d/e/2PACX-1vSwk28blL11yjqG9skdbzMYC9ZWWgJqHcq5EjsFqp7x7rXvBwRWEJiJq4kGtqZ2IFcrFiSbs5bi3F5V/pub?start=false&loop=false&delayms=3000">
             Google Slides</a>.</p>
         </div>
-        <iframe allowfullscreen="true"
-                class="card-img-bottom"
-                frameborder="0"
-                height="569"
-                mozallowfullscreen="true"
-                src="https://docs.google.com/presentation/d/e/2PACX-1vSwk28blL11yjqG9skdbzMYC9ZWWgJqHcq5EjsFqp7x7rXvBwRWEJiJq4kGtqZ2IFcrFiSbs5bi3F5V/embed?start=false&loop=false&delayms=3000"
-                webkitallowfullscreen="true"></iframe>
       </div>
     </div>
     <div class="col-md-6">

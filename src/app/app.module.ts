@@ -16,6 +16,7 @@ import {SpeakingTalkComponent} from './speaking/speaking-talk/speaking-talk.comp
 import {ContactComponent} from './contact/contact.component';
 import {AppRoutingModule} from './app-routing.module';
 import {PortfolioService} from './portfolio/portfolio.service';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import {PortfolioService} from './portfolio/portfolio.service';
     FormsModule,
     BrowserAnimationsModule,
     ScullyLibModule,
+    HttpClientModule,
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]
