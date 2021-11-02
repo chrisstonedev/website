@@ -3,7 +3,7 @@ const sanityClient = require('@sanity/client');
 const sanity = sanityClient({
   projectId: process.env.SANITY_PROJECT_ID,
   dataset: process.env.SANITY_DATASET,
-  useCdn: true,
+  useCdn: false,
   apiVersion: '2021-11-02'
 });
 

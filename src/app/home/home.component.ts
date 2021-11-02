@@ -29,7 +29,6 @@ export class HomeComponent implements OnInit {
 
   incrementClicker() {
     this.apiService.incrementCounter().subscribe(success => {
-      console.log(success);
       if (success)
         this.clickerCount++;
     });
