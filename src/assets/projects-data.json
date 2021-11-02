@@ -20,56 +20,6 @@
     "description": "I needed a way to keep track of how many items we needed to cover in sprint planning and backlog refinement meetings and make sure that we are still on track to finish the meeting in time. I used this as an opportunity to continue learning Kotlin and Android development."
   },
   {
-    "id": "transfer-plus",
-    "name": "Transfer Plus",
-    "platform": "C# Windows Forms app",
-    "image": "assets/transferplus.png",
-    "availability": "",
-    "availabilityLink": "",
-    "source": "",
-    "description": "As a software engineer, I often volunteered or was selected to help in multiple cross-team projects. This led to my eventual selection for the initial development of a new initiative project. While I continued to pick up sprint tasks in the Ticket Entry team, I was the one developer who was always consistently assigned to this team. Once I became Team Lead in the company, I hired, managed, and mentored a new development team for the program after it succeeded its initiative phase and received additional funding from the business, continuing to provide code review and coding contributions."
-  },
-  {
-    "id": "self-check-in",
-    "name": "Self Check-In",
-    "platform": "C# WPF app",
-    "image": "assets/selfcheckinuserflow.png",
-    "availability": "",
-    "availabilityLink": "",
-    "source": "",
-    "description": "Self Check-In is a touchscreen interface for Ticket Entry for which I designed the architecture and led development. Designed as a pair of client/server applications, the server program runs in the background while running Ticket Entry and shares data via a shared database connection, while the client program has its own installer and can be run on any computer. To this point, all C# applications on the team were written in Windows Forms, but the need for an impressive user interface for the touchscreen client program led to the prototype and eventual final decision to write it in WPF, making use of specially shaped controls, theming options, and dynamically sized text. The client program connects to the server by way of an IP socket with the ability to recover on its own in the event of low or disconnected network. The client can also support card readers over an IP port or over a serial connection, which is helpful for when drivers have an RF card they can use to pull up their order. In one prototype, I had even created and presented a Xamarin.Forms proof-of-concept mobile application for future consideration."
-  },
-  {
-    "id": "communicator",
-    "name": "Communicator",
-    "platform": "C# Windows Forms app",
-    "image": "assets/ticketpostredesign.png",
-    "availability": "",
-    "availabilityLink": "",
-    "source": "",
-    "description": "Needing a way for Ticket Entry to perform network operations in the background, I created Communicator from scratch. The initial release was for a very specific web service push to another internal service on the team, presented to the user as a queue of messages that successfully send or that failed in some way and need to be retried. Over time, the program has been expanded to also send data to third-party systems across a variety of interfaces including REST APIs, legacy Component Services applications, direct database calls via connection string, and Azure Event Hubs and Storage Account uploads."
-  },
-  {
-    "id": "audit-log",
-    "name": "Audit Log",
-    "platform": "C# Windows Forms app",
-    "image": "assets/auditlog.png",
-    "availability": "",
-    "availabilityLink": "",
-    "source": "",
-    "description": "Audit Log is a record of important events that are logged automatically by Ticket Entry and its dependencies, and it is the first C# Windows Forms application added to our team's solution, and I created it from scratch. Taking inspiration from similar forms we had in VB6, I migrated code from one language to another as it was for the initial release. The next major revision I made involved a refactor of the entire application so that, instead of using the same patterns we used in VB6, it would adopt the Model-View-Presenter Passive View pattern; this way, I was also able to write our team's first unit tests, using MSTest V2 and Moq. I continued to improve the program iteratively, whether it was at the back-end (performance improvements by introducing background worker threads and asynchronous functions to load hundreds of thousands of log records in seconds) or at the front-end (leveraging Infragistics controls to provide better design and filtering experiences)."
-  },
-  {
-    "id": "ticket-entry",
-    "name": "Ticket Entry",
-    "platform": "Visual Basic 6.0 desktop app",
-    "image": "assets/ticketentry.png",
-    "availability": "",
-    "availabilityLink": "",
-    "source": "",
-    "description": "My first experience working on a software team as a full-time employee, I joined the Ticket Entry team as its second software engineer, and, within a few years, became the Team Lead, continuing to contribute while managing four software engineers and one QA tester. Written completely in Visual Basic 6.0 at the time that I joined the team, it interfaces with devices such as scales, printers, LED signs, signature pads, fingerprint scanners, and more, all connected by serial port, IP port, or USB. It also connects to various enterprise accounting software and has dependencies on other modules maintained by other teams in the company. As I spent more time on the team learning the software and contributing to it, I created a COM-visible C# library that contains methods that this VB6 program can call. As a result, we can perform more advanced functionality and use modern unit testing tools as we work on technical debt reduction over time, without having to wait for the entire project to be migrated to C# first."
-  },
-  {
     "id": "gymrattrax",
     "name": "GymRatTrax",
     "platform": "Java Android application",
@@ -108,25 +58,5 @@
     "availabilityLink": "",
     "source": "https://github.com/chrisstonedev/physics-units",
     "description": "Fascinated in physics class with how four basic SI units could be derived into so many other useful contexts, I created this very simple JavaScript tool. Click on a unit to multiply or divide by that unit. Starting with only the four basic units (e.g., kilograms, meters), can you activate the other derived units (e.g., Newtons, Joules)? See how many you can recall from memory before you look them up online. Keyboard shortcuts can also be used."
-  },
-  {
-    "id": "mcls",
-    "name": "MCLS, et al.",
-    "platform": "HTML websites",
-    "image": "assets/mcls.png",
-    "availability": "",
-    "availabilityLink": "",
-    "source": "",
-    "description": "I worked for a custom contact lens small business for three years and assumed several roles over that time, including administrative assistance and warehouse shipping, but the ultimate position to which I had worked up was graphic and web designer. I used Adobe products to design the simulated appearance that various custom contact lenses would have on an eye, as well as the brochures and posters on which these images would be placed in order to print to distribute. These images were also used online for information and for sales and distribution. I maintained a total of eight websites across different brands and markets. Three used ePages, two used Joomla!, and three were pure handwritten HTML. Two of the websites that were pure HTML were created by me, and I wrote the HTML, CSS, and JavaScript in a text editor to make single-page sites with infographics and contact forms along with hooks into shopping cart functionality. I used jQuery on pages in two of the pre-existing websites to create interactive displays."
-  },
-  {
-    "id": "imminent-development",
-    "name": "Imminent Development",
-    "platform": "Music project",
-    "image": "assets/imminentdevelopment.png",
-    "availability": "Download \"Time and Again\"",
-    "availabilityLink": "assets/timeandagain.mp3",
-    "source": "",
-    "description": "Before my software career started, I had a passion for writing music. Armed with a basic understanding of music theory, I wrote, recorded, and produced several songs between 2006 and 2012. I have always wanted to learn to play a music instrument really well, and I still do. To get around my lack of performance ability, I would record samples and then program and sequence them accordingly. I performed at high school talent shows and released a single in digital stores for purchase (no longer available)."
   }
 ]

@@ -25,29 +25,8 @@ import {SpeakingTalkComponent} from "./speaking/speaking-talk/speaking-talk.comp
       component: ProjectsListComponent,
       data: {animationState: 'Portfolio'}
     }, {
-      path: 'portfolio/website',
-      component: ProjectDetailComponent,
-      data: {slug: 'website'}
-    }, {
-      path: 'portfolio/sprint-planning-timer',
-      component: ProjectDetailComponent,
-      data: {slug: 'sprint-planning-timer'}
-    }, {
-      path: 'portfolio/gymrattrax',
-      component: ProjectDetailComponent,
-      data: {slug: 'gymrattrax'}
-    }, {
-      path: 'portfolio/hash-it-out',
-      component: ProjectDetailComponent,
-      data: {slug: 'hash-it-out'}
-    }, {
-      path: 'portfolio/bookshop',
-      component: ProjectDetailComponent,
-      data: {slug: 'bookshop'}
-    }, {
-      path: 'portfolio/physics-units',
-      component: ProjectDetailComponent,
-      data: {slug: 'physics-units'}
+      path: 'portfolio/:slug',
+      component: ProjectDetailComponent
     }, {
       path: 'speaking',
       component: SpeakingComponent,
