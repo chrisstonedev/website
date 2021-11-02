@@ -39,6 +39,9 @@ import {SpeakingTalkComponent} from "./speaking/speaking-talk/speaking-talk.comp
       component: ContactComponent,
       data: {animationState: 'Contact'}
     }, {
+      path: 'blog',
+      loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
+    }, {
       path: '**',
       redirectTo: '/'
     }]),

@@ -12,6 +12,12 @@ export const config: ScullyConfig = {
   projectName: "personal-website",
   outDir: './dist/static',
   routes: {
+    '/blog/:slug': {
+      type: 'contentFolder',
+      slug: {
+        folder: "./blog"
+      }
+    },
     "/portfolio/:slug": {
       type: 'portfolioSlugPlugin'
     }
