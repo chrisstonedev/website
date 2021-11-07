@@ -1,62 +1,83 @@
 [
   {
-    "id": "website",
+    "slug": "website",
     "name": "Website",
     "platform": "TypeScript Angular app",
-    "image": "assets/website.png",
-    "availability": "",
-    "availabilityLink": "",
-    "source": "https://github.com/chrisstonedev/website",
+    "image": {
+      "path": "assets/website.png",
+      "alt": "Image of Website"
+    },
+    "availability": null,
+    "openSourceLink": "https://github.com/chrisstonedev/website",
     "description": "Sole developer of this very website you are on now. Developed iteratively to describe my development skills and, in a meta twist, is the very highlight of my TypeScript and Angular experience."
   },
   {
-    "id": "sprint-planning-timer",
+    "slug": "sprint-planning-timer",
     "name": "Sprint Planning Timer",
     "platform": "Kotlin Android app",
-    "image": "assets/sprintplanning.png",
-    "availability": "",
-    "availabilityLink": "",
-    "source": "https://github.com/chrisstonedev/sprint-planning-timer-android",
+    "image": {
+      "path": "assets/sprintplanning.png",
+      "alt": "Image of Website"
+    },
+    "availability": null,
+    "openSourceLink": "https://github.com/chrisstonedev/sprint-planning-timer-android",
     "description": "I needed a way to keep track of how many items we needed to cover in sprint planning and backlog refinement meetings and make sure that we are still on track to finish the meeting in time. I used this as an opportunity to continue learning Kotlin and Android development."
   },
   {
-    "id": "gymrattrax",
+    "slug": "gymrattrax",
     "name": "GymRatTrax",
     "platform": "Java Android application",
-    "image": "assets/gymrattrax.png",
-    "availability": "Download app",
-    "availabilityLink": "https://play.google.com/store/apps/details?id=com.gymrattrax.scheduler&hl=en",
-    "source": "https://github.com/GymRatTrax/GymRatTrax-FitnessScheduler",
+    "image": {
+      "path": "assets/gymrattrax.png",
+      "alt": "Image of GymRatTrax"
+    },
+    "availability": {
+      "buttonLabel": "Download app",
+      "link": "https://play.google.com/store/apps/details?id=com.gymrattrax.scheduler&hl=en"
+    },
+    "openSourceLink": "https://github.com/GymRatTrax/GymRatTrax-FitnessScheduler",
     "description": "My first experience working on a team collaboratively and my first time serving as a team leader, GymRatTrax was my senior academic project. It is a personal fitness scheduler application made to replace a fitness planner with features such as adaptive suggestions, reverse calorie search, and robust statistics. I ran weekly Kanban sprints for the team using GitHub Issues to make sure we were staying on track to meet planned milestone deadlines. This is the first Android application I have developed that has been published to the Google Play Store. In addition to leading the development, I coordinated our other tasks on the project including documentation, class presentations and deliverables, and our presentation at a public showcase event."
   },
   {
-    "id": "hash-it-out",
+    "slug": "hash-it-out",
     "name": "Hash It Out",
     "platform": "C# WPF app",
-    "image": "assets/hashitout.png",
-    "availability": "Download app",
-    "availabilityLink": "assets/HashItOut.zip",
-    "source": "https://github.com/chrisstonedev/hash-it-out",
+    "image": {
+      "path": "assets/hashitout.png",
+      "alt": "Image of Hash It Out"
+    },
+    "availability": {
+      "buttonLabel": "Download app",
+      "link": "assets/HashItOut.zip"
+    },
+    "openSourceLink": "https://github.com/chrisstonedev/hash-it-out",
     "description": "Wanting a quick way to get the MD5 and SHA-1 checksum for any file, I developed this Windows application that can be installed to add quick access in the context menu while browsing files. Target values can be copied and pasted to the side with an indicator appearing to quickly tell the user if the values match or not."
   },
   {
-    "id": "bookshop",
+    "slug": "bookshop",
     "name": "Bookshop",
     "platform": "PHP web app",
-    "image": "assets/bookshop.png",
-    "availability": "",
-    "availabilityLink": "",
-    "source": "https://github.com/chrisstonedev/bookshop-demo",
+    "image": {
+      "path": "assets/bookshop.png",
+      "alt": "Image of Bookshop"
+    },
+    "availability": null,
+    "openSourceLink": "https://github.com/chrisstonedev/bookshop-demo",
     "description": "Developed as part of a coursework assignment to implement user security in software while guarding against common vulnerabilities such as SQLI and XSS, the design resembles an online store with inventory and checkout functionality with secure registration and login procedures."
   },
   {
-    "id": "physics-units",
+    "slug": "physics-units",
     "name": "Physics Units",
     "platform": "JavaScript web app",
-    "image": "assets/physics.png",
-    "availability": "",
-    "availabilityLink": "",
-    "source": "https://github.com/chrisstonedev/physics-units",
+    "image": {
+      "path": "assets/physics.png",
+      "alt": "Image of Physics"
+    },
+    "availability": {
+      "buttonLabel": "Open web app",
+      "link": "https://physics.chrisstone.dev"
+    },
+    "openSourceLink": "https://github.com/chrisstonedev/physics-units",
     "description": "Fascinated in physics class with how four basic SI units could be derived into so many other useful contexts, I created this very simple JavaScript tool. Click on a unit to multiply or divide by that unit. Starting with only the four basic units (e.g., kilograms, meters), can you activate the other derived units (e.g., Newtons, Joules)? See how many you can recall from memory before you look them up online. Keyboard shortcuts can also be used."
   }
 ]

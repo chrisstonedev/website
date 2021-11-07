@@ -1,5 +1,52 @@
 [
   {
-    "slug": "technical-debt"
+    "slug": "technical-debt",
+    "title": "Buried in Technical Debt? Making the Right Investments in Your Code",
+    "conferences": [
+      {
+        "name": "Atlanta Code Camp 2021",
+        "type": "In-person",
+        "date": "2021-10-09",
+        "link": "https://atlantacodecamp.com/2021"
+      },
+      {
+        "name": "Big Mountain Data & Dev 2021",
+        "type": "Virtual",
+        "date": "2021-10-22",
+        "link": "https://www.utahgeekevents.com/events/big-mountain-data-dev-2021/"
+      },
+      {
+        "name": "Festive Tech Calendar 2021",
+        "type": "Virtual",
+        "date": "2021-12-30",
+        "link": "https://festivetechcalendar.com/"
+      }
+    ],
+    "coverPhoto": {
+      "path": "assets/atlantacodecamp-photo.jpeg",
+      "alt": "Chris Stone speaking at Atlanta Code Camp"
+    },
+    "abstract": "Have you ever taken a shortcut to complete a task, assuring yourself that you would go back and clean it up and do it the right way later when you had the time? In software, this is called “technical debt,” and when it piles up, it can make code hard to read and maintain. Soon enough, the cost to fix these problems can become too high, and convincing your team to take action becomes increasingly difficult. In this talk, we will discuss the different types of technical debt, how to convince other people in the organization of the importance of making regular “minimum payments,” and some creative strategies to keep in mind for software projects with excessive “accrued interest.”",
+    "promoImage": {
+      "path": "assets/atlantacodecamp.jpeg",
+      "alt": "Chris Stone will be presenting at Atlanta Code Camp 2021"
+    },
+    "slidesLink": "https://docs.google.com/presentation/d/e/2PACX-1vSwk28blL11yjqG9skdbzMYC9ZWWgJqHcq5EjsFqp7x7rXvBwRWEJiJq4kGtqZ2IFcrFiSbs5bi3F5V/pub?start=false&loop=false&delayms=3000",
+    "codeLink": "https://github.com/chrisstonedev/technical-debt",
+    "codeImage": {
+      "path": "assets/github-technical-debt.jpeg",
+      "alt": "See the code behind this talk at github.com/chrisstonedev/technical-debt"
+    }
+  },
+  {
+    "slug": "scully",
+    "title": "The Jamstack Is Out There: Making Static Angular Sites with Scully",
+    "conferences": [],
+    "coverPhoto": null,
+    "abstract": "Making static sites with Angular is possible with Scully.",
+    "promoImage": null,
+    "slidesLink": "",
+    "codeLink": "",
+    "codeImage": null
   }
 ]

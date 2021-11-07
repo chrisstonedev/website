@@ -7,30 +7,25 @@
 </p>
 <div class="container">
   <div class="row justify-content-md-center">
-    <div class="col-md-6">
-      <div class="card card-link text-white bg-dark"
-           routerLink="/speaking/technical-debt">
-        <img alt="Chris Stone speaking at Atlanta Technical Debt"
-             class="card-img-top"
-             src="assets/atlantacodecamp-photo.jpeg"/>
-        <div class="card-body">
-          <h5>
-            Buried in Technical Debt? Making the Right Investments in Your Code
-          </h5>
-          <h6>
-            <ul>
-              <li>Atlanta Code Camp 2021</li>
-              <li>Big Mountain Data & Dev 2021</li>
-              <li>Festive Tech Calendar 2021</li>
-            </ul>
-          </h6>
-          <button class="btn btn-primary"
-                  routerLink="/speaking/technical-debt"
-                  type="submit">
-            Details
-          </button>
+    <div *ngFor="let talk of talks" class="col-md-6">
+      <a [routerLink]="['/speaking', talk.slug]">
+        <div class="card card-link text-white bg-dark">
+          <img *ngIf="talk.coverPhoto"
+               alt="{{talk.coverPhoto.alt}}"
+               class="card-img-top"
+               src="{{talk.coverPhoto.path}}"/>
+          <div class="card-body">
+            <h5>{{talk.title}}</h5>
+            <h6>
+              <ul>
+                <li *ngFor="let conference of talk.conferences">{{conference.name}}</li>
+              </ul>
+            </h6>
+            <a [routerLink]="['/speaking', talk.slug]"
+               class="btn btn-primary">Details</a>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </div>

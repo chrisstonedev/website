@@ -1,6 +1,4 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-
 import {PortfolioService} from '../portfolio.service';
 import {Project} from '../project';
 
@@ -14,10 +12,7 @@ import {Project} from '../project';
 export class ProjectsListComponent implements OnInit {
   projects: Project[] = [];
 
-  constructor(
-    private activatedRoute: ActivatedRoute,
-    private projectsService: PortfolioService
-  ) {
+  constructor(private projectsService: PortfolioService) {
   }
 
   ngOnInit() {
@@ -25,7 +20,7 @@ export class ProjectsListComponent implements OnInit {
   }
 
   loadProjects() {
-    this.projects = this.projectsService.getProjects();
+    this.projects = this.getAllProjects();
   }
 
   getAllProjects(): Project[] {

@@ -1,10 +1,14 @@
+import {ImageData} from "../speaking/talk";
+
 export interface Project {
-  id: string;
+  slug: string;
   name: string;
   platform: string;
-  image: string;
-  availability: string;
-  availabilityLink: string;
-  source: string;
+  image: ImageData;
+  availability: {
+    buttonLabel: string;
+    link: string;
+  };
+  openSourceLink: string;
   description: string;
 }

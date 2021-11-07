@@ -6,7 +6,7 @@ import {Project} from '../project';
 @Component({
   selector: 'app-project-detail',
   templateUrl: './project-detail.component.html',
-  styleUrls: ['./project-detail.component.css'],
+  styleUrls: ['./project-detail.component.scss'],
   providers: [PortfolioService],
 })
 export class ProjectDetailComponent implements OnInit {
@@ -22,7 +22,7 @@ export class ProjectDetailComponent implements OnInit {
   ngOnInit(): void {
     const slug = this.activatedRoute.snapshot.paramMap.get('slug');
     const projects = this.projectsService.getProjects();
-    this.project = projects.find((p) => p.id === slug);
+    this.project = projects.find((p) => p.slug === slug);
     if (this.project === undefined) {
       this.onBack();
     }
