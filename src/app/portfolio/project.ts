@@ -5,6 +5,8 @@ export interface Project {
   name: string;
   platform: string;
   image: ImageData;
+  image2: ImageData;
+  image3: ImageData;
   availability: {
     buttonLabel: string;
     link: string;

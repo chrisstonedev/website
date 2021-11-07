@@ -1,7 +1,7 @@
 import {Component, Input, ViewEncapsulation} from '@angular/core';
 
-import {PortfolioService} from '../../portfolio.service';
-import {Project} from '../../project';
+import {PortfolioService} from '../portfolio.service';
+import {Project} from '../project';
 
 @Component({
   selector: 'app-item',

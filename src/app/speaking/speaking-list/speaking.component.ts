@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {SpeakingService} from "./speaking.service";
-import {Talk} from "./talk";
+import {SpeakingService} from "../speaking.service";
+import {Talk} from "../talk";
 
 @Component({
   selector: 'app-speaking',

@@ -7,6 +7,8 @@
       "path": "assets/website.png",
       "alt": "Image of Website"
     },
+    "image2": null,
+    "image3": null,
     "availability": null,
     "openSourceLink": "https://github.com/chrisstonedev/website",
     "description": "Sole developer of this very website you are on now. Developed iteratively to describe my development skills and, in a meta twist, is the very highlight of my TypeScript and Angular experience."
@@ -19,6 +21,8 @@
       "path": "assets/sprintplanning.png",
       "alt": "Image of Website"
     },
+    "image2": null,
+    "image3": null,
     "availability": null,
     "openSourceLink": "https://github.com/chrisstonedev/sprint-planning-timer-android",
     "description": "I needed a way to keep track of how many items we needed to cover in sprint planning and backlog refinement meetings and make sure that we are still on track to finish the meeting in time. I used this as an opportunity to continue learning Kotlin and Android development."
@@ -31,6 +35,8 @@
       "path": "assets/gymrattrax.png",
       "alt": "Image of GymRatTrax"
     },
+    "image2": null,
+    "image3": null,
     "availability": {
       "buttonLabel": "Download app",
       "link": "https://play.google.com/store/apps/details?id=com.gymrattrax.scheduler&hl=en"
@@ -46,6 +52,8 @@
       "path": "assets/hashitout.png",
       "alt": "Image of Hash It Out"
     },
+    "image2": null,
+    "image3": null,
     "availability": {
       "buttonLabel": "Download app",
       "link": "assets/HashItOut.zip"
@@ -61,6 +69,8 @@
       "path": "assets/bookshop.png",
       "alt": "Image of Bookshop"
     },
+    "image2": null,
+    "image3": null,
     "availability": null,
     "openSourceLink": "https://github.com/chrisstonedev/bookshop-demo",
     "description": "Developed as part of a coursework assignment to implement user security in software while guarding against common vulnerabilities such as SQLI and XSS, the design resembles an online store with inventory and checkout functionality with secure registration and login procedures."
@@ -73,6 +83,8 @@
       "path": "assets/physics.png",
       "alt": "Image of Physics"
     },
+    "image2": null,
+    "image3": null,
     "availability": {
       "buttonLabel": "Open web app",
       "link": "https://physics.chrisstone.dev"
