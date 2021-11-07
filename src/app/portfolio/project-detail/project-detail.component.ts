@@ -29,6 +29,6 @@ export class ProjectDetailComponent implements OnInit {
   }
 
   onBack(): void {
-    this.router.navigate(['projects']);
+    this.router.navigate(['portfolio']);
   }
 }

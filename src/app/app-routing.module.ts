@@ -32,7 +32,7 @@ import {SpeakingTalkComponent} from "./speaking/speaking-talk/speaking-talk.comp
       component: SpeakingComponent,
       data: {animationState: 'Speaking'}
     }, {
-      path: 'speaking/technical-debt',
+      path: 'speaking/:slug',
       component: SpeakingTalkComponent
     }, {
       path: 'contact',

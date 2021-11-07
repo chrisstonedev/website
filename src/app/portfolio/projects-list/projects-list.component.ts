@@ -21,13 +21,11 @@ export class ProjectsListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.activatedRoute.params.subscribe(() => {
-      this.loadProjects();
-    });
+    this.loadProjects();
   }
 
   loadProjects() {
-    this.projects = this.projectsService.getProjects().filter((x) => x.source.length > 0);
+    this.projects = this.projectsService.getProjects();
   }
 
   getAllProjects(): Project[] {

@@ -171,6 +171,6 @@ describe('ProjectsListComponent', () => {
     expect(projectService.getProjects).toHaveBeenCalled();
     expect(projectServiceSpy).toHaveBeenCalled();
     expect(something.length).toEqual(13);
-    expect(component.projects.length).toEqual(6);
+    expect(component.projects.length).toEqual(13);
   });
 });
