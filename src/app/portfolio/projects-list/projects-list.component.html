@@ -1,8 +1,25 @@
-<div class="card text-white bg-dark mb-2">
+<p>
   These open source projects demonstrate things that I have learned outside job experience to continue my skills.
+</p>
+<div class="card text-white bg-dark mb-3 filter-card">
+  <h5>Filter:</h5>
+  <label>
+    <span>Language: </span>
+    <select (change)="filterChange()" [(ngModel)]="selectedLanguage" class="form-select">
+      <option selected="" value="">All Languages</option>
+      <option *ngFor="let language of languages">{{language}}</option>
+    </select>
+  </label>
+  <label>
+    <span>Platform: </span>
+    <select (change)="filterChange()" [(ngModel)]="selectedPlatform" class="form-select">
+      <option selected="" value="">All Platforms</option>
+      <option *ngFor="let platform of platforms">{{platform}}</option>
+    </select>
+  </label>
 </div>
 <div class="row">
-  <app-item *ngFor="let project of projects"
+  <app-item *ngFor="let project of filteredProjects"
             [project]="project"
             class="col-md-4"></app-item>
 </div>

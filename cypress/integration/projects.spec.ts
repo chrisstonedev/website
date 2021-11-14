@@ -3,26 +3,24 @@ describe('Projects List Page', () => {
     cy.visit('/portfolio');
   });
 
-  it('should have an unordered list', () => {
+  it('should have 6 projects in the default list', () => {
     cy.get('ul').should('exist');
-  });
-
-  it.skip('should have 13 projects in the default list', () => {
-    cy.get('app-item').should('have.length', 13);
-    cy.get('#flexCheckDefault').should('not.be.checked');
-  });
-
-  it.skip('should have 6 projects in the filtered list', () => {
-    cy.get('#flexCheckDefault').check({scrollBehavior: false});
     cy.get('app-item').should('have.length', 6);
-    cy.get('#flexCheckDefault').should('be.checked');
   });
 
-  it.skip('should have 13 projects after unfiltering again', () => {
-    const filterCheckBox = cy.get('#flexCheckDefault');
-    filterCheckBox.click({scrollBehavior: false});
-    filterCheckBox.click({scrollBehavior: false});
-    cy.get('app-item').should('have.length', 13);
-    filterCheckBox.should('not.be.checked');
+  it('should have the expected language and platform lists', () => {
+    cy.get(':nth-child(2) > .form-select').children('option').then(options => {
+      const actual = [...options].map(o => o.value)
+      expect(actual).to.deep.eq(['', 'C#', 'HTML', 'Java', 'JavaScript', 'Kotlin', 'PHP', 'TypeScript', 'XAML'])
+    });
+    cy.get(':nth-child(3) > .form-select').children('option').then(options => {
+      const actual = [...options].map(o => o.value)
+      expect(actual).to.deep.eq(['', 'Android', 'Angular', 'WPF', 'Web', 'Windows'])
+    });
+  });
+
+  it('should have 1 C# project', () => {
+    cy.get(':nth-child(2) > .form-select').select('C#', {force: true});
+    cy.get('app-item').should('have.length', 1);
   });
 });

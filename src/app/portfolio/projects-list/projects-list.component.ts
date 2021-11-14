@@ -11,19 +11,43 @@ import {Project} from '../project';
 })
 export class ProjectsListComponent implements OnInit {
   projects: Project[] = [];
+  filteredProjects: Project[] = [];
+  selectedLanguage = '';
+  selectedPlatform = '';
+  languages: string[] = [];
+  platforms: string[] = [];
 
   constructor(private projectsService: PortfolioService) {
   }
 
   ngOnInit() {
-    this.loadProjects();
+    this.loadProjectData();
   }
 
-  loadProjects() {
-    this.projects = this.getAllProjects();
+  loadProjectData() {
+    this.projects = this.projectsService.getProjects();
+    this.filteredProjects = this.projects;
+
+    function getSortedListOfUniqueElements(arrayOfArrays: string[][]) {
+      return [].concat.apply([], arrayOfArrays).filter((elem, index, self) => index === self.indexOf(elem))
+        .sort();
+    }
+
+    this.languages = getSortedListOfUniqueElements(this.projects.map(x => x.languages));
+    this.platforms = getSortedListOfUniqueElements(this.projects.map(x => x.platforms));
   }
 
-  getAllProjects(): Project[] {
-    return this.projectsService.getProjects();
+  filterChange() {
+    this.filteredProjects = this.projects.filter(
+      x => {
+        if (this.selectedLanguage.length > 0 && this.selectedPlatform.length > 0)
+          return x.languages.includes(this.selectedLanguage) && x.platforms.includes(this.selectedPlatform);
+        if (this.selectedLanguage.length > 0)
+          return x.languages.includes(this.selectedLanguage);
+        if (this.selectedPlatform.length > 0)
+          return x.platforms.includes(this.selectedPlatform);
+        return x;
+      }
+    );
   }
 }

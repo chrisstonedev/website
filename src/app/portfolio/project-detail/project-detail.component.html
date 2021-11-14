@@ -2,24 +2,53 @@
   <a class="back-link" routerLink="/portfolio">
     <div>👈 Back</div>
   </a>
-  <div class="card text-white bg-dark col-12">
-    <div class="image-grid-container">
-      <div></div>
-      <!-- Empty div keeps first column of grid empty (until I come back with another design idea). -->
-      <img [alt]="project.image.alt" [src]="project.image.path" class="card-img-detail"/>
+</div>
+<div class="row">
+  <div class="col-md-6 mt-3">
+    <div class="card text-light bg-dark">
+      <div class="card-body">
+        <h1>{{ project.name }}</h1>
+        <h6>Language: {{ project.languages }}</h6>
+        <h6>Platform: {{ project.platforms }}</h6>
+        <a *ngIf="project.availability"
+           [href]="project.availability.link"
+           class="btn btn-primary btn-availability"
+           target="_blank">{{ project.availability.buttonLabel }}</a>
+        <a *ngIf="project.openSourceLink"
+           [href]="project.openSourceLink"
+           class="btn btn-primary"
+           target="_blank">View source</a>
+      </div>
     </div>
-    <div class="card-body">
-      <h5>{{ project.name }}</h5>
-      <h6>{{ project.platform }}</h6>
-      <p class="card-text">{{ project.description }}</p>
-      <a *ngIf="project.availability"
-         [href]="project.availability.link"
-         class="btn btn-primary btn-availability"
-         target="_blank">{{ project.availability.buttonLabel }}</a>
-      <a *ngIf="project.openSourceLink"
-         [href]="project.openSourceLink"
-         class="btn btn-primary"
-         target="_blank">View source</a>
+    <div class="card text-light bg-dark mt-3">
+      <div class="card-body">
+        <h5>Description</h5>
+        <p class="card-text">{{ project.description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 mt-3">
+    <div class="card text-light bg-dark">
+      <div class="card-body">
+        <h5>Screenshot</h5>
+      </div>
+      <img [alt]="project.image.alt" [src]="project.image.path" class="card-img-bottom">
+    </div>
+  </div>
+  <div class="col-md-6 mt-3">
+    <div class="card text-light bg-dark">
+      <div class="card-body">
+        <h5 class="card-title">Purpose behind starting the project</h5>
+        <p class="card-text">{{project.purpose}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 mt-3">
+    <div class="card text-light bg-dark">
+      <div class="card-body">
+        <h5 class="card-title">Challenges faced in the development of this project</h5>
+        <p class="card-text">{{project.challenge}}</p>
+      </div>
     </div>
   </div>
 </div>

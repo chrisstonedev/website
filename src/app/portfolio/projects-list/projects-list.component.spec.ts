@@ -29,8 +29,11 @@ describe('ProjectsListComponent', () => {
       {
         slug: 'website',
         name: 'Website',
-        platform: 'TypeScript Angular app',
+        languages: ['TypeScript'],
+        platforms: ['Angular'],
         image: {path: 'assets/website.png', alt: 'Image alt'},
+        image2: null,
+        image3: null,
         availability: null,
         openSourceLink: 'https://google.com',
         description: '',
@@ -42,12 +45,111 @@ describe('ProjectsListComponent', () => {
       'getProjects'
     ).and.returnValue(projectList);
 
-    const something = component.getAllProjects();
-    component.loadProjects();
+    component.loadProjectData();
 
     expect(projectService.getProjects).toHaveBeenCalled();
     expect(projectServiceSpy).toHaveBeenCalled();
-    expect(something.length).toEqual(1);
     expect(component.projects.length).toEqual(1);
+  });
+
+  it('should load the languages list from project data', () => {
+    let projectList: Project[] = [
+      {
+        slug: null,
+        name: null,
+        languages: ['TypeScript', 'C#'],
+        platforms: null,
+        image: null,
+        image2: null,
+        image3: null,
+        availability: null,
+        openSourceLink: null,
+        description: null,
+      },
+      {
+        slug: null,
+        name: null,
+        languages: ['TypeScript', 'Java'],
+        platforms: null,
+        image: null,
+        image2: null,
+        image3: null,
+        availability: null,
+        openSourceLink: null,
+        description: null,
+      }
+    ];
+
+    spyOn(projectService, 'getProjects').and.returnValue(projectList);
+    component.loadProjectData();
+
+    expect(component.languages).toEqual(['C#', 'Java', 'TypeScript']);
+  });
+
+  it('should filter projects from the language dropdown', () => {
+    let projectList: Project[] = [
+      {
+        slug: null,
+        name: 'A',
+        languages: ['TypeScript', 'HTML'],
+        platforms: ['Web'],
+        image: null,
+        image2: null,
+        image3: null,
+        availability: null,
+        openSourceLink: null,
+        description: null,
+      },
+      {
+        slug: null,
+        name: 'B',
+        languages: ['TypeScript'],
+        platforms: ['Windows'],
+        image: null,
+        image2: null,
+        image3: null,
+        availability: null,
+        openSourceLink: null,
+        description: null,
+      },
+      {
+        slug: null,
+        name: 'C',
+        languages: ['C#'],
+        platforms: ['Windows'],
+        image: null,
+        image2: null,
+        image3: null,
+        availability: null,
+        openSourceLink: null,
+        description: null,
+      }
+    ];
+
+    spyOn(projectService, 'getProjects').and.returnValue(projectList);
+
+    component.loadProjectData();
+    expect(component.projects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.filteredProjects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
+
+    component.selectedLanguage = 'TypeScript';
+    component.filterChange();
+    expect(component.projects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.filteredProjects.map(x=>x.name)).toEqual(['A', 'B']);
+
+    component.selectedPlatform = 'Windows';
+    component.filterChange();
+    expect(component.projects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.filteredProjects.map(x=>x.name)).toEqual(['B']);
+
+    component.selectedLanguage = '';
+    component.filterChange();
+    expect(component.projects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.filteredProjects.map(x=>x.name)).toEqual(['B', 'C']);
+
+    component.selectedPlatform = '';
+    component.filterChange();
+    expect(component.projects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.filteredProjects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
   });
 });

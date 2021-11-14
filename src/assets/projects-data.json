@@ -2,94 +2,157 @@
   {
     "slug": "website",
     "name": "Website",
-    "platform": "TypeScript Angular app",
+    "tagline": "TypeScript Angular app",
+    "languages": [
+      "TypeScript",
+      "HTML"
+    ],
+    "platforms": [
+      "Angular",
+      "Web"
+    ],
     "image": {
       "path": "assets/website.png",
       "alt": "Image of Website"
     },
-    "image2": null,
-    "image3": null,
     "availability": null,
     "openSourceLink": "https://github.com/chrisstonedev/website",
-    "description": "Sole developer of this very website you are on now. Developed iteratively to describe my development skills and, in a meta twist, is the very highlight of my TypeScript and Angular experience."
+    "description": "A portfolio website to help list personal projects that demonstrate abilities and interests as well as talks that I have given and can give at conferences.",
+    "purpose": "I really wanted to get into web development and needed a project on which I could hone my skills and demonstrate my abilities. Before this project started, my website was still designed solely from from handwritten HTML and CSS and did not contain much content. At the time, my day job was mostly in desktop applications. Choosing Angular as my framework, I created this application in 2018, and ever since then, in addition to being the way that I can demonstrate my competency in web programming, it remains a sandbox for web experiments that I have wanted to try. One such experiment involved compiling a mobile application version using Electron. The website currently uses Scully to assist in the deployment as a Jamstack static site.",
+    "challenge": "I learned Angular by taking online courses, watching videos, and reading documentation. None of the tutorials directly led me to creating a design that matched what I was needing. I continue to work towards improving the interface and experience of this website to improve my front-end skills. Also, I have known basic CSS for some time but I have not done much with animations or other advanced features. The website currently uses Bootstrap for design templates, but I am keeping an open mind to other frameworks or incorporating more direct CSS."
   },
   {
-    "slug": "sprint-planning-timer",
-    "name": "Sprint Planning Timer",
-    "platform": "Kotlin Android app",
+    "slug": "agenda-timer",
+    "name": "Agenda Timer",
+    "tagline": "Kotlin Android app",
+    "languages": [
+      "Kotlin"
+    ],
+    "platforms": [
+      "Android"
+    ],
     "image": {
       "path": "assets/sprintplanning.png",
-      "alt": "Image of Website"
+      "alt": "Image of Agenda Timer"
     },
-    "image2": null,
-    "image3": null,
     "availability": null,
     "openSourceLink": "https://github.com/chrisstonedev/sprint-planning-timer-android",
-    "description": "I needed a way to keep track of how many items we needed to cover in sprint planning and backlog refinement meetings and make sure that we are still on track to finish the meeting in time. I used this as an opportunity to continue learning Kotlin and Android development."
+    "description": "A timer application in which, given a number of items that must be covered and a total time to get through all items, timers are provided on a per item basis in order to keep an agenda on schedule.",
+    "purpose": "In my time as development team lead, I would help facilitate sprint planning meetings. In some cases, a product manager would advise on a list of items that would need to be covered and discussed ahead of going into a sprint; however, in order to prevent such planning meetings from taking too long, the question would come up of how we can make sure that we do not spend too much time discussing one thing before we go on to the next item. It is a simple calculation that could be done using a spreadsheet, but an application can give feedback in color and sound. A desktop version of the application was made to use during these meetings, and an Android version had been in development in my own time as a way of furthering learning pursuits on Android and Kotlin development.",
+    "challenge": "While I had made simple Android applications before, including ones that had timers in them, making sure that the state of the timer would withstand different user inputs was important. Also, I had not done much with media and sound in a mobile application, and I enjoyed the challenge of figuring out how to accomplish this."
   },
   {
     "slug": "gymrattrax",
     "name": "GymRatTrax",
-    "platform": "Java Android application",
+    "tagline": "Java Android application",
+    "languages": [
+      "Java"
+    ],
+    "platforms": [
+      "Android"
+    ],
     "image": {
       "path": "assets/gymrattrax.png",
       "alt": "Image of GymRatTrax"
     },
-    "image2": null,
-    "image3": null,
     "availability": {
       "buttonLabel": "Download app",
       "link": "https://play.google.com/store/apps/details?id=com.gymrattrax.scheduler&hl=en"
     },
     "openSourceLink": "https://github.com/GymRatTrax/GymRatTrax-FitnessScheduler",
-    "description": "My first experience working on a team collaboratively and my first time serving as a team leader, GymRatTrax was my senior academic project. It is a personal fitness scheduler application made to replace a fitness planner with features such as adaptive suggestions, reverse calorie search, and robust statistics. I ran weekly Kanban sprints for the team using GitHub Issues to make sure we were staying on track to meet planned milestone deadlines. This is the first Android application I have developed that has been published to the Google Play Store. In addition to leading the development, I coordinated our other tasks on the project including documentation, class presentations and deliverables, and our presentation at a public showcase event."
+    "description": "A mobile workout planner with an exercise scheduler and assorted features.",
+    "purpose": "A senior project capstone for my bachelor's degree. Working within a group of four people, I elected to fill the role of team lead, and I organized work planning meetings and worked in the team and made sure that work was being divided up well. I was contributing both documentation needs as well as code needs in various places, including general architectural guidance. I was in charge of making sure deliverables were prepared on time and submitted, and I worked with my team on presentation and demonstration requirements. I have continued to maintain the GymRatTrax project since graduating as a sandbox for Android development.",
+    "challenge": "While I had worked as an intern at a software company prior to this course project, this was my first time in anything like a leadership role. I wanted to make sure the deliverables were always ready and on time, and that sometimes required picking up various tasks if someone had assigned themselves something that was too large for them to complete on their own. Also, giving ourselves a goal of having an application that could be published in the Google Play Store by the end of the semester was not something that was a requirement or even that many other projects did, but it helped us see what it takes to see an application get published through to the end."
   },
   {
     "slug": "hash-it-out",
     "name": "Hash It Out",
-    "platform": "C# WPF app",
+    "tagline": "C# WPF app",
+    "languages": [
+      "C#",
+      "XAML"
+    ],
+    "platforms": [
+      "WPF",
+      "Windows"
+    ],
     "image": {
       "path": "assets/hashitout.png",
       "alt": "Image of Hash It Out"
     },
-    "image2": null,
-    "image3": null,
     "availability": {
       "buttonLabel": "Download app",
       "link": "assets/HashItOut.zip"
     },
     "openSourceLink": "https://github.com/chrisstonedev/hash-it-out",
-    "description": "Wanting a quick way to get the MD5 and SHA-1 checksum for any file, I developed this Windows application that can be installed to add quick access in the context menu while browsing files. Target values can be copied and pasted to the side with an indicator appearing to quickly tell the user if the values match or not."
+    "description": "A desktop application that can compute hashes for files.",
+    "purpose": "At the time that this application was first created, this was my first WPF application I had written. Completing this application gave me the confidence to introduce WPF applications where I was working. Beyond the general purpose of wanting to make a WPF app, I had found myself needing to occasionally check for hash sums and not having a reliable utility at the time to do this. Also, I was able to use this application as a sandbox for installation methods, using both Microsoft Visual Studio Installer Projects and ClickOnce as possible options.",
+    "challenge": "While it was not very difficult to get the functions to work as intended, performance became an issue early in development. Figuring out how to keep the application responsive while complicated hash sum calculations were being done was critical in order to let the user believe that the application was still functioning."
   },
   {
     "slug": "bookshop",
     "name": "Bookshop",
-    "platform": "PHP web app",
+    "tagline": "PHP web app",
+    "languages": [
+      "PHP"
+    ],
+    "platforms": [
+      "Web"
+    ],
     "image": {
       "path": "assets/bookshop.png",
       "alt": "Image of Bookshop"
     },
-    "image2": null,
-    "image3": null,
     "availability": null,
     "openSourceLink": "https://github.com/chrisstonedev/bookshop-demo",
-    "description": "Developed as part of a coursework assignment to implement user security in software while guarding against common vulnerabilities such as SQLI and XSS, the design resembles an online store with inventory and checkout functionality with secure registration and login procedures."
+    "description": "A sample e-commerce website that is developed on a LAMP stack.",
+    "purpose": "This project was created based on an assignment in a secure software development course to teach methods to prevent common security issues, such as cross site scripting and SQL injection. Over time, this application continues to serve as a sandbox for LAMP stack development testing. Now, the tests to confirm that security concerns are properly handled can be run as Cypress automated tests.",
+    "challenge": "While the app is fake and does not hook into anything real, there is a back-end and a front-end to this application and making sure that everything is in communicate well is important. Not much attention was paid to design and user experience, which I believe are important for future development."
   },
   {
     "slug": "physics-units",
     "name": "Physics Units",
-    "platform": "JavaScript web app",
+    "tagline": "JavaScript web app",
+    "languages": [
+      "JavaScript"
+    ],
+    "platforms": [
+      "Web"
+    ],
     "image": {
       "path": "assets/physics.png",
       "alt": "Image of Physics"
     },
-    "image2": null,
-    "image3": null,
     "availability": {
       "buttonLabel": "Open web app",
       "link": "https://physics.chrisstone.dev"
     },
     "openSourceLink": "https://github.com/chrisstonedev/physics-units",
-    "description": "Fascinated in physics class with how four basic SI units could be derived into so many other useful contexts, I created this very simple JavaScript tool. Click on a unit to multiply or divide by that unit. Starting with only the four basic units (e.g., kilograms, meters), can you activate the other derived units (e.g., Newtons, Joules)? See how many you can recall from memory before you look them up online. Keyboard shortcuts can also be used."
+    "description": "A calculator that demonstrates how many derived units in physics are all made by calculating units from base units.",
+    "purpose": "In physics class, I was very interested in the relationship between different units, and, in class, I had sketched out a utility tool where someone could multiply or divide certain units to get the derived units for other contacts. This idea would then be created using JavaScript as a way to practice JavaScript skills.",
+    "challenge": "Aside from small JavaScript features that I had created in my time as a graphic and web designer, I did not have a lot of experience creating something completely from scratch as its own fully interactive piece. I had experience writing HTML and CSS from scratch, but understanding good practices for embedding JavaScript and working with many variables is something to overcome. User interface in better design is a concern for the longevity of the project going forward."
+  },
+  {
+    "slug": "connect-four",
+    "name": "Connect Four",
+    "tagline": "JavaScript web app",
+    "languages": [
+      "TypeScript"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "image": {
+      "path": "assets/connect-four.png",
+      "alt": "Image of Connect Four"
+    },
+    "availability": {
+      "buttonLabel": "Open web app",
+      "link": "https://connect-four.chrisstone.dev"
+    },
+    "openSourceLink": "https://github.com/chrisstonedev/physics-units",
+    "description": "A game in which the goal is to get four tokens in a row horizontally. vertically, or diagonally on a game board while a computer player examines your moves and tries to beat you.",
+    "purpose": "Inspired by a kata in a Software Crafters Atlanta Meeting we practiced in which the goal was to implement some game rules of the Battleship game, my sights turned to a different board game, and my test-driven development goal was to program the artificial intelligence behind the game. Given a series of user inputs, I needed to be able to rely on the computer AI to perform specific actions that a human would take if they were trying to win the game. This started as Shirley concert Cheryl Shirley conceptual, but a user interface was later also made so that it could be demonstrated to others and how to play the game and to see if they could be my computer AI.",
+    "challenge": "The original goal, creating an artificial intelligence that could beat someone in a board game using test-driven development, was challenging. Trying to figure out how the computer would interpret a Connect Four board and how it would determine game-winning scenarios was a challenge."
   }
 ]

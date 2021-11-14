@@ -2,13 +2,12 @@
   <div class="card card-link text-white bg-dark">
     <img [alt]="project.image.alt"
          [src]="project.image.path"
-         class="card-img-top"/>
+         class="card-img-top">
     <div class="card-body">
       <h5>{{ project.name }}</h5>
-      <h6>{{ project.platform }}</h6>
+      <h6>{{ project.tagline }}</h6>
       <a [routerLink]="['/portfolio', project.slug]"
-         class="btn btn-primary">Details
-      </a>
+         class="btn btn-primary">Details</a>
     </div>
   </div>
 </a>

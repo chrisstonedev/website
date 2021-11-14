@@ -1,8 +1,27 @@
+app-item {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
 .form-check {
   padding: 1rem 3rem !important;
 }
 
-app-item {
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
+.filter-card {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 8px 32px;
+}
+
+.filter-card h5 {
+  margin: 0;
+}
+
+.filter-card label {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
