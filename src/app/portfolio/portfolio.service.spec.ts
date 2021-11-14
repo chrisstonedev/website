@@ -12,11 +12,11 @@ describe('PortfolioService', () => {
   );
 
   it(
-    'should return a Projects list with 13 users',
+    'should return a Projects list with the expected count',
     waitForAsync(
       inject([PortfolioService], (service: PortfolioService) => {
         const response = service.getProjects();
-        expect(response.length).toBe(6);
+        expect(response.length).toBe(7);
       })
     )
   );

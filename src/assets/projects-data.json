@@ -18,7 +18,7 @@
     "availability": null,
     "openSourceLink": "https://github.com/chrisstonedev/website",
     "description": "A portfolio website to help list personal projects that demonstrate abilities and interests as well as talks that I have given and can give at conferences.",
-    "purpose": "I really wanted to get into web development and needed a project on which I could hone my skills and demonstrate my abilities. Before this project started, my website was still designed solely from from handwritten HTML and CSS and did not contain much content. At the time, my day job was mostly in desktop applications. Choosing Angular as my framework, I created this application in 2018, and ever since then, in addition to being the way that I can demonstrate my competency in web programming, it remains a sandbox for web experiments that I have wanted to try. One such experiment involved compiling a mobile application version using Electron. The website currently uses Scully to assist in the deployment as a Jamstack static site.",
+    "purpose": "I needed a way to get into web development, so I created this project to hone my skills and demonstrate my abilities. Before this project started, my website was still designed solely from from handwritten HTML and CSS and did not contain much content. At the time, my day job was mostly in desktop applications. Choosing Angular as my framework, I created this application in 2018, and ever since then, in addition to being the way that I can demonstrate my competency in web programming, it remains a sandbox for web experiments that I have wanted to try. One such experiment involved compiling a mobile application version using Electron. The website currently uses Scully to assist in the deployment as a Jamstack static site.",
     "challenge": "I learned Angular by taking online courses, watching videos, and reading documentation. None of the tutorials directly led me to creating a design that matched what I was needing. I continue to work towards improving the interface and experience of this website to improve my front-end skills. Also, I have known basic CSS for some time but I have not done much with animations or other advanced features. The website currently uses Bootstrap for design templates, but I am keeping an open mind to other frameworks or incorporating more direct CSS."
   },
   {
@@ -37,9 +37,9 @@
     },
     "availability": null,
     "openSourceLink": "https://github.com/chrisstonedev/sprint-planning-timer-android",
-    "description": "A timer application in which, given a number of items that must be covered and a total time to get through all items, timers are provided on a per item basis in order to keep an agenda on schedule.",
-    "purpose": "In my time as development team lead, I would help facilitate sprint planning meetings. In some cases, a product manager would advise on a list of items that would need to be covered and discussed ahead of going into a sprint; however, in order to prevent such planning meetings from taking too long, the question would come up of how we can make sure that we do not spend too much time discussing one thing before we go on to the next item. It is a simple calculation that could be done using a spreadsheet, but an application can give feedback in color and sound. A desktop version of the application was made to use during these meetings, and an Android version had been in development in my own time as a way of furthering learning pursuits on Android and Kotlin development.",
-    "challenge": "While I had made simple Android applications before, including ones that had timers in them, making sure that the state of the timer would withstand different user inputs was important. Also, I had not done much with media and sound in a mobile application, and I enjoyed the challenge of figuring out how to accomplish this."
+    "description": "A timer application which, given a number of items that must be covered and a total time to get through all items, provides timers on a per item basis in order to keep an agenda on schedule.",
+    "purpose": "In my time as development team lead, I would help facilitate sprint planning meetings. In some cases, a product manager would advise on a list of items that would need to be covered and discussed ahead of going into a sprint; however, in order to prevent such planning meetings from taking too long, the question would come up of how we can make sure that we do not spend too much time discussing one thing before we go on to the next item. It is a simple calculation that could be done using a spreadsheet, but an application can give feedback in color and sound. Desktop and mobile versions of this idea were developed in my own time that I would occasionally use to make sure meetings were on pace. The mobile application specifically served as a way to do more with Kotlin development.",
+    "challenge": "While I had made simple Android applications before, including ones that had timers in them, making sure that the state of the timer would withstand different user inputs and could reset appropriately was important. Also, I had not done much with media and sound in a mobile application, and I enjoyed the challenge of figuring out how to accomplish this."
   },
   {
     "slug": "gymrattrax",
@@ -61,8 +61,8 @@
     },
     "openSourceLink": "https://github.com/GymRatTrax/GymRatTrax-FitnessScheduler",
     "description": "A mobile workout planner with an exercise scheduler and assorted features.",
-    "purpose": "A senior project capstone for my bachelor's degree. Working within a group of four people, I elected to fill the role of team lead, and I organized work planning meetings and worked in the team and made sure that work was being divided up well. I was contributing both documentation needs as well as code needs in various places, including general architectural guidance. I was in charge of making sure deliverables were prepared on time and submitted, and I worked with my team on presentation and demonstration requirements. I have continued to maintain the GymRatTrax project since graduating as a sandbox for Android development.",
-    "challenge": "While I had worked as an intern at a software company prior to this course project, this was my first time in anything like a leadership role. I wanted to make sure the deliverables were always ready and on time, and that sometimes required picking up various tasks if someone had assigned themselves something that was too large for them to complete on their own. Also, giving ourselves a goal of having an application that could be published in the Google Play Store by the end of the semester was not something that was a requirement or even that many other projects did, but it helped us see what it takes to see an application get published through to the end."
+    "purpose": "A senior capstone project for my bachelor's degree. Working within a group of four people, I elected to fill the role of team lead, and I organized work planning meetings and worked in the team and made sure that work was being divided up well. I was contributing both documentation needs as well as code needs in various places, including general architectural guidance. I was in charge of making sure deliverables were prepared on time and submitted, and I worked with my team on presentation and demonstration requirements. I have continued to maintain the GymRatTrax project since graduating as a sandbox for Android development.",
+    "challenge": "While I had worked as an intern as a software engineer prior to this course project, this was my first time in anything like a leadership role. I wanted to make sure the deliverables were always ready and on time, and that sometimes required picking up various tasks if someone had assigned themselves something that was too large for them to complete on their own. Also, giving ourselves a goal of having an application that could be published in the Google Play Store by the end of the semester was not something that was a requirement or even that many other projects did, but it helped us see what it takes to see an application get published through to the end."
   },
   {
     "slug": "hash-it-out",
@@ -107,7 +107,7 @@
     "openSourceLink": "https://github.com/chrisstonedev/bookshop-demo",
     "description": "A sample e-commerce website that is developed on a LAMP stack.",
     "purpose": "This project was created based on an assignment in a secure software development course to teach methods to prevent common security issues, such as cross site scripting and SQL injection. Over time, this application continues to serve as a sandbox for LAMP stack development testing. Now, the tests to confirm that security concerns are properly handled can be run as Cypress automated tests.",
-    "challenge": "While the app is fake and does not hook into anything real, there is a back-end and a front-end to this application and making sure that everything is in communicate well is important. Not much attention was paid to design and user experience, which I believe are important for future development."
+    "challenge": "While there is no actual book store and placing orders will not actually do anything, there is a back-end and a front-end to this application and making sure that everything is in communicate well is important. Not much attention was paid to design and user experience, which I believe will be important for future maintenance."
   },
   {
     "slug": "physics-units",
@@ -135,7 +135,7 @@
   {
     "slug": "connect-four",
     "name": "Connect Four",
-    "tagline": "JavaScript web app",
+    "tagline": "TypeScript Angular game",
     "languages": [
       "TypeScript"
     ],
@@ -150,9 +150,9 @@
       "buttonLabel": "Open web app",
       "link": "https://connect-four.chrisstone.dev"
     },
-    "openSourceLink": "https://github.com/chrisstonedev/physics-units",
+    "openSourceLink": "https://github.com/chrisstonedev/connect-four",
     "description": "A game in which the goal is to get four tokens in a row horizontally. vertically, or diagonally on a game board while a computer player examines your moves and tries to beat you.",
-    "purpose": "Inspired by a kata in a Software Crafters Atlanta Meeting we practiced in which the goal was to implement some game rules of the Battleship game, my sights turned to a different board game, and my test-driven development goal was to program the artificial intelligence behind the game. Given a series of user inputs, I needed to be able to rely on the computer AI to perform specific actions that a human would take if they were trying to win the game. This started as Shirley concert Cheryl Shirley conceptual, but a user interface was later also made so that it could be demonstrated to others and how to play the game and to see if they could be my computer AI.",
+    "purpose": "Inspired by a kata in a Software Crafters Atlanta meeting in which the goal was to implement some game rules of the Battleship game, I considered a different board game, and my goal was to use test-driven development to develop the artificial intelligence behind the game. Given a series of user inputs, I needed to be able to rely on the computer to perform specific actions that a human would take if they were trying to win the game. This started as a series of theoretical game boards, but a user interface was later also made so that it could actually be played as a game. Now, as the computer's patterns improve, anyone can play the game and see if they can win against the computer.",
     "challenge": "The original goal, creating an artificial intelligence that could beat someone in a board game using test-driven development, was challenging. Trying to figure out how the computer would interpret a Connect Four board and how it would determine game-winning scenarios was a challenge."
   }
 ]
