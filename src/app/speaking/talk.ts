@@ -1,8 +1,10 @@
 export interface Talk {
   slug: string;
   title: string;
+  subtitle: string;
   conferences: Conference[];
-  coverPhoto: ImageData | null;
+  coverImage: ImageData;
+  eventPhotos: ImageData[];
   abstract: string;
   promoImage: ImageData;
   slidesLink: string;

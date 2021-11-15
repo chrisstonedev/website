@@ -10,17 +10,16 @@
     <div *ngFor="let talk of talks" class="col-md-6">
       <a [routerLink]="['/speaking', talk.slug]">
         <div class="card card-link text-white bg-dark">
-          <img *ngIf="talk.coverPhoto"
-               alt="{{talk.coverPhoto.alt}}"
+          <img *ngIf="talk.coverImage"
+               alt="{{talk.coverImage.alt}}"
                class="card-img-top"
-               src="{{talk.coverPhoto.path}}">
+               src="{{talk.coverImage.path}}">
           <div class="card-body">
             <h5>{{talk.title}}</h5>
-            <h6>
-              <ul>
-                <li *ngFor="let conference of talk.conferences">{{conference.name}}</li>
-              </ul>
-            </h6>
+            <h6>{{talk.subtitle}}</h6>
+            <ul>
+              <li *ngFor="let conference of talk.conferences">{{conference.name}}</li>
+            </ul>
             <a [routerLink]="['/speaking', talk.slug]"
                class="btn btn-primary">Details</a>
           </div>

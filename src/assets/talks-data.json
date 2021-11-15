@@ -1,7 +1,8 @@
 [
   {
     "slug": "technical-debt",
-    "title": "Buried in Technical Debt? Making the Right Investments in Your Code",
+    "title": "Buried in Technical Debt?",
+    "subtitle": "Making the Right Investments in Your Code",
     "conferences": [
       {
         "name": "Atlanta Code Camp 2021",
@@ -22,13 +23,23 @@
         "link": "https://festivetechcalendar.com/"
       }
     ],
-    "coverPhoto": {
-      "path": "assets/atlantacodecamp-photo.jpeg",
-      "alt": "Chris Stone speaking at Atlanta Code Camp"
+    "coverImage": {
+      "path": "assets/technical-debt-cover.png",
+      "alt": "Initial slide of the presentation Buried in Technical Debt? Making the Right Investments in Your Code"
     },
+    "eventPhotos": [
+      {
+        "path": "assets/technical-debt-event-atlanta-code-camp.jpeg",
+        "alt": "Chris Stone speaking at Atlanta Code Camp 2021"
+      },
+      {
+        "path": "assets/technical-debt-event-big-mountain.png",
+        "alt": "Chris Stone speaking at Big Mountain Data & Dev 2021"
+      }
+    ],
     "abstract": "Have you ever taken a shortcut to complete a task, assuring yourself that you would go back and clean it up and do it the right way later when you had the time? In software, this is called “technical debt,” and when it piles up, it can make code hard to read and maintain. Soon enough, the cost to fix these problems can become too high, and convincing your team to take action becomes increasingly difficult. In this talk, we will discuss the different types of technical debt, how to convince other people in the organization of the importance of making regular “minimum payments,” and some creative strategies to keep in mind for software projects with excessive “accrued interest.”",
     "promoImage": {
-      "path": "assets/atlantacodecamp.jpeg",
+      "path": "assets/technical-debt-promo-atlanta-code-camp.jpeg",
       "alt": "Chris Stone will be presenting at Atlanta Code Camp 2021"
     },
     "slidesLink": "https://docs.google.com/presentation/d/e/2PACX-1vSwk28blL11yjqG9skdbzMYC9ZWWgJqHcq5EjsFqp7x7rXvBwRWEJiJq4kGtqZ2IFcrFiSbs5bi3F5V/pub?start=false&loop=false&delayms=3000",
@@ -40,10 +51,15 @@
   },
   {
     "slug": "scully",
-    "title": "The Jamstack Is Out There: Making Static Angular Sites with Scully",
+    "title": "The Jamstack Is Out There",
+    "subtitle": "Using Scully to Create Static Sites in Angular",
     "conferences": [],
-    "coverPhoto": null,
-    "abstract": "Making static sites with Angular is possible with Scully.",
+    "coverImage": {
+      "path": "assets/scully-cover.png",
+      "alt": "Initial slide of the presentation The Jamstack Is Out There: Using Scully to Create Static Sites in Angular"
+    },
+    "eventPhotos": null,
+    "abstract": "Angular is a powerful web application framework, but it can sometimes be more powerful than what we really need, creating deployment files that are very large and take significant time for users to render. When performance is a key consideration, it might be time to consider making a Jamstack static site. Scully is a static site generator that works with Angular to pre-render content and deliver fast and secure websites. In this talk, we explain what it means for a site to be a Jamstack site and how Scully works to fulfill those needs. We will cover some definitions and see the code of an Angular site as it deploys into a static site.",
     "promoImage": null,
     "slidesLink": "",
     "codeLink": "",

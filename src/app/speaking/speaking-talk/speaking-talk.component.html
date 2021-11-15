@@ -9,7 +9,9 @@
       <div class="card text-white bg-dark">
         <div class="card-body">
           <h2>{{talk.title}}</h2>
-          <p *ngIf="talk.conferences.length === 0">This talk has not yet been presented at a conference.</p>
+          <h4>{{talk.subtitle}}</h4>
+          <p *ngIf="talk.conferences.length === 0">This talk has been submitted to conferences but has not yet been
+            accepted.</p>
           <p *ngIf="talk.conferences.length > 0">This talk has been presented at the following conferences:</p>
           <ul>
             <li *ngFor="let conference of talk.conferences">
@@ -42,21 +44,6 @@
           A recording will be made available soon.
         </div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="card text-white bg-dark mt-4">
-        <div class="card-body">
-          <h3>Promotional image</h3>
-          <p *ngIf="!talk.promoImage">No promotional image exists.</p>
-        </div>
-        <img *ngIf="talk.promoImage"
-             [alt]='talk.promoImage.alt' [src]='talk.promoImage.path'
-             class="card-img-bottom">
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
       <div class="card text-white bg-dark mt-4">
         <div class="card-body">
           <h3>Slides</h3>
@@ -65,9 +52,9 @@
             <a [href]="talk.slidesLink" target="_blank">
               Google Slides</a>.</p>
         </div>
+        <img [alt]='talk.coverImage.alt' [src]='talk.coverImage.path'
+             class="card-img-bottom">
       </div>
-    </div>
-    <div class="col-md-6">
       <div class="card text-white bg-dark mt-4">
         <div class="card-body">
           <h3>Code</h3>
@@ -81,6 +68,25 @@
           <img [alt]="talk.codeImage.alt"
                [src]="talk.codeImage.path"
                class="card-img-bottom"></a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card text-white bg-dark mt-4">
+        <div class="card-body">
+          <h3>Event photos</h3>
+          <p *ngIf="!talk.eventPhotos">There are no event photos currently.</p>
+        </div>
+        <img *ngFor="let photo of talk.eventPhotos; last as isLast" [alt]="photo.alt"
+             [ngClass]="{'card-img-bottom' : isLast, 'card-img' : !isLast}" [src]="photo.path">
+      </div>
+      <div class="card text-white bg-dark mt-4">
+        <div class="card-body">
+          <h3>Promotional image</h3>
+          <p *ngIf="!talk.promoImage">No promotional image exists.</p>
+        </div>
+        <img *ngIf="talk.promoImage"
+             [alt]='talk.promoImage.alt' [src]='talk.promoImage.path'
+             class="card-img-bottom">
       </div>
     </div>
   </div>
