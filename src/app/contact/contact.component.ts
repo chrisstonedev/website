@@ -1,4 +1,5 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-contact',
@@ -6,7 +7,11 @@ import {Component, ViewEncapsulation} from '@angular/core';
   styleUrls: ['./contact.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class ContactComponent {
-  constructor() {
+export class ContactComponent implements OnInit {
+  constructor(private titleService: Title) {
+  }
+
+  ngOnInit(): void {
+    this.titleService.setTitle('Contact - Chris Stone');
   }
 }

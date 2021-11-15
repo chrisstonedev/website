@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 import {PortfolioService} from '../portfolio.service';
 import {Project} from '../project';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-list',
@@ -17,10 +18,11 @@ export class ProjectsListComponent implements OnInit {
   languages: string[] = [];
   platforms: string[] = [];
 
-  constructor(private projectsService: PortfolioService) {
+  constructor(private projectsService: PortfolioService, private titleService: Title) {
   }
 
   ngOnInit() {
+    this.titleService.setTitle('Portfolio - Chris Stone');
     this.loadProjectData();
   }
 

@@ -1,5 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {animate, AnimationBuilder, group, query, style} from '@angular/animations';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-home',
@@ -16,10 +17,11 @@ export class HomeComponent implements OnInit {
     {id: 'tagline-team', text: 'Versatile team player'}
   ];
 
-  constructor(private animationBuilder: AnimationBuilder) {
+  constructor(private animationBuilder: AnimationBuilder, private titleService: Title) {
   }
 
   ngOnInit(): void {
+    this.titleService.setTitle('Chris Stone');
     this.toggleState();
   }
 

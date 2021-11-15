@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {SpeakingService} from "../speaking.service";
 import {Talk} from "../talk";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-speaking',
@@ -10,14 +11,15 @@ import {Talk} from "../talk";
 export class SpeakingComponent implements OnInit {
   talks: Talk[] = [];
 
-  constructor(private speakingService: SpeakingService) {
+  constructor(private speakingService: SpeakingService, private titleService: Title) {
   }
 
   ngOnInit() {
-    this.loadProjects();
+    this.titleService.setTitle('Speaking - Chris Stone');
+    this.loadTalks();
   }
 
-  loadProjects() {
+  loadTalks() {
     this.talks = this.getAllTalks();
   }
 

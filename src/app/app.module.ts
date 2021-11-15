@@ -1,4 +1,4 @@
-import {BrowserModule} from '@angular/platform-browser';
+import {BrowserModule, Title} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -37,7 +37,7 @@ import {PortfolioService} from './portfolio/portfolio.service';
     BrowserAnimationsModule,
     ScullyLibModule,
   ],
-  providers: [PortfolioService],
+  providers: [PortfolioService, Title],
   bootstrap: [AppComponent]
 })
 export class AppModule {

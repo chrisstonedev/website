@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {SpeakingService} from "../speaking.service";
 import {Talk} from "../talk";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-speaking-talk',
@@ -14,7 +15,7 @@ export class SpeakingTalkComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private speakingService: SpeakingService) {
+    private speakingService: SpeakingService, private titleService: Title) {
   }
 
   ngOnInit(): void {
@@ -24,6 +25,7 @@ export class SpeakingTalkComponent implements OnInit {
     if (this.talk === undefined) {
       this.onBack();
     }
+    this.titleService.setTitle(this.talk.title + ' - Chris Stone');
   }
 
   onBack(): void {

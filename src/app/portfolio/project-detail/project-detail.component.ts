@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {PortfolioService} from '../portfolio.service';
 import {Project} from '../project';
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-project-detail',
@@ -15,7 +16,8 @@ export class ProjectDetailComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    private projectsService: PortfolioService
+    private projectsService: PortfolioService,
+    private titleService: Title
   ) {
   }
 
@@ -26,6 +28,7 @@ export class ProjectDetailComponent implements OnInit {
     if (this.project === undefined) {
       this.onBack();
     }
+    this.titleService.setTitle(this.project.name + ' - Chris Stone');
   }
 
   onBack(): void {
