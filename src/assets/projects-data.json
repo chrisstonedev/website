@@ -22,6 +22,26 @@
     "challenge": "I learned Angular by taking online courses, watching videos, and reading documentation. None of the tutorials directly led me to creating a design that matched what I was needing. I continue to work towards improving the interface and experience of this website to improve my front-end skills. Also, I have known basic CSS for some time but I have not done much with animations or other advanced features. The website currently uses Bootstrap for design templates, but I am keeping an open mind to other frameworks or incorporating more direct CSS."
   },
   {
+    "slug": "advent-of-code",
+    "name": "Advent of Code 2021",
+    "tagline": "Solving problems in multiple languages",
+    "languages": [
+      "C#",
+      "TypeScript",
+      "Kotlin"
+    ],
+    "platforms": null,
+    "image": {
+      "path": "assets/website.png",
+      "alt": "Image of Website"
+    },
+    "availability": null,
+    "openSourceLink": "https://github.com/chrisstonedev/advent-of-code-2021",
+    "description": "",
+    "purpose": "",
+    "challenge": ""
+  },
+  {
     "slug": "agenda-timer",
     "name": "Agenda Timer",
     "tagline": "Kotlin Android app",
