@@ -30,16 +30,63 @@
       "TypeScript",
       "Kotlin"
     ],
-    "platforms": null,
+    "platforms": ["N/A"],
     "image": {
-      "path": "assets/website.png",
+      "path": "assets/advent-of-code.png",
       "alt": "Image of Website"
     },
     "availability": null,
     "openSourceLink": "https://github.com/chrisstonedev/advent-of-code-2021",
-    "description": "",
-    "purpose": "",
-    "challenge": ""
+    "description": "Solving challenges for Advent of Code 2021 in multiple languages.",
+    "purpose": "Increase ability to problem-solve in multiple languages. Strengthen the knowledge of certain languages while driving myself to learn about other languages as well.",
+    "challenge": "It had been some time since I had used Kotlin code at the time that I started this project, so trying to use alternative languages and approaches on certain days lets me attempt to tackle prompts in different ways."
+  },
+  {
+    "slug": "connect-four",
+    "name": "Connect Four",
+    "tagline": "TypeScript Angular game",
+    "languages": [
+      "TypeScript"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "image": {
+      "path": "assets/connect-four.png",
+      "alt": "Image of Connect Four"
+    },
+    "availability": {
+      "buttonLabel": "Open web app",
+      "link": "https://connect-four.chrisstone.dev"
+    },
+    "openSourceLink": "https://github.com/chrisstonedev/connect-four",
+    "description": "A game in which the goal is to get four tokens in a row horizontally. vertically, or diagonally on a game board while a computer player examines your moves and tries to beat you.",
+    "purpose": "Inspired by a kata in a Software Crafters Atlanta meeting in which the goal was to implement some game rules of the Battleship game, I considered a different board game, and my goal was to use test-driven development to develop the artificial intelligence behind the game. Given a series of user inputs, I needed to be able to rely on the computer to perform specific actions that a human would take if they were trying to win the game. This started as a series of theoretical game boards, but a user interface was later also made so that it could actually be played as a game. Now, as the computer's patterns improve, anyone can play the game and see if they can win against the computer.",
+    "challenge": "The original goal, creating an artificial intelligence that could beat someone in a board game using test-driven development, was challenging. Trying to figure out how the computer would interpret a Connect Four board and how it would determine game-winning scenarios was a challenge."
+  },
+  {
+    "slug": "mine-finder",
+    "name": "Mine Finder",
+    "tagline": "Solving problems in multiple languages",
+    "languages": [
+      "TypeScript"
+    ],
+    "platforms": [
+      "Web",
+      "Electron"
+    ],
+    "image": {
+      "path": "assets/mine-finder.png",
+      "alt": "Image of Website"
+    },
+    "availability": {
+      "buttonLabel": "Open web app",
+      "link": "https://mine-finder.chrisstone.dev/"
+    },
+    "openSourceLink": "https://github.com/chrisstonedev/mine-finder",
+    "description": "A Minesweeper clone written in TypeScript that can be played on the web as well as on Desktop via Electron.",
+    "purpose": "A fan of Minesweeper, I used a tutorial to recreate it in JavaScript and gave myself the additional challenge of using TypeScript features to build the application. I also had been interested in learning more about Electron and this project was able to serve as a sandbox for Electron development.",
+    "challenge": "I had used Angular and React templates before to build TypeScript applications, but trying to build an application without the use of templates gave an additional challenge."
   },
   {
     "slug": "agenda-timer",
@@ -151,28 +198,5 @@
     "description": "A calculator that demonstrates how many derived units in physics are all made by calculating units from base units.",
     "purpose": "In physics class, I was very interested in the relationship between different units, and, in class, I had sketched out a utility tool where someone could multiply or divide certain units to get the derived units for other contacts. This idea would then be created using JavaScript as a way to practice JavaScript skills.",
     "challenge": "Aside from small JavaScript features that I had created in my time as a graphic and web designer, I did not have a lot of experience creating something completely from scratch as its own fully interactive piece. I had experience writing HTML and CSS from scratch, but understanding good practices for embedding JavaScript and working with many variables is something to overcome. User interface in better design is a concern for the longevity of the project going forward."
-  },
-  {
-    "slug": "connect-four",
-    "name": "Connect Four",
-    "tagline": "TypeScript Angular game",
-    "languages": [
-      "TypeScript"
-    ],
-    "platforms": [
-      "Web"
-    ],
-    "image": {
-      "path": "assets/connect-four.png",
-      "alt": "Image of Connect Four"
-    },
-    "availability": {
-      "buttonLabel": "Open web app",
-      "link": "https://connect-four.chrisstone.dev"
-    },
-    "openSourceLink": "https://github.com/chrisstonedev/connect-four",
-    "description": "A game in which the goal is to get four tokens in a row horizontally. vertically, or diagonally on a game board while a computer player examines your moves and tries to beat you.",
-    "purpose": "Inspired by a kata in a Software Crafters Atlanta meeting in which the goal was to implement some game rules of the Battleship game, I considered a different board game, and my goal was to use test-driven development to develop the artificial intelligence behind the game. Given a series of user inputs, I needed to be able to rely on the computer to perform specific actions that a human would take if they were trying to win the game. This started as a series of theoretical game boards, but a user interface was later also made so that it could actually be played as a game. Now, as the computer's patterns improve, anyone can play the game and see if they can win against the computer.",
-    "challenge": "The original goal, creating an artificial intelligence that could beat someone in a board game using test-driven development, was challenging. Trying to figure out how the computer would interpret a Connect Four board and how it would determine game-winning scenarios was a challenge."
   }
 ]
