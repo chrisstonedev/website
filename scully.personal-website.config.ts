@@ -1,4 +1,5 @@
 import {registerPlugin, ScullyConfig} from '@scullyio/scully';
+import '@scullyio/scully-plugin-puppeteer';
 
 const projectData = require('./src/assets/projects-data.json');
 const talkData = require('./src/assets/talks-data.json');
