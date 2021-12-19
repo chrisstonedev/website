@@ -15,8 +15,12 @@ export class ProjectsListComponent implements OnInit {
   filteredProjects: Project[] = [];
   selectedLanguage = '';
   selectedPlatform = '';
+  selectedLibrary = '';
   languages: string[] = [];
   platforms: string[] = [];
+  libraries: string[] = [];
+  sortOptions = ['Recently created', 'Most commits', 'Recently updated'];
+  selectedSortOption = this.sortOptions[0];
 
   constructor(private projectsService: PortfolioService, private titleService: Title) {
   }
@@ -24,6 +28,7 @@ export class ProjectsListComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle('Portfolio - Chris Stone');
     this.loadProjectData();
+    this.filterChange();
   }
 
   loadProjectData() {
@@ -37,18 +42,33 @@ export class ProjectsListComponent implements OnInit {
 
     this.languages = getSortedListOfUniqueElements(this.projects.map(x => x.languages));
     this.platforms = getSortedListOfUniqueElements(this.projects.map(x => x.platforms));
+    this.libraries = getSortedListOfUniqueElements(this.projects.map(x => x.libraries));
   }
 
   filterChange() {
-    this.filteredProjects = this.projects.filter(
+    this.filteredProjects = this.projects.sort((a, b) => {
+      switch (this.selectedSortOption) {
+        case 'Recently created':
+          return b.dateCreated.localeCompare(a.dateCreated);
+        case 'Recently updated':
+          return b.dateUpdated.localeCompare(a.dateUpdated);
+        case 'Most commits':
+          if (b.commits < a.commits)
+            return -1;
+          if (b.commits > a.commits)
+            return 1;
+          return 0;
+      }
+    }).filter(
       x => {
-        if (this.selectedLanguage.length > 0 && this.selectedPlatform.length > 0)
-          return x.languages.includes(this.selectedLanguage) && x.platforms.includes(this.selectedPlatform);
+        let showThisProject = true;
         if (this.selectedLanguage.length > 0)
-          return x.languages.includes(this.selectedLanguage);
+          showThisProject &&= x.languages.includes(this.selectedLanguage);
         if (this.selectedPlatform.length > 0)
-          return x.platforms.includes(this.selectedPlatform);
-        return x;
+          showThisProject &&= x.platforms.includes(this.selectedPlatform);
+        if (this.selectedLibrary.length > 0)
+          showThisProject &&= x.libraries.includes(this.selectedLibrary);
+        return showThisProject;
       }
     );
   }

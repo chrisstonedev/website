@@ -4,8 +4,12 @@ export interface Project {
   slug: string;
   name: string;
   tagline: string;
+  dateCreated: string;
+  dateUpdated: string;
+  commits: number;
   languages: string[];
   platforms: string[];
+  libraries: string[];
   image: ImageData;
   availability: {
     buttonLabel: string;
