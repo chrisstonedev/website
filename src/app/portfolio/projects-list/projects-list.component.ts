@@ -19,7 +19,7 @@ export class ProjectsListComponent implements OnInit {
   languages: string[] = [];
   platforms: string[] = [];
   libraries: string[] = [];
-  sortOptions = ['Recently created', 'Most commits', 'Recently updated'];
+  sortOptions = ['Recently created', 'Most commits', 'Recently updated', 'Alphabetical'];
   selectedSortOption = this.sortOptions[0];
 
   constructor(private projectsService: PortfolioService, private titleService: Title) {
@@ -58,6 +58,8 @@ export class ProjectsListComponent implements OnInit {
           if (b.commits > a.commits)
             return 1;
           return 0;
+        case 'Alphabetical':
+          return a.name.localeCompare(b.name);
       }
     }).filter(
       x => {
