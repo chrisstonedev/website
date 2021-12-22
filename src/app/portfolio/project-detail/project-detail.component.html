@@ -10,6 +10,7 @@
         <h1>{{ project.name }}</h1>
         <h6>Language: {{ project.languages }}</h6>
         <h6>Platform: {{ project.platforms }}</h6>
+        <h6>Libraries: {{ project.libraries }}</h6>
         <a *ngIf="project.availability"
            [href]="project.availability.link"
            class="btn btn-primary btn-availability"

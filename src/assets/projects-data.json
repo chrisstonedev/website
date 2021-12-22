@@ -4,8 +4,8 @@
     "name": "Website",
     "tagline": "TypeScript Angular app",
     "dateCreated": "2018-03-07",
-    "dateUpdated": "2021-12-13",
-    "commits": 117,
+    "dateUpdated": "2021-12-21",
+    "commits": 120,
     "languages": [
       "TypeScript",
       "HTML"
@@ -15,7 +15,10 @@
     ],
     "libraries": [
       "Angular",
-      "Scully"
+      "Scully",
+      "Bootstrap",
+      "Jasmine",
+      "Cypress"
     ],
     "image": {
       "path": "assets/website.png",
@@ -45,7 +48,7 @@
     "libraries": [],
     "image": {
       "path": "assets/advent-of-code.png",
-      "alt": "Image of Website"
+      "alt": "Image of Advent of Code"
     },
     "availability": null,
     "openSourceLink": "https://github.com/chrisstonedev/advent-of-code-2021",
@@ -67,7 +70,8 @@
       "Web"
     ],
     "libraries": [
-      "Angular"
+      "Angular",
+      "Jasmine"
     ],
     "image": {
       "path": "assets/connect-four.png",
@@ -100,7 +104,7 @@
     ],
     "image": {
       "path": "assets/mine-finder.png",
-      "alt": "Image of Website"
+      "alt": "Image of Mine Finder"
     },
     "availability": {
       "buttonLabel": "Open web app",
@@ -181,7 +185,8 @@
       "Windows"
     ],
     "libraries": [
-      "WPF"
+      "WPF",
+      "MSTest"
     ],
     "image": {
       "path": "assets/hashitout.png",
@@ -209,7 +214,9 @@
     "platforms": [
       "Web"
     ],
-    "libraries": [],
+    "libraries": [
+      "Cypress"
+    ],
     "image": {
       "path": "assets/bookshop.png",
       "alt": "Image of Bookshop"
@@ -264,25 +271,55 @@
       "React"
     ],
     "image": {
-      "path": "assets/website.png",
-      "alt": "Image of Website"
+      "path": "assets/tic-tac-toe.png",
+      "alt": "Image of Tic Tac Toe"
     },
     "availability": {
       "buttonLabel": "Open web app",
       "link": "https://tic-tac-toe.chrisstone.dev"
     },
     "openSourceLink": "https://github.com/chrisstonedev/tic-tac-toe",
-    "description": "",
-    "purpose": "",
-    "challenge": ""
+    "description": "A tic tac toe game based off the tutorial on the React website.",
+    "purpose": "I wanted more practice in the React framework after focusing on Angular in my professional career to that point. Getting to practice new things in React while thinking of ways to continue making a game of Tic Tac Toe engaging and fun helped make the learning process interesting.",
+    "challenge": "Still needing more practice in React, there is a bit of 'translation' work to do to imagine how the Tic Tac Toe game can be made more fun and then determine how that would best be done with the tools I have."
   },
   {
     "slug": "recipes",
     "name": "Recipe Book",
-    "tagline": "React Next.js app",
+    "tagline": "Markdown Hugo app",
     "dateCreated": "2021-12-17",
-    "dateUpdated": "2021-12-17",
-    "commits": 3,
+    "dateUpdated": "2021-12-21",
+    "commits": 7,
+    "languages": [
+      "Markdown",
+      "HTML"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "libraries": [
+      "Hugo"
+    ],
+    "image": {
+      "path": "assets/recipe-book.png",
+      "alt": "Image of Recipe Book"
+    },
+    "availability": {
+      "buttonLabel": "Open web app",
+      "link": "https://recipes.chrisstone.dev"
+    },
+    "openSourceLink": "https://github.com/chrisstonedev/recipe-book",
+    "description": "A recipe book app written in Markdown using Hugo to build it as a static site.",
+    "purpose": "I became interested in Jamstack static site options and how to build performance-focused and well-designed sites without having to write complicated code. The simplicity of Hugo's Markdown templating options appealed to me.",
+    "challenge": "On a technical level, it is very easy to get started while using styles that other people have made, so breaking down how styles and layouts work so I can experience building one from scratch is a challenge. Beyond that, the biggest challenge I have with my recipe book app is making sure I can provide enough recipes! New pages are so easy to create that the biggest bottleneck is my own ability to provide content over time."
+  },
+  {
+    "slug": "reading",
+    "name": "Reading List",
+    "tagline": "React Next.js app",
+    "dateCreated": "2021-10-26",
+    "dateUpdated": "2021-12-21",
+    "commits": 36,
     "languages": [
       "JavaScript"
     ],
@@ -291,19 +328,21 @@
     ],
     "libraries": [
       "React",
-      "Next.js"
+      "Next.js",
+      "Tailwind CSS",
+      "Sanity"
     ],
     "image": {
-      "path": "assets/website.png",
-      "alt": "Image of Website"
+      "path": "assets/reading-list.png",
+      "alt": "Image of Reading List"
     },
     "availability": {
       "buttonLabel": "Open web app",
-      "link": "https://recipes.chrisstone.dev"
+      "link": "https://reading.chrisstone.dev"
     },
-    "openSourceLink": "https://github.com/chrisstonedev/recipe-book",
-    "description": "",
-    "purpose": "",
-    "challenge": ""
+    "openSourceLink": "https://github.com/chrisstonedev/reading-list",
+    "description": "A list of recommended books for software engineering and technical professionals. This application uses the Next.js framework, React library, Sanity CMS, Netlify Identity authentication, Netlify Functions API layer, and Tailwind CSS design templates. Users can log in and mark books as recommended or add one to their wish list. The home page shows the most popular technical books, starting with those that are most recommended, then most wished.",
+    "purpose": "With most of my professional web experience being in Angular or Hugo, I wanted to give the most popular Jamstack framework (according to GitHub stars) a spin. As the project was underway, I saw this project as a way to show what I could do across all areas of the stack. I had learned about Tailwind CSS and wanted a project to be able to use it. I had used Sanity before but not in a significant and permanent way. I was able to get the project to a good state to be able to demonstrate it to others at work and in my community in the form of a lightning talk, and the ability to invite them to login and help contribute helps the app grow and improve even more.",
+    "challenge": "With a lot of different parts of this application, trying to focus on one particular area at a time while minimizing work-in-progress, while also not being so perfectionist as to spend too much time in one area. Planning timely goals in which many parts of the app can be improved is important. Also, relying on so many additional libraries has made it difficult to debug certain unexpected issues, and synthesizing multiple guides to make sure that my specific stack combination is still able to handle what I want is something that can be necessary."
   }
 ]

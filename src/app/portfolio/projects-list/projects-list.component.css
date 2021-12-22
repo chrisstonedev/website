@@ -8,7 +8,7 @@ app-item {
 }
 
 .filter-card {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   gap: 32px;
@@ -24,4 +24,10 @@ app-item {
   display: flex;
   flex-direction: row;
   gap: 8px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }

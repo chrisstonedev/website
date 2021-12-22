@@ -19,7 +19,7 @@ export class ProjectsListComponent implements OnInit {
   languages: string[] = [];
   platforms: string[] = [];
   libraries: string[] = [];
-  sortOptions = ['Recently created', 'Most commits', 'Recently updated', 'Alphabetical'];
+  sortOptions = ['Recently updated', 'Most commits', 'Recently created', 'Alphabetical'];
   selectedSortOption = this.sortOptions[0];
 
   constructor(private projectsService: PortfolioService, private titleService: Title) {
@@ -46,12 +46,19 @@ export class ProjectsListComponent implements OnInit {
   }
 
   filterChange() {
-    this.filteredProjects = this.projects.sort((a, b) => {
+    this.filteredProjects = [...this.projects].sort((a, b) => {
       switch (this.selectedSortOption) {
         case 'Recently created':
           return b.dateCreated.localeCompare(a.dateCreated);
         case 'Recently updated':
-          return b.dateUpdated.localeCompare(a.dateUpdated);
+          const compareDateUpdated = b.dateUpdated.localeCompare(a.dateUpdated);
+          if (compareDateUpdated !== 0)
+            return compareDateUpdated;
+          if (b.commits < a.commits)
+            return -1;
+          if (b.commits > a.commits)
+            return 1;
+          return 0;
         case 'Most commits':
           if (b.commits < a.commits)
             return -1;
