@@ -8,8 +8,4 @@ describe('Home Page Tests', () => {
       expect(text).to.have.text('Chris Stone');
     });
   });
-
-  it('should display banner ad', () => {
-    cy.get('.event-banner-link').should('exist');
-  })
 })
