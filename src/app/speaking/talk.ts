@@ -10,6 +10,7 @@ export interface Talk {
   slidesLink: string;
   codeLink: string;
   codeImage: ImageData;
+  recording: Recording;
 }
 
 export interface ImageData {
@@ -21,5 +22,11 @@ export interface Conference {
   name: string;
   type: string;
   date: string;
+  link: string;
+}
+
+export interface Recording {
+  conference: string;
+  thumbnail: ImageData;
   link: string;
 }

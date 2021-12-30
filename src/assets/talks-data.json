@@ -47,6 +47,14 @@
     "codeImage": {
       "path": "assets/github-technical-debt.jpeg",
       "alt": "See the code behind this talk at github.com/chrisstonedev/technical-debt"
+    },
+    "recording": {
+      "conference": "Festive Tech Calendar 2021",
+      "thumbnail": {
+        "path": "assets/technical-debt-recording-festive-tech.jpeg",
+        "alt": "Buried in Technical Debt"
+      },
+      "link": "https://www.youtube.com/watch?v=n6-d1ZXWlz8"
     }
   },
   {
@@ -63,6 +71,7 @@
     "promoImage": null,
     "slidesLink": "",
     "codeLink": "",
-    "codeImage": null
+    "codeImage": null,
+    "recording": null
   }
 ]
