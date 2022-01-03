@@ -1,8 +1,10 @@
 .list-group-item {
   font-size: large;
+  overflow: hidden;
   padding-bottom: 12px;
   padding-top: 12px;
   margin-left: 16px;
+  white-space: nowrap;
 
   &:hover {
     background: #495057 !important;
@@ -14,5 +16,6 @@
 svg {
   fill: white;
   margin-right: 24px;
+  height: 24px;
   width: 24px;
 }
