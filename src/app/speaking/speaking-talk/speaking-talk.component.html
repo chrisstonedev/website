@@ -12,16 +12,11 @@
           <h4>{{talk.subtitle}}</h4>
           <p *ngIf="talk.conferences.length === 0">This talk has been submitted to conferences but has not yet been
             accepted.</p>
-          <p *ngIf="talk.conferences.length > 0">This talk has been presented at the following conferences:</p>
-          <ul>
-            <li *ngFor="let conference of talk.conferences">
-              <a [href]='conference.link' rel="nofollow" target='_blank'>
-                {{conference.name}}</a>
-              <span
-                [ngClass]="{'bg-primary': conference.type === 'In-person', 'bg-success': conference.type === 'Virtual'}"
-                class="badge">{{conference.type}}</span>
-            </li>
-          </ul>
+          <ng-container *ngIf="talk.conferences.length > 0">
+            <app-conference-list [conferences]="talk.conferences" [type]="listType.Past"></app-conference-list>
+            <app-conference-list [conferences]="talk.conferences" [type]="listType.Present"></app-conference-list>
+            <app-conference-list [conferences]="talk.conferences" [type]="listType.Future"></app-conference-list>
+          </ng-container>
         </div>
       </div>
     </div>

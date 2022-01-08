@@ -16,6 +16,7 @@ import {SpeakingTalkComponent} from './speaking/speaking-talk/speaking-talk.comp
 import {ContactComponent} from './contact/contact.component';
 import {AppRoutingModule} from './app-routing.module';
 import {PortfolioService} from './portfolio/portfolio.service';
+import {ConferenceListComponent} from './speaking/speaking-talk/conference-list/conference-list.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {PortfolioService} from './portfolio/portfolio.service';
     SpeakingComponent,
     SpeakingTalkComponent,
     ContactComponent,
+    ConferenceListComponent,
   ],
   imports: [
     BrowserModule,

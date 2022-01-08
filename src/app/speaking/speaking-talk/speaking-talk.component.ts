@@ -3,6 +3,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {SpeakingService} from "../speaking.service";
 import {Talk} from "../talk";
 import {Title} from "@angular/platform-browser";
+import {ListType} from './conference-list/conference-list.component';
 
 @Component({
   selector: 'app-speaking-talk',
@@ -11,6 +12,7 @@ import {Title} from "@angular/platform-browser";
 })
 export class SpeakingTalkComponent implements OnInit {
   talk: Talk;
+  listType = ListType;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -26,6 +28,8 @@ export class SpeakingTalkComponent implements OnInit {
       this.onBack();
     }
     this.titleService.setTitle(this.talk.title + ' - Chris Stone');
+
+    this.talk.conferences.filter(x => x.date < 'today')
   }
 
   onBack(): void {

@@ -59,9 +59,16 @@
   },
   {
     "slug": "scully",
-    "title": "The Jamstack Is Out There",
+    "title": "Scully: The Angular Jamstack Is Out There",
     "subtitle": "Using Scully to Create Static Sites in Angular",
-    "conferences": [],
+    "conferences": [
+      {
+        "name": "DevNexus 2022",
+        "type": "In-person",
+        "date": "2022-04-12",
+        "link": "https://devnexus.com/"
+      }
+    ],
     "coverImage": {
       "path": "assets/scully-cover.png",
       "alt": "Initial slide of the presentation The Jamstack Is Out There: Using Scully to Create Static Sites in Angular"

@@ -1,0 +1,16 @@
+<ng-container *ngIf="conferences.length > 0">
+  <ng-container [ngSwitch]="type">
+    <p *ngSwitchCase="listType.Past">This talk has been presented at the following conferences:</p>
+    <p *ngSwitchCase="listType.Present">I am presenting this talk today at this conference:</p>
+    <p *ngSwitchCase="listType.Future">This talk will be presented at the following upcoming conferences:</p>
+  </ng-container>
+  <p></p>
+  <ul>
+    <li *ngFor="let conference of conferences">
+      <a [href]='conference.link' rel="nofollow" target='_blank'>
+        {{conference.name}}</a> ({{conference.date | date: type === listType.Past ? 'MMMM yyyy' : 'MMMM d, YYYY'}})
+      <span [ngClass]="{'bg-primary': conference.type === 'In-person', 'bg-success': conference.type === 'Virtual'}"
+            class="badge">{{conference.type}}</span>
+    </li>
+  </ul>
+</ng-container>
