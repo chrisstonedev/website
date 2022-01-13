@@ -21,6 +21,12 @@
         "type": "Virtual",
         "date": "2021-12-30",
         "link": "https://festivetechcalendar.com/"
+      },
+      {
+        "name": "Devnexus 2022",
+        "type": "In-person",
+        "date": "2022-04-12",
+        "link": "https://devnexus.com/"
       }
     ],
     "coverImage": {
@@ -63,7 +69,7 @@
     "subtitle": "Using Scully to Create Static Sites in Angular",
     "conferences": [
       {
-        "name": "DevNexus 2022",
+        "name": "Devnexus 2022",
         "type": "In-person",
         "date": "2022-04-12",
         "link": "https://devnexus.com/"
