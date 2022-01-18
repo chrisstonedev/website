@@ -42,6 +42,8 @@ describe('ProjectsListComponent', () => {
         description: '',
         purpose: null,
         challenge: null,
+        netlifyBadge: null,
+        cypressBadge: null,
       }
     ];
 
@@ -75,6 +77,8 @@ describe('ProjectsListComponent', () => {
         description: null,
         purpose: null,
         challenge: null,
+        netlifyBadge: null,
+        cypressBadge: null,
       },
       {
         slug: null,
@@ -92,6 +96,8 @@ describe('ProjectsListComponent', () => {
         description: null,
         purpose: null,
         challenge: null,
+        netlifyBadge: null,
+        cypressBadge: null,
       }
     ];
 
@@ -119,6 +125,8 @@ describe('ProjectsListComponent', () => {
         description: null,
         purpose: null,
         challenge: null,
+        netlifyBadge: null,
+        cypressBadge: null,
       },
       {
         slug: null,
@@ -136,6 +144,8 @@ describe('ProjectsListComponent', () => {
         description: null,
         purpose: null,
         challenge: null,
+        netlifyBadge: null,
+        cypressBadge: null,
       },
       {
         slug: null,
@@ -153,6 +163,8 @@ describe('ProjectsListComponent', () => {
         description: null,
         purpose: null,
         challenge: null,
+        netlifyBadge: null,
+        cypressBadge: null,
       }
     ];
 

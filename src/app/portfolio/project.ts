@@ -19,4 +19,11 @@ export interface Project {
   description: string;
   purpose: string;
   challenge: string;
+  netlifyBadge: Badge;
+  cypressBadge: Badge;
+}
+
+export interface Badge {
+  imageUrl: string;
+  linkUrl: string;
 }

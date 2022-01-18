@@ -5,7 +5,7 @@ describe('Projects List Page', () => {
 
   it('should have 6 projects in the default list', () => {
     cy.get('ul').should('exist');
-    cy.get('app-item').should('have.length', 12);
+    cy.get('app-item').should('have.length', 13);
   });
 
   it('should have the expected language and platform lists', () => {

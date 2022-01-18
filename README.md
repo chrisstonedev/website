@@ -8,6 +8,8 @@ This app is hosted on Netlify and can be found at [chrisstone.dev](https://chris
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1787925d-7a4c-499d-b6d0-a5058b10261b/deploy-status)](https://app.netlify.com/sites/chrisstonedev/deploys)
 
+[![website](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/6c7evw/main&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/6c7evw/runs)
+
 ## Development
 
 ### Prerequisites

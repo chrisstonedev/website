@@ -16,7 +16,7 @@ describe('PortfolioService', () => {
     waitForAsync(
       inject([PortfolioService], (service: PortfolioService) => {
         const response = service.getProjects();
-        expect(response.length).toBe(12);
+        expect(response.length).toBe(13);
       })
     )
   );

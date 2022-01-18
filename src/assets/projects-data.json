@@ -4,8 +4,8 @@
     "name": "Website",
     "tagline": "TypeScript Angular app",
     "dateCreated": "2018-03-07",
-    "dateUpdated": "2021-12-21",
-    "commits": 120,
+    "dateUpdated": "2022-01-18",
+    "commits": 132,
     "languages": [
       "TypeScript",
       "HTML"
@@ -28,7 +28,15 @@
     "openSourceLink": "https://github.com/chrisstonedev/website",
     "description": "A portfolio website to help list personal projects that demonstrate abilities and interests as well as talks that I have given and can give at conferences.",
     "purpose": "I needed a way to get into web development, so I created this project to hone my skills and demonstrate my abilities. Before this project started, my website was still designed solely from from handwritten HTML and CSS and did not contain much content. At the time, my day job was mostly in desktop applications. Choosing Angular as my framework, I created this application in 2018, and ever since then, in addition to being the way that I can demonstrate my competency in web programming, it remains a sandbox for web experiments that I have wanted to try. One such experiment involved compiling a mobile application version using Electron. The website currently uses Scully to assist in the deployment as a Jamstack static site.",
-    "challenge": "I learned Angular by taking online courses, watching videos, and reading documentation. None of the tutorials directly led me to creating a design that matched what I was needing. I continue to work towards improving the interface and experience of this website to improve my front-end skills. Also, I have known basic CSS for some time but I have not done much with animations or other advanced features. The website currently uses Bootstrap for design templates, but I am keeping an open mind to other frameworks or incorporating more direct CSS."
+    "challenge": "I learned Angular by taking online courses, watching videos, and reading documentation. None of the tutorials directly led me to creating a design that matched what I was needing. I continue to work towards improving the interface and experience of this website to improve my front-end skills. Also, I have known basic CSS for some time but I have not done much with animations or other advanced features. The website currently uses Bootstrap for design templates, but I am keeping an open mind to other frameworks or incorporating more direct CSS.",
+    "netlifyBadge": {
+      "imageUrl": "https://api.netlify.com/api/v1/badges/1787925d-7a4c-499d-b6d0-a5058b10261b/deploy-status",
+      "linkUrl": "https://app.netlify.com/sites/chrisstonedev/deploys"
+    },
+    "cypressBadge": {
+      "imageUrl": "https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/6c7evw/main&style=flat&logo=cypress",
+      "linkUrl": "https://dashboard.cypress.io/projects/6c7evw/runs"
+    }
   },
   {
     "slug": "advent-of-code",
@@ -54,7 +62,9 @@
     "openSourceLink": "https://github.com/chrisstonedev/advent-of-code-2021",
     "description": "Solving challenges for Advent of Code 2021 in multiple languages.",
     "purpose": "Increase ability to problem-solve in multiple languages. Strengthen the knowledge of certain languages while driving myself to learn about other languages as well.",
-    "challenge": "It had been some time since I had used Kotlin code at the time that I started this project, so trying to use alternative languages and approaches on certain days lets me attempt to tackle prompts in different ways."
+    "challenge": "It had been some time since I had used Kotlin code at the time that I started this project, so trying to use alternative languages and approaches on certain days lets me attempt to tackle prompts in different ways.",
+    "netlifyBadge": null,
+    "cypressBadge": null
   },
   {
     "slug": "connect-four",
@@ -84,7 +94,12 @@
     "openSourceLink": "https://github.com/chrisstonedev/connect-four",
     "description": "A game in which the goal is to get four tokens in a row horizontally. vertically, or diagonally on a game board while a computer player examines your moves and tries to beat you.",
     "purpose": "Inspired by a kata in a Software Crafters Atlanta meeting in which the goal was to implement some game rules of the Battleship game, I considered a different board game, and my goal was to use test-driven development to develop the artificial intelligence behind the game. Given a series of user inputs, I needed to be able to rely on the computer to perform specific actions that a human would take if they were trying to win the game. This started as a series of theoretical game boards, but a user interface was later also made so that it could actually be played as a game. Now, as the computer's patterns improve, anyone can play the game and see if they can win against the computer.",
-    "challenge": "The original goal, creating an artificial intelligence that could beat someone in a board game using test-driven development, was challenging. Trying to figure out how the computer would interpret a Connect Four board and how it would determine game-winning scenarios was a challenge."
+    "challenge": "The original goal, creating an artificial intelligence that could beat someone in a board game using test-driven development, was challenging. Trying to figure out how the computer would interpret a Connect Four board and how it would determine game-winning scenarios was a challenge.",
+    "netlifyBadge": {
+      "imageUrl": "https://api.netlify.com/api/v1/badges/d0035373-e174-4b56-a00d-7936442d21ee/deploy-status",
+      "linkUrl": "https://app.netlify.com/sites/chrisstonedev-connect-four/deploys"
+    },
+    "cypressBadge": null
   },
   {
     "slug": "mine-finder",
@@ -113,7 +128,12 @@
     "openSourceLink": "https://github.com/chrisstonedev/mine-finder",
     "description": "A Minesweeper clone written in TypeScript that can be played on the web as well as on Desktop via Electron.",
     "purpose": "A fan of Minesweeper, I used a tutorial to recreate it in JavaScript and gave myself the additional challenge of using TypeScript features to build the application. I also had been interested in learning more about Electron and this project was able to serve as a sandbox for Electron development.",
-    "challenge": "I had used Angular and React templates before to build TypeScript applications, but trying to build an application without the use of templates gave an additional challenge."
+    "challenge": "I had used Angular and React templates before to build TypeScript applications, but trying to build an application without the use of templates gave an additional challenge.",
+    "netlifyBadge": {
+      "imageUrl": "https://api.netlify.com/api/v1/badges/80e9bd22-6c79-4304-b739-6e844a5f7c60/deploy-status",
+      "linkUrl": "https://app.netlify.com/sites/chrisstonedev-mine-finder/deploys"
+    },
+    "cypressBadge": null
   },
   {
     "slug": "agenda-timer",
@@ -139,7 +159,9 @@
     "openSourceLink": "https://github.com/chrisstonedev/sprint-planning-timer-android",
     "description": "A timer application which, given a number of items that must be covered and a total time to get through all items, provides timers on a per item basis in order to keep an agenda on schedule.",
     "purpose": "In my time as development team lead, I would help facilitate sprint planning meetings. In some cases, a product manager would advise on a list of items that would need to be covered and discussed ahead of going into a sprint; however, in order to prevent such planning meetings from taking too long, the question would come up of how we can make sure that we do not spend too much time discussing one thing before we go on to the next item. It is a simple calculation that could be done using a spreadsheet, but an application can give feedback in color and sound. Desktop and mobile versions of this idea were developed in my own time that I would occasionally use to make sure meetings were on pace. The mobile application specifically served as a way to do more with Kotlin development.",
-    "challenge": "While I had made simple Android applications before, including ones that had timers in them, making sure that the state of the timer would withstand different user inputs and could reset appropriately was important. Also, I had not done much with media and sound in a mobile application, and I enjoyed the challenge of figuring out how to accomplish this."
+    "challenge": "While I had made simple Android applications before, including ones that had timers in them, making sure that the state of the timer would withstand different user inputs and could reset appropriately was important. Also, I had not done much with media and sound in a mobile application, and I enjoyed the challenge of figuring out how to accomplish this.",
+    "netlifyBadge": null,
+    "cypressBadge": null
   },
   {
     "slug": "gymrattrax",
@@ -168,7 +190,9 @@
     "openSourceLink": "https://github.com/GymRatTrax/GymRatTrax-FitnessScheduler",
     "description": "A mobile workout planner with an exercise scheduler and assorted features.",
     "purpose": "A senior capstone project for my bachelor's degree. Working within a group of four people, I elected to fill the role of team lead, and I organized work planning meetings and worked in the team and made sure that work was being divided up well. I was contributing both documentation needs as well as code needs in various places, including general architectural guidance. I was in charge of making sure deliverables were prepared on time and submitted, and I worked with my team on presentation and demonstration requirements. I have continued to maintain the GymRatTrax project since graduating as a sandbox for Android development.",
-    "challenge": "While I had worked as an intern as a software engineer prior to this course project, this was my first time in anything like a leadership role. I wanted to make sure the deliverables were always ready and on time, and that sometimes required picking up various tasks if someone had assigned themselves something that was too large for them to complete on their own. Also, giving ourselves a goal of having an application that could be published in the Google Play Store by the end of the semester was not something that was a requirement or even that many other projects did, but it helped us see what it takes to see an application get published through to the end."
+    "challenge": "While I had worked as an intern as a software engineer prior to this course project, this was my first time in anything like a leadership role. I wanted to make sure the deliverables were always ready and on time, and that sometimes required picking up various tasks if someone had assigned themselves something that was too large for them to complete on their own. Also, giving ourselves a goal of having an application that could be published in the Google Play Store by the end of the semester was not something that was a requirement or even that many other projects did, but it helped us see what it takes to see an application get published through to the end.",
+    "netlifyBadge": null,
+    "cypressBadge": null
   },
   {
     "slug": "hash-it-out",
@@ -199,7 +223,9 @@
     "openSourceLink": "https://github.com/chrisstonedev/hash-it-out",
     "description": "A desktop application that can compute hashes for files.",
     "purpose": "At the time that this application was first created, this was my first WPF application I had written. Completing this application gave me the confidence to introduce WPF applications where I was working. Beyond the general purpose of wanting to make a WPF app, I had found myself needing to occasionally check for hash sums and not having a reliable utility at the time to do this. Also, I was able to use this application as a sandbox for installation methods, using both Microsoft Visual Studio Installer Projects and ClickOnce as possible options.",
-    "challenge": "While it was not very difficult to get the functions to work as intended, performance became an issue early in development. Figuring out how to keep the application responsive while complicated hash sum calculations were being done was critical in order to let the user believe that the application was still functioning."
+    "challenge": "While it was not very difficult to get the functions to work as intended, performance became an issue early in development. Figuring out how to keep the application responsive while complicated hash sum calculations were being done was critical in order to let the user believe that the application was still functioning.",
+    "netlifyBadge": null,
+    "cypressBadge": null
   },
   {
     "slug": "bookshop",
@@ -225,7 +251,9 @@
     "openSourceLink": "https://github.com/chrisstonedev/bookshop-demo",
     "description": "A sample e-commerce website that is developed on a LAMP stack.",
     "purpose": "This project was created based on an assignment in a secure software development course to teach methods to prevent common security issues, such as cross site scripting and SQL injection. Over time, this application continues to serve as a sandbox for LAMP stack development testing. Now, the tests to confirm that security concerns are properly handled can be run as Cypress automated tests.",
-    "challenge": "While there is no actual book store and placing orders will not actually do anything, there is a back-end and a front-end to this application and making sure that everything is in communicate well is important. Not much attention was paid to design and user experience, which I believe will be important for future maintenance."
+    "challenge": "While there is no actual book store and placing orders will not actually do anything, there is a back-end and a front-end to this application and making sure that everything is in communicate well is important. Not much attention was paid to design and user experience, which I believe will be important for future maintenance.",
+    "netlifyBadge": null,
+    "cypressBadge": null
   },
   {
     "slug": "physics-units",
@@ -252,17 +280,22 @@
     "openSourceLink": "https://github.com/chrisstonedev/physics-units",
     "description": "A calculator that demonstrates how many derived units in physics are all made by calculating units from base units.",
     "purpose": "In physics class, I was very interested in the relationship between different units, and, in class, I had sketched out a utility tool where someone could multiply or divide certain units to get the derived units for other contacts. This idea would then be created using JavaScript as a way to practice JavaScript skills.",
-    "challenge": "Aside from small JavaScript features that I had created in my time as a graphic and web designer, I did not have a lot of experience creating something completely from scratch as its own fully interactive piece. I had experience writing HTML and CSS from scratch, but understanding good practices for embedding JavaScript and working with many variables is something to overcome. User interface in better design is a concern for the longevity of the project going forward."
+    "challenge": "Aside from small JavaScript features that I had created in my time as a graphic and web designer, I did not have a lot of experience creating something completely from scratch as its own fully interactive piece. I had experience writing HTML and CSS from scratch, but understanding good practices for embedding JavaScript and working with many variables is something to overcome. User interface in better design is a concern for the longevity of the project going forward.",
+    "netlifyBadge": {
+      "imageUrl": "https://api.netlify.com/api/v1/badges/f6f4842f-a8b5-454d-8cfa-c21bc69f13d7/deploy-status",
+      "linkUrl": "https://app.netlify.com/sites/physics-units/deploys"
+    },
+    "cypressBadge": null
   },
   {
     "slug": "tic-tac-toe",
     "name": "Tic Tac Toe",
-    "tagline": "JavaScript React game",
+    "tagline": "TypeScript React game",
     "dateCreated": "2021-12-16",
-    "dateUpdated": "2021-12-16",
-    "commits": 2,
+    "dateUpdated": "2022-01-10",
+    "commits": 3,
     "languages": [
-      "JavaScript"
+      "TypeScript"
     ],
     "platforms": [
       "Web"
@@ -281,7 +314,12 @@
     "openSourceLink": "https://github.com/chrisstonedev/tic-tac-toe",
     "description": "A tic tac toe game based off the tutorial on the React website.",
     "purpose": "I wanted more practice in the React framework after focusing on Angular in my professional career to that point. Getting to practice new things in React while thinking of ways to continue making a game of Tic Tac Toe engaging and fun helped make the learning process interesting.",
-    "challenge": "Still needing more practice in React, there is a bit of 'translation' work to do to imagine how the Tic Tac Toe game can be made more fun and then determine how that would best be done with the tools I have."
+    "challenge": "Still needing more practice in React, there is a bit of 'translation' work to do to imagine how the Tic Tac Toe game can be made more fun and then determine how that would best be done with the tools I have.",
+    "netlifyBadge": {
+      "imageUrl": "https://api.netlify.com/api/v1/badges/823fbf37-b342-4633-ad2d-1d7f591d8435/deploy-status",
+      "linkUrl": "https://app.netlify.com/sites/chrisstonedev-tic-tac-toe/deploys"
+    },
+    "cypressBadge": null
   },
   {
     "slug": "recipes",
@@ -311,16 +349,22 @@
     "openSourceLink": "https://github.com/chrisstonedev/recipe-book",
     "description": "A recipe book app written in Markdown using Hugo to build it as a static site.",
     "purpose": "I became interested in Jamstack static site options and how to build performance-focused and well-designed sites without having to write complicated code. The simplicity of Hugo's Markdown templating options appealed to me.",
-    "challenge": "On a technical level, it is very easy to get started while using styles that other people have made, so breaking down how styles and layouts work so I can experience building one from scratch is a challenge. Beyond that, the biggest challenge I have with my recipe book app is making sure I can provide enough recipes! New pages are so easy to create that the biggest bottleneck is my own ability to provide content over time."
+    "challenge": "On a technical level, it is very easy to get started while using styles that other people have made, so breaking down how styles and layouts work so I can experience building one from scratch is a challenge. Beyond that, the biggest challenge I have with my recipe book app is making sure I can provide enough recipes! New pages are so easy to create that the biggest bottleneck is my own ability to provide content over time.",
+    "netlifyBadge": {
+      "imageUrl": "https://api.netlify.com/api/v1/badges/36e2d986-9660-4e73-ae18-5f204941c95d/deploy-status",
+      "linkUrl": "https://app.netlify.com/sites/chrisstonedev-recipe-book/deploys"
+    },
+    "cypressBadge": null
   },
   {
     "slug": "reading",
-    "name": "Reading List",
+    "name": "reading.engineering",
     "tagline": "React Next.js app",
     "dateCreated": "2021-10-26",
-    "dateUpdated": "2021-12-21",
-    "commits": 36,
+    "dateUpdated": "2022-01-16",
+    "commits": 47,
     "languages": [
+      "TypeScript",
       "JavaScript"
     ],
     "platforms": [
@@ -338,11 +382,55 @@
     },
     "availability": {
       "buttonLabel": "Open web app",
-      "link": "https://reading.chrisstone.dev"
+      "link": "https://reading.engineering"
     },
     "openSourceLink": "https://github.com/chrisstonedev/reading-list",
     "description": "A list of recommended books for software engineering and technical professionals. This application uses the Next.js framework, React library, Sanity CMS, Netlify Identity authentication, Netlify Functions API layer, and Tailwind CSS design templates. Users can log in and mark books as recommended or add one to their wish list. The home page shows the most popular technical books, starting with those that are most recommended, then most wished.",
     "purpose": "With most of my professional web experience being in Angular or Hugo, I wanted to give the most popular Jamstack framework (according to GitHub stars) a spin. As the project was underway, I saw this project as a way to show what I could do across all areas of the stack. I had learned about Tailwind CSS and wanted a project to be able to use it. I had used Sanity before but not in a significant and permanent way. I was able to get the project to a good state to be able to demonstrate it to others at work and in my community in the form of a lightning talk, and the ability to invite them to login and help contribute helps the app grow and improve even more.",
-    "challenge": "With a lot of different parts of this application, trying to focus on one particular area at a time while minimizing work-in-progress, while also not being so perfectionist as to spend too much time in one area. Planning timely goals in which many parts of the app can be improved is important. Also, relying on so many additional libraries has made it difficult to debug certain unexpected issues, and synthesizing multiple guides to make sure that my specific stack combination is still able to handle what I want is something that can be necessary."
+    "challenge": "With a lot of different parts of this application, trying to focus on one particular area at a time while minimizing work-in-progress, while also not being so perfectionist as to spend too much time in one area. Planning timely goals in which many parts of the app can be improved is important. Also, relying on so many additional libraries has made it difficult to debug certain unexpected issues, and synthesizing multiple guides to make sure that my specific stack combination is still able to handle what I want is something that can be necessary.",
+    "netlifyBadge": {
+      "imageUrl": "https://api.netlify.com/api/v1/badges/9c5a06da-ee42-42c3-9b71-58ddc089ca43/deploy-status",
+      "linkUrl": "https://app.netlify.com/sites/reading-engineering/deploys"
+    },
+    "cypressBadge": null
+  },
+  {
+    "slug": "github-users",
+    "name": "GitHub User Search",
+    "tagline": "TypeScript Angular app",
+    "dateCreated": "2022-01-17",
+    "dateUpdated": "2022-01-18",
+    "commits": 20,
+    "languages": [
+      "TypeScript"
+    ],
+    "platforms": [
+      "Web"
+    ],
+    "libraries": [
+      "Angular",
+      "Cypress",
+      "Jasmine"
+    ],
+    "image": {
+      "path": "assets/github-users.png",
+      "alt": "Image of GitHub User Search"
+    },
+    "availability": {
+      "buttonLabel": "Open web app",
+      "link": "https://github-users.chrisstone.dev"
+    },
+    "openSourceLink": "https://github.com/chrisstonedev/github-user-search",
+    "description": "This is an Angular application that calls the GitHub Search API to look up users. Results are paginated and will feature interesting facts about the people currently displayed.",
+    "purpose": "I wanted to start a project that would demonstrate skills I have learned over time in consuming external APIs. Netlify Functions are used as a middle layer that actually handles the GitHub API directly in a serverless environment that runs in a Node.js environment. This project was also very helpful as a means of strengthening knowledge of RxJS functions, which came in handy as data is traveling across the layers of the app architecture to get to its UI destination.",
+    "challenge": "Though this is a very small app, the solution required using an authentication token to get access to higher rate limits, and making sure that this token is available to all environments that need it while keeping it secret from those who should not see it required additional attention.",
+    "netlifyBadge": {
+      "imageUrl": "https://api.netlify.com/api/v1/badges/9c5a06da-ee42-42c3-9b71-58ddc089ca43/deploy-status",
+      "linkUrl": "https://app.netlify.com/sites/reading-engineering/deploys"
+    },
+    "cypressBadge": {
+      "imageUrl": "https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/4z8iyr&style=flat&logo=cypress",
+      "linkUrl": "https://dashboard.cypress.io/projects/4z8iyr/runs"
+    }
   }
 ]
