@@ -392,7 +392,10 @@
       "imageUrl": "https://api.netlify.com/api/v1/badges/9c5a06da-ee42-42c3-9b71-58ddc089ca43/deploy-status",
       "linkUrl": "https://app.netlify.com/sites/reading-engineering/deploys"
     },
-    "cypressBadge": null
+    "cypressBadge": {
+      "imageUrl": "https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/ok6tbi&style=flat&logo=cypress",
+      "linkUrl": "https://dashboard.cypress.io/projects/ok6tbi/runs"
+    }
   },
   {
     "slug": "github-users",
@@ -425,8 +428,8 @@
     "purpose": "I wanted to start a project that would demonstrate skills I have learned over time in consuming external APIs. Netlify Functions are used as a middle layer that actually handles the GitHub API directly in a serverless environment that runs in a Node.js environment. This project was also very helpful as a means of strengthening knowledge of RxJS functions, which came in handy as data is traveling across the layers of the app architecture to get to its UI destination.",
     "challenge": "Though this is a very small app, the solution required using an authentication token to get access to higher rate limits, and making sure that this token is available to all environments that need it while keeping it secret from those who should not see it required additional attention.",
     "netlifyBadge": {
-      "imageUrl": "https://api.netlify.com/api/v1/badges/9c5a06da-ee42-42c3-9b71-58ddc089ca43/deploy-status",
-      "linkUrl": "https://app.netlify.com/sites/reading-engineering/deploys"
+      "imageUrl": "https://api.netlify.com/api/v1/badges/caf0035a-d0fb-405c-bdba-c4f07c7f62e8/deploy-status",
+      "linkUrl": "https://app.netlify.com/sites/github-user-search-chrisstonedev/deploys"
     },
     "cypressBadge": {
       "imageUrl": "https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/4z8iyr&style=flat&logo=cypress",
