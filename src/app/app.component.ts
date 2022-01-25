@@ -7,7 +7,7 @@ import {routeTransitionAnimations} from './route-transition-animations';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   providers: [PortfolioService],
   animations: [routeTransitionAnimations]
 })

@@ -6,7 +6,7 @@ import {Project} from '../project';
 @Component({
   selector: 'app-item',
   templateUrl: './projects-list-item.component.html',
-  styleUrls: ['./projects-list-item.component.css'],
+  styleUrls: ['./projects-list-item.component.scss'],
   encapsulation: ViewEncapsulation.None,
   providers: [PortfolioService],
 })

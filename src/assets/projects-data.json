@@ -248,7 +248,7 @@
       "alt": "Image of Bookshop"
     },
     "availability": null,
-    "openSourceLink": "https://github.com/chrisstonedev/bookshop-demo",
+    "openSourceLink": "https://github.com/chrisstonedev/bookshop-lamp",
     "description": "A sample e-commerce website that is developed on a LAMP stack.",
     "purpose": "This project was created based on an assignment in a secure software development course to teach methods to prevent common security issues, such as cross site scripting and SQL injection. Over time, this application continues to serve as a sandbox for LAMP stack development testing. Now, the tests to confirm that security concerns are properly handled can be run as Cypress automated tests.",
     "challenge": "While there is no actual book store and placing orders will not actually do anything, there is a back-end and a front-end to this application and making sure that everything is in communicate well is important. Not much attention was paid to design and user experience, which I believe will be important for future maintenance.",
@@ -309,7 +309,7 @@
     },
     "availability": {
       "buttonLabel": "Open web app",
-      "link": "https://tic-tac-toe.chrisstone.dev"
+      "link": "https://tictactoe.chrisstone.dev"
     },
     "openSourceLink": "https://github.com/chrisstonedev/tic-tac-toe",
     "description": "A tic tac toe game based off the tutorial on the React website.",
