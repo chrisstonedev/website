@@ -1,11 +1,7 @@
 <div class='container'>
   <div class="row">
     <div class='col-md-8'>
-      <div #refTaglines id='taglines'>
-        <ng-container *ngFor='let tagline of taglines'>
-          <div [id]='tagline.id' class='tagline'>{{tagline.text}}</div>
-        </ng-container>
-      </div>
+      <app-taglines></app-taglines>
       <p>Chris Stone is a full-stack software engineer with experience making web, cloud, desktop, and mobile
         applications. He seeks technical challenges and is always eager to learn more and continue growing.</p>
       <p>He also has experience in team leadership and public speaking. He is interested in the power of software to

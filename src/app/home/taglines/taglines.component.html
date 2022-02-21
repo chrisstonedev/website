@@ -1,0 +1,5 @@
+<div #refTaglines id='taglines'>
+  <ng-container *ngFor='let tagline of taglines'>
+    <div [id]='tagline.id' class='tagline'>{{tagline.text}}</div>
+  </ng-container>
+</div>

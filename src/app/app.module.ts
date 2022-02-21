@@ -17,6 +17,7 @@ import {ContactComponent} from './contact/contact.component';
 import {AppRoutingModule} from './app-routing.module';
 import {PortfolioService} from './portfolio/portfolio.service';
 import {ConferenceListComponent} from './speaking/speaking-talk/conference-list/conference-list.component';
+import {TaglinesComponent} from './home/taglines/taglines.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {ConferenceListComponent} from './speaking/speaking-talk/conference-list/
     SpeakingTalkComponent,
     ContactComponent,
     ConferenceListComponent,
+    TaglinesComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,7 @@ import {ConferenceListComponent} from './speaking/speaking-talk/conference-list/
     ScullyLibModule,
   ],
   providers: [PortfolioService, Title],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
 }
