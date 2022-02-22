@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
 import {animate, AnimationBuilder, group, query, style} from '@angular/animations';
 
 @Component({
@@ -7,6 +7,7 @@ import {animate, AnimationBuilder, group, query, style} from '@angular/animation
   styleUrls: ['./taglines.component.scss'],
 })
 export class TaglinesComponent implements OnInit {
+  @Input() duration = 3000;
   currentTaglineIndex = -1;
   @ViewChild('refTaglines') refTaglines: ElementRef;
   taglines = [
@@ -56,7 +57,7 @@ export class TaglinesComponent implements OnInit {
       this.currentTaglineIndex = this.nextTagline(this.currentTaglineIndex);
       this.buildAndPlayAnimation(this.currentTaglineIndex);
     };
-    setInterval(keepGoing, 3000);
+    setInterval(keepGoing, this.duration);
   }
 
   private nextTagline(tagline: number) {

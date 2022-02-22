@@ -18,6 +18,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {PortfolioService} from './portfolio/portfolio.service';
 import {ConferenceListComponent} from './speaking/speaking-talk/conference-list/conference-list.component';
 import {TaglinesComponent} from './home/taglines/taglines.component';
+import {SlideshowComponent} from './home/slideshow/slideshow.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {TaglinesComponent} from './home/taglines/taglines.component';
     ContactComponent,
     ConferenceListComponent,
     TaglinesComponent,
+    SlideshowComponent,
   ],
   imports: [
     BrowserModule,
