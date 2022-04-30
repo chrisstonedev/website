@@ -1,22 +1,17 @@
-.event-banner-link {
-  background: #1468;
-  border-radius: 20px;
-  color: white;
-  padding: 8px 24px 0;
-  margin-bottom: 24px;
-  text-decoration: none;
+article {
+  margin: 0 auto;
+  max-width: 1200px;
 
-  &:hover {
-    color: #aff;
-    opacity: 0.8;
+  .top-row {
+    display: flex;
+    gap: 20px;
+
+    .first-text {
+      flex: 2;
+    }
+
+    .profile-picture {
+      flex: 1;
+    }
   }
-
-  .event-banner-title {
-    font-size: x-large;
-    margin-bottom: 16px;
-  }
-}
-
-.profile-picture {
-  margin-bottom: 24px;
 }

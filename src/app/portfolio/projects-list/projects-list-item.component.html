@@ -1,13 +1,7 @@
-<a [routerLink]="['/portfolio', project.slug]">
-  <div class="card card-link text-white bg-dark">
-    <img [alt]="project.image.alt"
-         [src]="project.image.path"
-         class="card-img-top">
-    <div class="card-body">
-      <h5>{{ project.name }}</h5>
-      <h6>{{ project.tagline }}</h6>
-      <a [routerLink]="['/portfolio', project.slug]"
-         class="btn btn-primary">Details</a>
-    </div>
+<a [routerLink]="['/portfolio', project.slug]" class='portfolio-item'>
+  <img [alt]='project.image.alt' [src]='project.image.path' class='card-img-top'>
+  <div class='card-body'>
+    <h2>{{ project.name }}</h2>
+    <p>{{ project.tagline }}</p>
   </div>
 </a>

@@ -1,5 +1,3 @@
 <figure #refSlideshow id='slideshow'>
-  <ng-container *ngFor='let image of images'>
-    <img [alt]="image.imageAlt" [id]='image.id' [src]="image.imageSource">
-  </ng-container>
+  <img *ngFor='let image of images' [alt]='image.imageAlt' [id]='image.id' [src]='image.imageSource'>
 </figure>

@@ -1,4 +1,4 @@
-import {ImageData} from "../speaking/talk";
+import { ImageData } from "../speaking/talk";
 
 export interface Project {
   slug: string;

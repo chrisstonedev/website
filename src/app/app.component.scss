@@ -1,4 +1,11 @@
-.container {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 15px;
 }

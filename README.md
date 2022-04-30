@@ -30,10 +30,6 @@ stylesheets are written in Sass.
 Updates to the Angular dependencies should be done via `ng angular`. Updates to new major versions of Angular through
 the Angular CLI will automate addressing most or all breaking changes introduced.
 
-### Bootstrap
-
-Additional styling uses the Bootstrap 5 library.
-
 ### Scully
 
 Scully is used to deploy the project as a Jamstack static site.

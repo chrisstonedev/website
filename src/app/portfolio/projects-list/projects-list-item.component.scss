@@ -1,19 +1,40 @@
-.btn {
-  background-color: var(--color-ikb) !important;
-  margin-top: 0.5rem !important;
-}
-.btn:hover {
-  background-color: #0069d9 !important;
-  border-color: #0062cc !important;
-}
-h5 {
-  margin-bottom: 0.75rem;
-}
-h6 {
-  color: #6c757d !important;
-  margin-bottom: 0.5rem !important;
-  margin-top: -0.375rem;
-}
-a {
+a.portfolio-item {
+  background: #ffffff40;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px #0008;
+  color: #fffb;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  transition: .2s;
+
+  &:hover {
+    background: #fff6;
+    transform: scale(1.05) rotate(3deg);
+  }
+
+  img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 10px;
+
+    h2 {
+      color: #eef;
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+
+    p {
+      color: #bbf;
+      margin-bottom: 12px;
+      margin-top: 0;
+    }
+
+    ul {
+      margin: 0;
+    }
+  }
 }

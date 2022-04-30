@@ -1,4 +1,4 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
   width: 100vw;
@@ -7,23 +7,25 @@ html {
 body {
   background-color: #20203f;
   color: #d0d0df;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
   overflow-x: hidden;
 }
 
-.card-link,
-.card-header {
-  cursor: pointer;
-}
+a {
+  transition: .2s;
 
-.card-link:hover {
-  transform: translateY(-10px);
-  transition: 0.2s;
-}
+  &:hover {
+    color: #ff8a00;
+  }
 
-a:hover,
-a:focus {
-  color: #ff8a00;
-  outline: none;
+  &:focus {
+    color: yellow;
+  }
+
+  &.active {
+    color: green;
+  }
 }
 
 .card-img-detail {

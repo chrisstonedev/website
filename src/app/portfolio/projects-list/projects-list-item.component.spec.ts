@@ -1,8 +1,8 @@
-import {ComponentFixture, TestBed, waitForAsync} from '@angular/core/testing';
-import {ProjectsListItemComponent} from './projects-list-item.component';
-import {Project} from '../project';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ProjectsListItemComponent } from './projects-list-item.component';
+import { Project } from '../project';
 import projectData from '../../../assets/projects-data.json';
-import {RouterTestingModule} from '@angular/router/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('ProjectsListItemComponent', () => {
   let component: ProjectsListItemComponent;

@@ -16,7 +16,6 @@
     "libraries": [
       "Angular",
       "Scully",
-      "Bootstrap",
       "Jasmine",
       "Cypress"
     ],
@@ -28,7 +27,7 @@
     "openSourceLink": "https://github.com/chrisstonedev/website",
     "description": "A portfolio website to help list personal projects that demonstrate abilities and interests as well as talks that I have given and can give at conferences.",
     "purpose": "I needed a way to get into web development, so I created this project to hone my skills and demonstrate my abilities. Before this project started, my website was still designed solely from from handwritten HTML and CSS and did not contain much content. At the time, my day job was mostly in desktop applications. Choosing Angular as my framework, I created this application in 2018, and ever since then, in addition to being the way that I can demonstrate my competency in web programming, it remains a sandbox for web experiments that I have wanted to try. One such experiment involved compiling a mobile application version using Electron. The website currently uses Scully to assist in the deployment as a Jamstack static site.",
-    "challenge": "I learned Angular by taking online courses, watching videos, and reading documentation. None of the tutorials directly led me to creating a design that matched what I was needing. I continue to work towards improving the interface and experience of this website to improve my front-end skills. Also, I have known basic CSS for some time but I have not done much with animations or other advanced features. The website currently uses Bootstrap for design templates, but I am keeping an open mind to other frameworks or incorporating more direct CSS.",
+    "challenge": "I learned Angular by taking online courses, watching videos, and reading documentation. None of the tutorials directly led me to creating a design that matched what I was needing. I continue to work towards improving the interface and experience of this website to improve my front-end skills. Also, I have known basic CSS for some time but I have not done much with animations or other advanced features. The website had used Bootstrap for design templates, but I had removed it in favor of direct edits of HTML and CSS design to improve accessibility.",
     "netlifyBadge": {
       "imageUrl": "https://api.netlify.com/api/v1/badges/1787925d-7a4c-499d-b6d0-a5058b10261b/deploy-status",
       "linkUrl": "https://app.netlify.com/sites/chrisstonedev/deploys"

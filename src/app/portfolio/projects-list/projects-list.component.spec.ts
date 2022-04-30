@@ -1,9 +1,9 @@
-import {TestBed, waitForAsync} from '@angular/core/testing';
-import {RouterTestingModule} from '@angular/router/testing';
-import {PortfolioService} from '../portfolio.service';
-import {Project} from '../project';
+import { TestBed, waitForAsync } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { PortfolioService } from '../portfolio.service';
+import { Project } from '../project';
 
-import {ProjectsListComponent} from './projects-list.component';
+import { ProjectsListComponent } from './projects-list.component';
 
 describe('ProjectsListComponent', () => {
   let component: ProjectsListComponent;
@@ -36,7 +36,7 @@ describe('ProjectsListComponent', () => {
         languages: ['TypeScript'],
         platforms: ['Angular'],
         libraries: [],
-        image: {path: 'assets/website.png', alt: 'Image alt'},
+        image: { path: 'assets/website.png', alt: 'Image alt' },
         availability: null,
         openSourceLink: 'https://google.com',
         description: '',
@@ -171,27 +171,27 @@ describe('ProjectsListComponent', () => {
     spyOn(projectService, 'getProjects').and.returnValue(projectList);
 
     component.loadProjectData();
-    expect(component.projects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
-    expect(component.filteredProjects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.projects.map(x => x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.filteredProjects.map(x => x.name)).toEqual(['A', 'B', 'C']);
 
     component.selectedLanguage = 'TypeScript';
     component.filterChange();
-    expect(component.projects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
-    expect(component.filteredProjects.map(x=>x.name)).toEqual(['A', 'B']);
+    expect(component.projects.map(x => x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.filteredProjects.map(x => x.name)).toEqual(['A', 'B']);
 
     component.selectedPlatform = 'Windows';
     component.filterChange();
-    expect(component.projects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
-    expect(component.filteredProjects.map(x=>x.name)).toEqual(['B']);
+    expect(component.projects.map(x => x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.filteredProjects.map(x => x.name)).toEqual(['B']);
 
     component.selectedLanguage = '';
     component.filterChange();
-    expect(component.projects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
-    expect(component.filteredProjects.map(x=>x.name)).toEqual(['B', 'C']);
+    expect(component.projects.map(x => x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.filteredProjects.map(x => x.name)).toEqual(['B', 'C']);
 
     component.selectedPlatform = '';
     component.filterChange();
-    expect(component.projects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
-    expect(component.filteredProjects.map(x=>x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.projects.map(x => x.name)).toEqual(['A', 'B', 'C']);
+    expect(component.filteredProjects.map(x => x.name)).toEqual(['A', 'B', 'C']);
   });
 });

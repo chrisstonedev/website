@@ -1,21 +1,37 @@
-.list-group-item {
-  font-size: large;
-  overflow: hidden;
-  padding-bottom: 12px;
-  padding-top: 12px;
-  margin-left: 16px;
-  white-space: nowrap;
+ul.contact-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 4px;
+  padding: 0;
 
-  &:hover {
-    background: #495057 !important;
-    transform: translateX(-16px);
-    transition: 0.2s;
+  li {
+    padding: 8px;
+
+    a {
+      background: #fff4;
+      color: #fff8;
+      display: block;
+      font-size: large;
+      height: 100%;
+      overflow: hidden;
+      padding: 8px;
+      text-decoration: none;
+      transition: 0.2s;
+      white-space: nowrap;
+      width: 100%;
+
+      &:hover {
+        background: #495057 !important;
+        transform: translateX(-16px);
+      }
+
+      svg {
+        fill: currentColor;
+        margin-right: 24px;
+        height: 24px;
+        width: 24px;
+      }
+    }
   }
-}
-
-svg {
-  fill: white;
-  margin-right: 24px;
-  height: 24px;
-  width: 24px;
 }

@@ -1,5 +1,5 @@
-import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
-import {animate, AnimationBuilder, group, query, style} from '@angular/animations';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { animate, AnimationBuilder, group, query, style } from '@angular/animations';
 
 @Component({
   selector: 'app-slideshow',
@@ -11,10 +11,10 @@ export class SlideshowComponent implements OnInit {
   currentImageIndex = -1;
   @ViewChild('refSlideshow') refSlideshow: ElementRef;
   images = [
-    {id: 'pro-2022', imageSource: '/assets/profile/pro-2022.webp', imageAlt: 'Photo of Chris Stone taken in 2022'},
-    {id: 'pro-2021', imageSource: '/assets/profile/pro-2021.webp', imageAlt: 'Photo of Chris Stone taken in 2021'},
-    {id: 'ponytail', imageSource: '/assets/profile/ponytail.webp', imageAlt: 'Chris Stone with hair pulled back'},
-    {id: 'pro-2020', imageSource: '/assets/profile/pro-2020.webp', imageAlt: 'Photo of Chris Stone taken in 2020'},
+    { id: 'pro-2022', imageSource: '/assets/profile/pro-2022.webp', imageAlt: 'Photo of Chris Stone taken in 2022' },
+    { id: 'pro-2021', imageSource: '/assets/profile/pro-2021.webp', imageAlt: 'Photo of Chris Stone taken in 2021' },
+    { id: 'ponytail', imageSource: '/assets/profile/ponytail.webp', imageAlt: 'Chris Stone with hair pulled back' },
+    { id: 'pro-2020', imageSource: '/assets/profile/pro-2020.webp', imageAlt: 'Photo of Chris Stone taken in 2020' },
   ];
 
   constructor(private animationBuilder: AnimationBuilder) {
@@ -35,7 +35,7 @@ export class SlideshowComponent implements OnInit {
             right: 0,
             top: 0,
           }),
-          animate('.5s', style({opacity: 0})),
+          animate('.5s', style({ opacity: 0 })),
         ]),
         query('#' + this.images[this.nextImage(imageIndex)].id, [
           style({
@@ -43,7 +43,7 @@ export class SlideshowComponent implements OnInit {
             position: 'static',
             visibility: 'visible',
           }),
-          animate('.5s', style({opacity: 1})),
+          animate('.5s', style({ opacity: 1 })),
         ]),
       ]),
     ]);

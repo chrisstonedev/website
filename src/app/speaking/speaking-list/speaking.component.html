@@ -1,30 +1,17 @@
-<h4>Speaking</h4>
-<p>
-  Speaking about technical topics helps me synthesize topics that I am trying to learn as well as share the things that
+<h1>Speaking</h1>
+<p>Speaking about technical topics helps me synthesize topics that I am trying to learn as well as share the things that
   I have learned with a wider audience. This is a relatively new pursuit in my career, so please come back to this page
   soon for more detail about talks I have given and the content from those talks. If you would like to invite me to
-  speak at your conference, <a routerLink="/contact">please reach out to me to let me know</a>.
-</p>
-<div class="container">
-  <div class="row justify-content-md-center">
-    <div *ngFor="let talk of talks" class="col-md-6">
-      <a [routerLink]="['/speaking', talk.slug]">
-        <div class="card card-link text-white bg-dark">
-          <img *ngIf="talk.coverImage"
-               alt="{{talk.coverImage.alt}}"
-               class="card-img-top"
-               src="{{talk.coverImage.path}}">
-          <div class="card-body">
-            <h5>{{talk.title}}</h5>
-            <h6>{{talk.subtitle}}</h6>
-            <ul>
-              <li *ngFor="let conference of talk.conferences">{{conference.name}}</li>
-            </ul>
-            <a [routerLink]="['/speaking', talk.slug]"
-               class="btn btn-primary">Details</a>
-          </div>
-        </div>
-      </a>
+  speak at your conference, <a routerLink='/contact'>please reach out to me to let me know</a>.</p>
+<div class='speaking-grid'>
+  <a *ngFor='let talk of talks' [routerLink]="['/speaking', talk.slug]">
+    <img *ngIf='talk.coverImage' alt='{{talk.coverImage.alt}}' class='card-img-top' src='{{talk.coverImage.path}}'>
+    <div class='card-body'>
+      <h2>{{talk.title}}</h2>
+      <h3>{{talk.subtitle}}</h3>
+      <ul>
+        <li *ngFor='let conference of talk.conferences'>{{conference.name}}</li>
+      </ul>
     </div>
-  </div>
+  </a>
 </div>
