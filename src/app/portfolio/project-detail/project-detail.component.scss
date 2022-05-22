@@ -22,13 +22,19 @@ h6 {
 }
 
 .back-link {
-  background: #014;
-  cursor: pointer;
-  padding: 5px 10px;
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
 
-  &:hover {
-    background: #125;
-    color: white;
+  a {
+    background: #014;
+    color: #fffb;
+    cursor: pointer;
+    padding: 5px 10px;
+    text-decoration: none;
+
+    &:hover {
+      background: #125;
+      color: white;
+    }
   }
 }
