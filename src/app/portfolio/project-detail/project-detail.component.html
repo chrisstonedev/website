@@ -3,55 +3,29 @@
     <span aria-hidden="true">👈 </span>Back
   </a>
 </div>
-<div class="col-md-6 mt-3">
-  <div class="card text-light bg-dark">
-    <div class="card-body">
-      <h1>{{ project.name }}</h1>
-      <ul>
-        <li>Language: {{ project.languages }}</li>
-        <li>Platform: {{ project.platforms }}</li>
-        <li>Libraries: {{ project.libraries }}</li>
-      </ul>
-      <a *ngIf="project.availability" [href]="project.availability.link" class="btn btn-primary btn-availability"
-         target="_blank">{{ project.availability.buttonLabel }}</a>
-      <a *ngIf="project.openSourceLink" [href]="project.openSourceLink" class="btn btn-primary" target="_blank">View
-        source</a>
-      <div *ngIf="project.netlifyBadge || project.cypressBadge" class="mt-2">
-        <a *ngIf="project.netlifyBadge" [href]="project.netlifyBadge.linkUrl" class="me-2" target="_blank"><img
-          [src]="project.netlifyBadge.imageUrl" alt="Netlify build status"></a>
-        <a *ngIf="project.cypressBadge" [href]="project.cypressBadge.linkUrl" target="_blank"><img
-          [src]="project.cypressBadge.imageUrl" alt="Cypress test status"></a>
-      </div>
-    </div>
-  </div>
-  <div class="card text-light bg-dark mt-3">
-    <div class="card-body">
-      <h2>Description</h2>
-      <p class="card-text">{{ project.description }}</p>
-    </div>
-  </div>
-</div>
-<div class="col-md-6 mt-3">
-  <div class="card text-light bg-dark">
-    <div class="card-body">
-      <h2>Screenshot</h2>
-    </div>
-    <img [alt]="project.image.alt" [src]="project.image.path" class="card-img-bottom">
-  </div>
-</div>
-<div class="col-md-6 mt-3">
-  <div class="card text-light bg-dark">
-    <div class="card-body">
-      <h2 class="card-title">Purpose behind starting the project</h2>
-      <p class="card-text">{{project.purpose}}</p>
-    </div>
-  </div>
-</div>
-<div class="col-md-6 mt-3">
-  <div class="card text-light bg-dark">
-    <div class="card-body">
-      <h2 class="card-title">Challenges faced in the development of this project</h2>
-      <p class="card-text">{{project.challenge}}</p>
-    </div>
-  </div>
-</div>
+<h1>{{ project.name }}</h1>
+<ul>
+  <li>Language: {{ project.languages }}</li>
+  <li>Platform: {{ project.platforms }}</li>
+  <li>Libraries: {{ project.libraries }}</li>
+</ul>
+<a *ngIf="project.availability" [href]="project.availability.link" target="_blank">
+  {{ project.availability.buttonLabel }}
+</a>
+<ul style="list-style-type: none; padding: 0">
+  <li *ngIf="project.openSourceLink"><a [href]="project.openSourceLink" target="_blank">View source</a></li>
+  <li *ngIf="project.netlifyBadge"><a [href]="project.netlifyBadge.linkUrl" target="_blank">
+    <img [src]="project.netlifyBadge.imageUrl" alt="Netlify build status">
+  </a></li>
+  <li *ngIf="project.cypressBadge"><a [href]="project.cypressBadge.linkUrl" target="_blank">
+    <img [src]="project.cypressBadge.imageUrl" alt="Cypress test status">
+  </a></li>
+</ul>
+<h2>Description</h2>
+<p>{{ project.description }}</p>
+<h2>Screenshot</h2>
+<img [alt]="project.image.alt" [src]="project.image.path">
+<h2>Purpose behind starting the project</h2>
+<p>{{project.purpose}}</p>
+<h2>Challenges faced in the development of this project</h2>
+<p>{{project.challenge}}</p>

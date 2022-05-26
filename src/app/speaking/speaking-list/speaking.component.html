@@ -5,7 +5,7 @@
   speak at your conference, <a routerLink='/contact'>please reach out to me to let me know</a>.</p>
 <div class='speaking-grid'>
   <a *ngFor='let talk of talks' [routerLink]="['/speaking', talk.slug]">
-    <img *ngIf='talk.coverImage' alt='{{talk.coverImage.alt}}' class='card-img-top' src='{{talk.coverImage.path}}'>
+    <img *ngIf='talk.coverImage' alt='{{talk.coverImage.alt}}' src='{{talk.coverImage.path}}'>
     <div class='card-body'>
       <h2>{{talk.title}}</h2>
       <h3>{{talk.subtitle}}</h3>

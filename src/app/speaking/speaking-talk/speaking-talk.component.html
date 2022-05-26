@@ -3,90 +3,41 @@
     <span aria-hidden="true">👈 </span>Back
   </a>
 </div>
-<div class="row">
-  <div class="col">
-    <div class="card text-white bg-dark">
-      <div class="card-body">
-        <h2>{{talk.title}}</h2>
-        <h4>{{talk.subtitle}}</h4>
-        <p *ngIf="talk.conferences.length === 0">This talk has been submitted to conferences but has not yet been
-          accepted.</p>
-        <ng-container *ngIf="talk.conferences.length > 0">
-          <app-conference-list [conferences]="talk.conferences" [type]="listType.Past"></app-conference-list>
-          <app-conference-list [conferences]="talk.conferences" [type]="listType.Present"></app-conference-list>
-          <app-conference-list [conferences]="talk.conferences" [type]="listType.Future"></app-conference-list>
-        </ng-container>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col">
-    <div class="card text-white bg-dark mt-4">
-      <div class="card-body">
-        <h3>Abstract</h3>
-        <p>{{talk.abstract}}</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-6">
-    <div class="card text-white bg-dark mt-4">
-      <div class="card-body">
-        <h3>Recording</h3>
-        <p *ngIf="!talk.recording">A recording will be made available soon.</p>
-        <p *ngIf="talk.recording">The recording of this talk as presented at {{talk.recording.conference}} is hosted
-          on <a [href]="talk.recording.link" target="_blank">YouTube</a>.</p>
-        <div *ngIf="!talk.recording"></div>
-      </div>
-      <a *ngIf="talk.recording" [href]="talk.recording.link" target="_blank">
-        <img [alt]='talk.recording.thumbnail.alt'
-             [src]='talk.recording.thumbnail.path'
-             class="card-img-bottom"></a>
-    </div>
-    <div class="card text-white bg-dark mt-4">
-      <div class="card-body">
-        <h3>Slides</h3>
-        <p *ngIf="!talk.slidesLink">Slides for this talk are still under construction and will be published soon.</p>
-        <p *ngIf="talk.slidesLink">Slides for this talk are hosted on
-          <a [href]="talk.slidesLink" target="_blank">Google Slides</a>.</p>
-      </div>
-      <a *ngIf="talk.slidesLink" [href]="talk.slidesLink" target="_blank">
-        <img [alt]='talk.coverImage.alt' [src]='talk.coverImage.path' class="card-img-bottom"></a>
-    </div>
-    <div class="card text-white bg-dark mt-4">
-      <div class="card-body">
-        <h3>Code</h3>
-        <p *ngIf="!talk.codeLink">The code behind this talk is still under construction and will be published
-          soon.</p>
-        <p *ngIf="talk.codeLink">See the code behind the talk on
-          <a [href]="talk.codeLink" target="_blank">GitHub</a>.</p>
-      </div>
-      <a *ngIf="talk.codeLink && talk.codeImage"
-         [href]="talk.codeLink" target="_blank">
-        <img [alt]="talk.codeImage.alt"
-             [src]="talk.codeImage.path"
-             class="card-img-bottom"></a>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="card text-white bg-dark mt-4">
-      <div class="card-body">
-        <h3>Event photos</h3>
-        <p *ngIf="!talk.eventPhotos">There are no event photos currently.</p>
-      </div>
-      <img *ngFor="let photo of talk.eventPhotos; last as isLast" [alt]="photo.alt"
-           [ngClass]="{'card-img-bottom' : isLast, 'card-img' : !isLast}" [src]="photo.path">
-    </div>
-    <div class="card text-white bg-dark mt-4">
-      <div class="card-body">
-        <h3>Promotional image</h3>
-        <p *ngIf="!talk.promoImage">No promotional image exists.</p>
-      </div>
-      <img *ngIf="talk.promoImage"
-           [alt]='talk.promoImage.alt' [src]='talk.promoImage.path'
-           class="card-img-bottom">
-    </div>
-  </div>
-</div>
+<h1>{{talk.title}}</h1>
+<h3>{{talk.subtitle}}</h3>
+<p *ngIf="talk.conferences.length === 0">This talk has been submitted to conferences but has not yet been
+  accepted.</p>
+<ng-container *ngIf="talk.conferences.length > 0">
+  <app-conference-list [conferences]="talk.conferences" [type]="listType.Past"></app-conference-list>
+  <app-conference-list [conferences]="talk.conferences" [type]="listType.Present"></app-conference-list>
+  <app-conference-list [conferences]="talk.conferences" [type]="listType.Future"></app-conference-list>
+</ng-container>
+<h2>Abstract</h2>
+<p>{{talk.abstract}}</p>
+<h2>Recording</h2>
+<p *ngIf="!talk.recording">A recording will be made available soon.</p>
+<p *ngIf="talk.recording">The recording of this talk as presented at {{talk.recording.conference}} is hosted on <a
+  [href]="talk.recording.link" target="_blank">YouTube</a>.</p>
+<a *ngIf="talk.recording" [href]="talk.recording.link" target="_blank">
+  <img [alt]='talk.recording.thumbnail.alt' [src]='talk.recording.thumbnail.path'>
+</a>
+<h2>Slides</h2>
+<p *ngIf="!talk.slidesLink">Slides for this talk are still under construction and will be published soon.</p>
+<p *ngIf="talk.slidesLink">Slides for this talk are hosted on <a [href]="talk.slidesLink" target="_blank">Google
+  Slides</a>.
+</p>
+<a *ngIf="talk.slidesLink" [href]="talk.slidesLink" target="_blank">
+  <img [alt]='talk.coverImage.alt' [src]='talk.coverImage.path'>
+</a>
+<h2>Code</h2>
+<p *ngIf="!talk.codeLink">The code behind this talk is still under construction and will be published soon.</p>
+<p *ngIf="talk.codeLink">See the code behind the talk on <a [href]="talk.codeLink" target="_blank">GitHub</a>.</p>
+<a *ngIf="talk.codeLink && talk.codeImage" [href]="talk.codeLink" target="_blank">
+  <img [alt]="talk.codeImage.alt" [src]="talk.codeImage.path"></a>
+<h2>Event photos</h2>
+<p *ngIf="!talk.eventPhotos">There are no event photos currently.</p>
+<img *ngFor="let photo of talk.eventPhotos; last as isLast" [alt]="photo.alt" [src]="photo.path">
+<h2>Promotional image</h2>
+<p *ngIf="!talk.promoImage">No promotional image exists.</p>
+<img *ngIf="talk.promoImage"
+     [alt]='talk.promoImage.alt' [src]='talk.promoImage.path'>
