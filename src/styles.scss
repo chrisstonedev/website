@@ -13,18 +13,15 @@ body {
 }
 
 a {
+  color: #88f;
   transition: .2s;
 
   &:hover {
-    color: #ff8a00;
+    color: #bbf;
   }
 
-  &:focus {
-    color: yellow;
-  }
-
-  &.active {
-    color: green;
+  &:focus, &:active {
+    color: white;
   }
 }
 
@@ -34,4 +31,54 @@ a {
 
 :root {
   --color-ikb: #211dc3;
+}
+
+.back-link {
+  display: flex;
+  justify-content: center;
+
+  a {
+    background: #014;
+    color: #fffb;
+    cursor: pointer;
+    padding: 5px 10px;
+    text-decoration: none;
+
+    &:hover {
+      background: #125;
+      color: white;
+    }
+  }
+}
+
+.work-card-grid {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  & > div {
+    background: #339;
+    border-radius: 16px;
+    padding: 16px;
+
+    & > h3 {
+      font-size: 16px;
+      margin: 0 0 16px;
+    }
+
+    & > .work-details {
+
+      h4 {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 8px 0 0;
+      }
+
+      h5 {
+        font-size: 14px;
+        font-style: italic;
+        margin: 0;
+      }
+    }
+  }
 }

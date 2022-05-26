@@ -1,30 +1,32 @@
 <div class="back-link" role="navigation">
   <a routerLink="/portfolio">
-    👈 Back
+    <span aria-hidden="true">👈 </span>Back
   </a>
 </div>
 <div class="col-md-6 mt-3">
   <div class="card text-light bg-dark">
     <div class="card-body">
       <h1>{{ project.name }}</h1>
-      <h6>Language: {{ project.languages }}</h6>
-      <h6>Platform: {{ project.platforms }}</h6>
-      <h6>Libraries: {{ project.libraries }}</h6>
+      <ul>
+        <li>Language: {{ project.languages }}</li>
+        <li>Platform: {{ project.platforms }}</li>
+        <li>Libraries: {{ project.libraries }}</li>
+      </ul>
       <a *ngIf="project.availability" [href]="project.availability.link" class="btn btn-primary btn-availability"
-        target="_blank">{{ project.availability.buttonLabel }}</a>
+         target="_blank">{{ project.availability.buttonLabel }}</a>
       <a *ngIf="project.openSourceLink" [href]="project.openSourceLink" class="btn btn-primary" target="_blank">View
         source</a>
       <div *ngIf="project.netlifyBadge || project.cypressBadge" class="mt-2">
         <a *ngIf="project.netlifyBadge" [href]="project.netlifyBadge.linkUrl" class="me-2" target="_blank"><img
-            [src]="project.netlifyBadge.imageUrl" alt="Netlify build status"></a>
+          [src]="project.netlifyBadge.imageUrl" alt="Netlify build status"></a>
         <a *ngIf="project.cypressBadge" [href]="project.cypressBadge.linkUrl" target="_blank"><img
-            [src]="project.cypressBadge.imageUrl" alt="Cypress test status"></a>
+          [src]="project.cypressBadge.imageUrl" alt="Cypress test status"></a>
       </div>
     </div>
   </div>
   <div class="card text-light bg-dark mt-3">
     <div class="card-body">
-      <h5>Description</h5>
+      <h2>Description</h2>
       <p class="card-text">{{ project.description }}</p>
     </div>
   </div>
@@ -32,7 +34,7 @@
 <div class="col-md-6 mt-3">
   <div class="card text-light bg-dark">
     <div class="card-body">
-      <h5>Screenshot</h5>
+      <h2>Screenshot</h2>
     </div>
     <img [alt]="project.image.alt" [src]="project.image.path" class="card-img-bottom">
   </div>
@@ -40,7 +42,7 @@
 <div class="col-md-6 mt-3">
   <div class="card text-light bg-dark">
     <div class="card-body">
-      <h5 class="card-title">Purpose behind starting the project</h5>
+      <h2 class="card-title">Purpose behind starting the project</h2>
       <p class="card-text">{{project.purpose}}</p>
     </div>
   </div>
@@ -48,7 +50,7 @@
 <div class="col-md-6 mt-3">
   <div class="card text-light bg-dark">
     <div class="card-body">
-      <h5 class="card-title">Challenges faced in the development of this project</h5>
+      <h2 class="card-title">Challenges faced in the development of this project</h2>
       <p class="card-text">{{project.challenge}}</p>
     </div>
   </div>

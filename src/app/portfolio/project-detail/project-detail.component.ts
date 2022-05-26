@@ -1,13 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { PortfolioService } from '../portfolio.service';
-import { Project } from '../project';
-import { Title } from "@angular/platform-browser";
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
+import {PortfolioService} from '../portfolio.service';
+import {Project} from '../project';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project-detail',
   templateUrl: './project-detail.component.html',
-  styleUrls: ['./project-detail.component.scss'],
   providers: [PortfolioService],
 })
 export class ProjectDetailComponent implements OnInit {
@@ -17,7 +16,7 @@ export class ProjectDetailComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private projectsService: PortfolioService,
-    private titleService: Title
+    private titleService: Title,
   ) {
   }
 
