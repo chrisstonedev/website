@@ -6,28 +6,28 @@
   <div class='filters'>
     <label>
       <span>Language: </span>
-      <select (change)='filterChange()' [(ngModel)]='selectedLanguage' class='form-select'>
+      <select (change)='filterChange()' [(ngModel)]='selectedLanguage'>
         <option selected='' value=''>All Languages</option>
         <option *ngFor='let language of languages'>{{language}}</option>
       </select>
     </label>
     <label>
       <span>Platform: </span>
-      <select (change)='filterChange()' [(ngModel)]='selectedPlatform' class='form-select'>
+      <select (change)='filterChange()' [(ngModel)]='selectedPlatform'>
         <option selected='' value=''>All Platforms</option>
         <option *ngFor='let platform of platforms'>{{platform}}</option>
       </select>
     </label>
     <label>
       <span>Library: </span>
-      <select (change)='filterChange()' [(ngModel)]='selectedLibrary' class='form-select'>
+      <select (change)='filterChange()' [(ngModel)]='selectedLibrary'>
         <option selected='' value=''>All Libraries</option>
         <option *ngFor='let library of libraries'>{{library}}</option>
       </select>
     </label>
     <label>
       <span>Sort: </span>
-      <select (change)='filterChange()' [(ngModel)]='selectedSortOption' class='form-select'>
+      <select (change)='filterChange()' [(ngModel)]='selectedSortOption'>
         <option *ngFor='let sortOption of sortOptions'>{{sortOption}}</option>
       </select>
     </label>
