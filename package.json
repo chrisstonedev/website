@@ -17,9 +17,10 @@
     "e2e:i": "cypress open",
     "favicon": "real-favicon check-for-update --fail-on-update faviconData.json",
     "favicon:generate": "real-favicon generate faviconDescription.json faviconData.json src",
-    "scully": "npx scully --",
-    "scully:serve": "ng build && npx scully -- && npx scully killServer --no-warning && npx scully serve --",
-    "scully:build": "ng build && npx scully -- --scanRoutes"
+    "scully": "scully --",
+    "scully:serve": "ng build && scully -- && scully killServer --no-warning && npx scully serve --",
+    "scully:build": "ng build && scully -- --scanRoutes",
+    "scully:build:verbose": "ng build --verbose && scully -- --scanRoutes --logSeverity=normal"
   },
   "private": true,
   "dependencies": {

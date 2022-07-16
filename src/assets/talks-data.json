@@ -1,8 +1,8 @@
 [
   {
     "slug": "technical-debt",
-    "title": "Buried in Technical Debt?",
-    "subtitle": "Making the Right Investments in Your Code",
+    "title": "Buried in Technical Debt? Making the Right Investments in Your Code",
+    "subtitle": "Technical Debt",
     "conferences": [
       {
         "name": "Atlanta Code Camp 2021",
@@ -66,14 +66,68 @@
   {
     "slug": "scully",
     "title": "Scully: The Angular Jamstack Is Out There",
-    "subtitle": "Using Scully to Create Static Sites in Angular",
-    "conferences": [],
+    "subtitle": "Scully",
+    "conferences": [
+      {
+        "name": "Scenic City Summit 2022",
+        "type": "In-person",
+        "date": "2022-07-22",
+        "link": "https://sceniccitysummit.com/"
+      },
+      {
+        "name": "Indy.Code() 2022",
+        "type": "In-person",
+        "date": "2022-10-19",
+        "link": "https://indycode.amegala.com/"
+      }
+    ],
     "coverImage": {
       "path": "assets/scully-cover.png",
       "alt": "Initial slide of the presentation The Jamstack Is Out There: Using Scully to Create Static Sites in Angular"
     },
     "eventPhotos": null,
-    "abstract": "Angular is a powerful web application framework, but it can sometimes be more powerful than what we really need, creating deployment files that are very large and take significant time for users to render. When performance is a key consideration, it might be time to consider making a Jamstack static site. Scully is a static site generator that works with Angular to pre-render content and deliver fast and secure websites. In this talk, we explain what it means for a site to be a Jamstack site and how Scully works to fulfill those needs. We will cover some definitions and see the code of an Angular site as it deploys into a static site.",
+    "abstract": "Angular is a powerful web application framework that helps us build impressive enterprise applications, but as static \"Jamstack\" sites grow in popularity, those who maintain Angular apps may feel the grass is greener with other technologies that are optimized for faster page rendering. Fortunately, the open source tool Scully is a static site generator that works with Angular to pre-render content and deliver fast and secure websites that can still connect to APIs to render dynamic content as needed. In this talk, I will demonstrate Scully by showing how it can be added to an existing Angular project, explain how it actually works behind the scenes to produce the new static assets, and recommend some good practices for incrementally improving your Angular applications.",
+    "promoImage": null,
+    "slidesLink": "",
+    "codeLink": "",
+    "codeImage": null,
+    "recording": null
+  },
+  {
+    "slug": "cypress-vs-playwright",
+    "title": "Cypress Vs. Playwright: The Great Test Framework Debate",
+    "subtitle": "Cypress Vs. Playwright",
+    "conferences": [
+      {
+        "name": "TDevConf 2022",
+        "type": "Virtual",
+        "date": "2022-09-30",
+        "link": "https://indycode.amegala.com/"
+      },
+      {
+        "name": "Indy.Code() 2022",
+        "type": "In-person",
+        "date": "2022-10-19",
+        "link": "https://indycode.amegala.com/"
+      }
+    ],
+    "coverImage": null,
+    "eventPhotos": null,
+    "abstract": "Cypress and Playwright are two excellent popular modern frameworks for testing web applications. They are open source, frequently updated, and have dedicated communities with excellent support. But when it comes time to choose one for your project, which one should you select? Which trade-offs are better for your situation? Do you need very fast performance? Do you need to be able to test on multiple browsers? Do you need a tool that will help you write multiple levels of tests (i.e. at the component level in addition to end-to-end)?\n\nIn this talk, I will demonstrate the best features offered in the very latest version of each testing library and share a fair comparison. I will even show what it takes to set up new projects and run actual tests. And even though both have their advantages, I will share which one was a better fit for our team when we tried both hands-on, and we will poll to see which testing tool is able to win more hearts and minds.",
+    "promoImage": null,
+    "slidesLink": "",
+    "codeLink": "",
+    "codeImage": null,
+    "recording": null
+  },
+  {
+    "slug": "remote-mob-programming",
+    "title": "What I Learned About Teamwork, Productivity, and Myself from Remote Mob Programming",
+    "subtitle": "Remote Mob Programming",
+    "conferences": [],
+    "coverImage": null,
+    "eventPhotos": null,
+    "abstract": "",
     "promoImage": null,
     "slidesLink": "",
     "codeLink": "",
