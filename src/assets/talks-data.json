@@ -27,6 +27,12 @@
         "type": "In-person",
         "date": "2022-04-12",
         "link": "https://devnexus.com/"
+      },
+      {
+        "name": "St. Louis Java User's Group",
+        "type": "Virtual",
+        "date": "2022-10-13",
+        "link": "https://www.meetup.com/gatewayjug/events/287572422/"
       }
     ],
     "coverImage": {
@@ -75,10 +81,22 @@
         "link": "https://sceniccitysummit.com/"
       },
       {
+        "name": "Atlanta Developers' Conference 2022",
+        "type": "In-person",
+        "date": "2022-09-17",
+        "link": "https://www.atldevcon.com/"
+      },
+      {
         "name": "Indy.Code() 2022",
         "type": "In-person",
         "date": "2022-10-19",
         "link": "https://indycode.amegala.com/"
+      },
+      {
+        "name": "Connect.Tech 2022",
+        "type": "In-person",
+        "date": "2022-11-08",
+        "link": "https://2022.connect.tech/"
       }
     ],
     "coverImage": {
@@ -102,7 +120,7 @@
         "name": "TDevConf 2022",
         "type": "Virtual",
         "date": "2022-09-30",
-        "link": "https://indycode.amegala.com/"
+        "link": "https://tdevconf.com/"
       },
       {
         "name": "Indy.Code() 2022",
