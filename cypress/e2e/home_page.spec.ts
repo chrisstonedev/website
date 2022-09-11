@@ -4,8 +4,6 @@ describe('Home Page Tests', () => {
   });
 
   it('should display the correct title', () => {
-    cy.get('.navbar-brand').should((text) => {
-      expect(text).to.have.text('Chris Stone');
-    });
+    cy.get('.header-name').should('contain.text', 'Chris Stone');
   });
-})
+});
