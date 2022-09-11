@@ -11,7 +11,7 @@ import { Project } from '../project';
   providers: [PortfolioService],
 })
 export class ProjectsListItemComponent {
-  @Input() project: Project;
+  @Input() project!: Project;
   projectsService: PortfolioService;
 
   constructor(projectsService: PortfolioService) {

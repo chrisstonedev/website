@@ -1,27 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+  --font-color: #002;
+  --background-color: #ddf;
+  --link-color: #66f;
+  --link-color-hover: #44f;
+  --link-color-focus: black;
+  --work-card-background: #ccf;
+  --back-link-background: #bcf;
+  --back-link-background-hover: #dff;
+  --back-link-color: #000b;
+  --back-link-color-hover: black;
+  --grid-card-background: #fff8;
+  --grid-card-background-hover: #fff;
+  --grid-card-box-shadow: #0008;
+  --grid-card-title: #338;
+  --grid-card-subtitle: #459;
+  --taglines-background-primary: #abe;
+  --taglines-background-secondary: #aaf;
+  --contact-background: #fff4;
+  --contact-background-hover: #fff;
+}
+
+[data-theme="dark"] {
+  --font-color: #ddf;
+  --background-color: #002;
+  --link-color: #aaf;
+  --link-color-hover: #bbf;
+  --link-color-focus: white;
+  --work-card-background: #339;
+  --back-link-background: #014;
+  --back-link-background-hover: #125;
+  --back-link-color: #fffb;
+  --back-link-color-hover: white;
+  --grid-card-background: #0008;
+  --grid-card-background-hover: #000;
+  --grid-card-box-shadow: #fff6;
+  --grid-card-color: #fffb;
+  --grid-card-title: #eef;
+  --grid-card-subtitle: #bbf;
+  --taglines-background-primary: #013;
+  --taglines-background-secondary: #014;
+  --contact-background: #0004;
+  --contact-background-hover: #000;
+}
+
 html {
   width: 100vw;
 }
 
 body {
-  background-color: #20203f;
-  color: #d0d0df;
+  background: var(--background-color);
+  color: var(--font-color);
   font-family: 'Roboto', sans-serif;
   margin: 0;
   overflow-x: hidden;
+  transition: 0.5s;
 }
 
 a {
-  color: #88f;
+  color: var(--link-color);
   transition: .2s;
 
   &:hover {
-    color: #bbf;
+    color: var(--link-color-hover);
   }
 
   &:focus, &:active {
-    color: white;
+    color: var(--link-color-focus);
   }
 }
 
@@ -42,15 +88,15 @@ img {
   justify-content: center;
 
   a {
-    background: #014;
-    color: #fffb;
+    background: var(--back-link-background);
+    color: var(--back-link-color);
     cursor: pointer;
     padding: 5px 10px;
     text-decoration: none;
 
     &:hover {
-      background: #125;
-      color: white;
+      background: var(--back-link-background-hover);
+      color: var(--back-link-color-hover);
     }
   }
 }
@@ -61,7 +107,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
   & > div {
-    background: #339;
+    background: var(--work-card-background);
     border-radius: 16px;
     padding: 16px;
 
@@ -85,4 +131,13 @@ img {
       }
     }
   }
+}
+
+.theme-switch {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: auto;
+  padding: 0;
 }

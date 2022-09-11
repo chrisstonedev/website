@@ -1,6 +1,6 @@
-import {ComponentFixture, TestBed} from '@angular/core/testing';
-
-import {TaglinesComponent} from './taglines.component';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TaglinesComponent } from './taglines.component';
+import { AnimationBuilder } from '@angular/animations';
 
 describe('TaglinesComponent', () => {
   let component: TaglinesComponent;
@@ -9,8 +9,8 @@ describe('TaglinesComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [TaglinesComponent],
-    })
-      .compileComponents();
+      providers: [AnimationBuilder],
+    }).compileComponents();
   });
 
   beforeEach(() => {

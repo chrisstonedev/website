@@ -17,7 +17,7 @@ describe('ProjectsListComponent', () => {
       }).compileComponents();
       component = TestBed.inject(ProjectsListComponent);
       projectService = TestBed.inject(PortfolioService);
-    })
+    }),
   );
 
   it('should create', () => {
@@ -29,7 +29,7 @@ describe('ProjectsListComponent', () => {
       {
         slug: 'website',
         name: 'Website',
-        tagline: null,
+        tagline: 'null',
         dateCreated: '',
         dateUpdated: '',
         commits: 0,
@@ -40,16 +40,16 @@ describe('ProjectsListComponent', () => {
         availability: null,
         openSourceLink: 'https://google.com',
         description: '',
-        purpose: null,
-        challenge: null,
+        purpose: 'null',
+        challenge: 'null',
         netlifyBadge: null,
         cypressBadge: null,
-      }
+      },
     ];
 
     const projectServiceSpy = spyOn(
       projectService,
-      'getProjects'
+      'getProjects',
     ).and.returnValue(projectList);
 
     component.loadProjectData();
@@ -62,43 +62,43 @@ describe('ProjectsListComponent', () => {
   it('should load the languages list from project data', () => {
     let projectList: Project[] = [
       {
-        slug: null,
-        name: null,
-        tagline: null,
+        slug: 'null',
+        name: 'null',
+        tagline: 'null',
         dateCreated: '',
         dateUpdated: '',
         commits: 0,
         languages: ['TypeScript', 'C#'],
         platforms: [],
         libraries: [],
-        image: null,
+        image: { path: 'path', alt: 'alt' },
         availability: null,
-        openSourceLink: null,
-        description: null,
-        purpose: null,
-        challenge: null,
+        openSourceLink: 'null',
+        description: 'null',
+        purpose: 'null',
+        challenge: 'null',
         netlifyBadge: null,
         cypressBadge: null,
       },
       {
-        slug: null,
-        name: null,
-        tagline: null,
+        slug: 'null',
+        name: 'null',
+        tagline: 'null',
         dateCreated: '',
         dateUpdated: '',
         commits: 0,
         languages: ['TypeScript', 'Java'],
         platforms: [],
         libraries: [],
-        image: null,
-        availability: null,
-        openSourceLink: null,
-        description: null,
-        purpose: null,
-        challenge: null,
+        image: { path: 'path', alt: 'alt' },
+        availability: { buttonLabel: 'buttonLabel', link: 'link' },
+        openSourceLink: 'null',
+        description: 'null',
+        purpose: 'null',
+        challenge: 'null',
         netlifyBadge: null,
         cypressBadge: null,
-      }
+      },
     ];
 
     spyOn(projectService, 'getProjects').and.returnValue(projectList);
@@ -110,62 +110,62 @@ describe('ProjectsListComponent', () => {
   it('should filter projects from the language dropdown', () => {
     let projectList: Project[] = [
       {
-        slug: null,
+        slug: 'null',
         name: 'A',
-        tagline: null,
+        tagline: 'null',
         dateCreated: '',
         dateUpdated: '',
         commits: 0,
         languages: ['TypeScript', 'HTML'],
         platforms: ['Web'],
         libraries: [],
-        image: null,
+        image: { path: 'path', alt: 'alt' },
         availability: null,
-        openSourceLink: null,
-        description: null,
-        purpose: null,
-        challenge: null,
+        openSourceLink: 'null',
+        description: 'null',
+        purpose: 'null',
+        challenge: 'null',
         netlifyBadge: null,
         cypressBadge: null,
       },
       {
-        slug: null,
+        slug: 'null',
         name: 'B',
-        tagline: null,
+        tagline: 'null',
         dateCreated: '',
         dateUpdated: '',
         commits: 0,
         languages: ['TypeScript'],
         platforms: ['Windows'],
         libraries: [],
-        image: null,
+        image: { path: 'path', alt: 'alt' },
         availability: null,
-        openSourceLink: null,
-        description: null,
-        purpose: null,
-        challenge: null,
+        openSourceLink: 'null',
+        description: 'null',
+        purpose: 'null',
+        challenge: 'null',
         netlifyBadge: null,
         cypressBadge: null,
       },
       {
-        slug: null,
+        slug: 'null',
         name: 'C',
-        tagline: null,
+        tagline: 'null',
         dateCreated: '',
         dateUpdated: '',
         commits: 0,
         languages: ['C#'],
         platforms: ['Windows'],
         libraries: [],
-        image: null,
+        image: { path: 'path', alt: 'alt' },
         availability: null,
-        openSourceLink: null,
-        description: null,
-        purpose: null,
-        challenge: null,
+        openSourceLink: 'null',
+        description: 'null',
+        purpose: 'null',
+        challenge: 'null',
         netlifyBadge: null,
         cypressBadge: null,
-      }
+      },
     ];
 
     spyOn(projectService, 'getProjects').and.returnValue(projectList);

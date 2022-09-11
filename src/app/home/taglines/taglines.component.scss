@@ -5,7 +5,7 @@
   position: relative;
 
   .tagline {
-    background-color: #013;
+    background-color: var(--taglines-background-primary);
     padding: 5px 10px;
     position: absolute;
     text-align: center;

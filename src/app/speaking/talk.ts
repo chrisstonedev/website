@@ -3,14 +3,14 @@ export interface Talk {
   title: string;
   subtitle: string;
   conferences: Conference[];
-  coverImage: ImageData;
-  eventPhotos: ImageData[];
+  coverImage: ImageData | null;
+  eventPhotos: ImageData[] | null;
   abstract: string;
-  promoImage: ImageData;
+  promoImage: ImageData | null;
   slidesLink: string;
   codeLink: string;
-  codeImage: ImageData;
-  recording: Recording;
+  codeImage: ImageData | null;
+  recording: Recording | null;
 }
 
 export interface ImageData {

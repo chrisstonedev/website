@@ -3,7 +3,7 @@ import {Talk} from "./talk";
 import talkData from '../../assets/talks-data.json';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SpeakingService {
   private talks: Talk[] = talkData;

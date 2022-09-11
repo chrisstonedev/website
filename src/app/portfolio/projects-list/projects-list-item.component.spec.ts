@@ -14,7 +14,7 @@ describe('ProjectsListItemComponent', () => {
         declarations: [ProjectsListItemComponent],
         imports: [RouterTestingModule],
       }).compileComponents();
-    })
+    }),
   );
 
   beforeEach(() => {

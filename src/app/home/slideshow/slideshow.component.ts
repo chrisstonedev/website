@@ -9,7 +9,7 @@ import { animate, AnimationBuilder, group, query, style } from '@angular/animati
 export class SlideshowComponent implements OnInit {
   @Input() duration = 3000;
   currentImageIndex = -1;
-  @ViewChild('refSlideshow') refSlideshow: ElementRef;
+  @ViewChild('refSlideshow') refSlideshow!: ElementRef;
   images = [
     { id: 'pro-2022', imageSource: '/assets/profile/pro-2022.webp', imageAlt: 'Photo of Chris Stone taken in 2022' },
     { id: 'pro-2021', imageSource: '/assets/profile/pro-2021.webp', imageAlt: 'Photo of Chris Stone taken in 2021' },

@@ -8,15 +8,15 @@ describe('AppComponent', () => {
     waitForAsync(() => {
       TestBed.configureTestingModule({
         declarations: [AppComponent, HeaderComponent],
-        imports: [RouterTestingModule]
+        imports: [RouterTestingModule],
       }).compileComponents();
-    })
+    }),
   );
   it('should create the app',
     waitForAsync(() => {
       const fixture = TestBed.createComponent(AppComponent);
       const app = fixture.debugElement.componentInstance;
       expect(app).toBeTruthy();
-    })
+    }),
   );
 });

@@ -36,8 +36,7 @@ export class ProjectsListComponent implements OnInit {
     this.filteredProjects = this.projects;
 
     function getSortedListOfUniqueElements(arrayOfArrays: string[][]) {
-      return [].concat.apply([], arrayOfArrays).filter((elem, index, self) => index === self.indexOf(elem))
-        .sort();
+      return [...new Set(arrayOfArrays.flat())].sort();
     }
 
     this.languages = getSortedListOfUniqueElements(this.projects.map(x => x.languages));
@@ -66,6 +65,7 @@ export class ProjectsListComponent implements OnInit {
             return 1;
           return 0;
         case 'Alphabetical':
+        default:
           return a.name.localeCompare(b.name);
       }
     }).filter(
@@ -78,7 +78,7 @@ export class ProjectsListComponent implements OnInit {
         if (this.selectedLibrary.length > 0)
           showThisProject &&= x.libraries.includes(this.selectedLibrary);
         return showThisProject;
-      }
+      },
     );
   }
 }

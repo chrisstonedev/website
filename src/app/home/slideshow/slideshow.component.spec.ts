@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { SlideshowComponent } from './slideshow.component';
+import { AnimationBuilder } from '@angular/animations';
 
 describe('SlideshowComponent', () => {
   let component: SlideshowComponent;
@@ -9,8 +9,8 @@ describe('SlideshowComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [SlideshowComponent],
-    })
-      .compileComponents();
+      providers: [AnimationBuilder],
+    }).compileComponents();
   });
 
   beforeEach(() => {

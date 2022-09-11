@@ -5,7 +5,7 @@ import {Title} from "@angular/platform-browser";
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 export class ContactComponent implements OnInit {
   constructor(private titleService: Title) {

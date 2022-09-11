@@ -1,8 +1,8 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
-import {PortfolioService} from '../portfolio.service';
-import {Project} from '../project';
-import {Title} from '@angular/platform-browser';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { PortfolioService } from '../portfolio.service';
+import { Project } from '../project';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-project-detail',
@@ -10,7 +10,7 @@ import {Title} from '@angular/platform-browser';
   providers: [PortfolioService],
 })
 export class ProjectDetailComponent implements OnInit {
-  project: Project;
+  project!: Project;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -23,10 +23,11 @@ export class ProjectDetailComponent implements OnInit {
   ngOnInit(): void {
     const slug = this.activatedRoute.snapshot.paramMap.get('slug');
     const projects = this.projectsService.getProjects();
-    this.project = projects.find((p) => p.slug === slug);
-    if (this.project === undefined) {
+    let project = projects.find((p) => p.slug === slug);
+    if (project === undefined) {
       this.onBack();
     }
+    this.project = project!;
     this.titleService.setTitle(this.project.name + ' - Chris Stone');
   }
 

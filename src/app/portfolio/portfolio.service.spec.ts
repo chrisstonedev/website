@@ -8,7 +8,7 @@ describe('PortfolioService', () => {
       TestBed.configureTestingModule({
         providers: [PortfolioService],
       });
-    })
+    }),
   );
 
   it(
@@ -17,7 +17,7 @@ describe('PortfolioService', () => {
       inject([PortfolioService], (service: PortfolioService) => {
         const response = service.getProjects();
         expect(response.length).toBe(13);
-      })
-    )
+      }),
+    ),
   );
 });

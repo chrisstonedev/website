@@ -1,6 +1,6 @@
-<div class="back-link" role="navigation">
-  <a routerLink="/portfolio">
-    <span aria-hidden="true">👈 </span>Back
+<div class='back-link' role='navigation'>
+  <a routerLink='/portfolio'>
+    <span aria-hidden='true'>👈 </span>Back
   </a>
 </div>
 <h1>{{ project.name }}</h1>
@@ -9,22 +9,22 @@
   <li>Platform: {{ project.platforms }}</li>
   <li>Libraries: {{ project.libraries }}</li>
 </ul>
-<a *ngIf="project.availability" [href]="project.availability.link" target="_blank">
+<a *ngIf='project.availability' [href]='project.availability.link' target='_blank'>
   {{ project.availability.buttonLabel }}
 </a>
-<ul style="list-style-type: none; padding: 0">
-  <li *ngIf="project.openSourceLink"><a [href]="project.openSourceLink" target="_blank">View source</a></li>
-  <li *ngIf="project.netlifyBadge"><a [href]="project.netlifyBadge.linkUrl" target="_blank">
-    <img [src]="project.netlifyBadge.imageUrl" alt="Netlify build status">
+<ul style='list-style-type: none; padding: 0'>
+  <li *ngIf='project.openSourceLink'><a [href]='project.openSourceLink' target='_blank'>View source</a></li>
+  <li *ngIf='project.netlifyBadge'><a [href]='project.netlifyBadge.linkUrl' target='_blank'>
+    <img [src]='project.netlifyBadge.imageUrl' alt='Netlify build status'>
   </a></li>
-  <li *ngIf="project.cypressBadge"><a [href]="project.cypressBadge.linkUrl" target="_blank">
-    <img [src]="project.cypressBadge.imageUrl" alt="Cypress test status">
+  <li *ngIf='project.cypressBadge'><a [href]='project.cypressBadge.linkUrl' target='_blank'>
+    <img [src]='project.cypressBadge.imageUrl' alt='Cypress test status'>
   </a></li>
 </ul>
 <h2>Description</h2>
 <p>{{ project.description }}</p>
 <h2>Screenshot</h2>
-<img [alt]="project.image.alt" [src]="project.image.path">
+<img [alt]='project.image.alt' [src]='project.image.path'>
 <h2>Purpose behind starting the project</h2>
 <p>{{project.purpose}}</p>
 <h2>Challenges faced in the development of this project</h2>

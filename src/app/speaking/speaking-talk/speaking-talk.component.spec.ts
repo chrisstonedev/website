@@ -14,7 +14,7 @@ describe('SpeakingTalkComponent', () => {
       imports: [RouterTestingModule],
       providers: [{
         provide: ActivatedRoute,
-        useValue: {snapshot: {paramMap: {get: () => 'technical-debt'}}}
+        useValue: {snapshot: {paramMap: {get: () => 'technical-debt'}}},
       }],
     })
       .compileComponents();

@@ -1,13 +1,13 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Conference } from '../../talk';
 
 @Component({
   selector: 'app-conference-list',
   templateUrl: './conference-list.component.html',
-  styleUrls: ['./conference-list.component.scss']
 })
 export class ConferenceListComponent implements OnInit {
-  @Input() conferences = [];
-  @Input() type: ListType;
+  @Input() conferences: Conference[] = [];
+  @Input() type!: ListType;
   listType = ListType;
 
   ngOnInit() {

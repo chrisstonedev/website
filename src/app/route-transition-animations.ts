@@ -9,13 +9,13 @@ function getTransitionState(moveToTheRight: boolean) {
         top: 0,
         ...(!moveToTheRight && { left: 0 }),
         ...(moveToTheRight && { right: 0 }),
-        width: '100%'
-      })
+        width: '100%',
+      }),
     ]),
     query(':enter', [style({
       ...(!moveToTheRight && { left: '-100%' }),
       ...(moveToTheRight && { right: '-100%' }),
-      opacity: 0
+      opacity: 0,
     })]),
     query(':leave', animateChild()),
     group([
@@ -23,28 +23,28 @@ function getTransitionState(moveToTheRight: boolean) {
         animate('.5s ease-out', style({
           ...(!moveToTheRight && { left: '100%' }),
           ...(moveToTheRight && { right: '100%' }),
-          opacity: 0
-        }))
+          opacity: 0,
+        })),
       ]),
       query(':enter', [
         animate('.5s ease-out', style({
           ...(!moveToTheRight && { left: '0%' }),
           ...(moveToTheRight && { right: '0%' }),
-          opacity: 1
-        }))
-      ])
+          opacity: 1,
+        })),
+      ]),
     ]),
-    query(':enter', animateChild())
+    query(':enter', animateChild()),
   ];
 }
 
 export const routeTransitionAnimations = trigger('triggerName', [
   transition(
     'Home => Work, Home => Portfolio, Home => Speaking, Home => Contact, Work => Portfolio, Work => Speaking, Work => Contact, Portfolio => Speaking, Portfolio => Contact, Speaking => Contact',
-    getTransitionState(true)
+    getTransitionState(true),
   ),
   transition(
     'Contact => Speaking, Contact => Portfolio, Contact => Work, Contact => Home, Speaking => Portfolio, Speaking => Work, Speaking => Home, Portfolio => Work, Portfolio => Home, Work => Home',
-    getTransitionState(false)
-  )
+    getTransitionState(false),
+  ),
 ]);

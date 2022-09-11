@@ -1,43 +1,43 @@
-<div class="back-link" role="navigation">
-  <a routerLink="/speaking">
-    <span aria-hidden="true">👈 </span>Back
+<div class='back-link' role='navigation'>
+  <a routerLink='/speaking'>
+    <span aria-hidden='true'>👈 </span>Back
   </a>
 </div>
 <h1>{{talk.title}}</h1>
 <h3>{{talk.subtitle}}</h3>
-<p *ngIf="talk.conferences.length === 0">This talk has been submitted to conferences but has not yet been
+<p *ngIf='talk.conferences.length === 0'>This talk has been submitted to conferences but has not yet been
   accepted.</p>
-<ng-container *ngIf="talk.conferences.length > 0">
-  <app-conference-list [conferences]="talk.conferences" [type]="listType.Past"></app-conference-list>
-  <app-conference-list [conferences]="talk.conferences" [type]="listType.Present"></app-conference-list>
-  <app-conference-list [conferences]="talk.conferences" [type]="listType.Future"></app-conference-list>
+<ng-container *ngIf='talk.conferences.length > 0'>
+  <app-conference-list [conferences]='talk.conferences' [type]='listType.Past'></app-conference-list>
+  <app-conference-list [conferences]='talk.conferences' [type]='listType.Present'></app-conference-list>
+  <app-conference-list [conferences]='talk.conferences' [type]='listType.Future'></app-conference-list>
 </ng-container>
 <h2>Abstract</h2>
 <p>{{talk.abstract}}</p>
 <h2>Recording</h2>
-<p *ngIf="!talk.recording">A recording will be made available soon.</p>
-<p *ngIf="talk.recording">The recording of this talk as presented at {{talk.recording.conference}} is hosted on <a
-  [href]="talk.recording.link" target="_blank">YouTube</a>.</p>
-<a *ngIf="talk.recording" [href]="talk.recording.link" target="_blank">
+<p *ngIf='!talk.recording'>A recording will be made available soon.</p>
+<p *ngIf='talk.recording'>The recording of this talk as presented at {{talk.recording.conference}} is hosted on <a
+  [href]='talk.recording.link' target='_blank'>YouTube</a>.</p>
+<a *ngIf='talk.recording' [href]='talk.recording.link' target='_blank'>
   <img [alt]='talk.recording.thumbnail.alt' [src]='talk.recording.thumbnail.path'>
 </a>
 <h2>Slides</h2>
-<p *ngIf="!talk.slidesLink">Slides for this talk are still under construction and will be published soon.</p>
-<p *ngIf="talk.slidesLink">Slides for this talk are hosted on <a [href]="talk.slidesLink" target="_blank">Google
+<p *ngIf='!talk.slidesLink'>Slides for this talk are still under construction and will be published soon.</p>
+<p *ngIf='talk.slidesLink'>Slides for this talk are hosted on <a [href]='talk.slidesLink' target='_blank'>Google
   Slides</a>.
 </p>
-<a *ngIf="talk.slidesLink" [href]="talk.slidesLink" target="_blank">
-  <img [alt]='talk.coverImage.alt' [src]='talk.coverImage.path'>
+<a *ngIf='talk.slidesLink' [href]='talk.slidesLink' target='_blank'>
+  <img [alt]='talk.coverImage!.alt' [src]='talk.coverImage!.path'>
 </a>
 <h2>Code</h2>
-<p *ngIf="!talk.codeLink">The code behind this talk is still under construction and will be published soon.</p>
-<p *ngIf="talk.codeLink">See the code behind the talk on <a [href]="talk.codeLink" target="_blank">GitHub</a>.</p>
-<a *ngIf="talk.codeLink && talk.codeImage" [href]="talk.codeLink" target="_blank">
-  <img [alt]="talk.codeImage.alt" [src]="talk.codeImage.path"></a>
+<p *ngIf='!talk.codeLink'>The code behind this talk is still under construction and will be published soon.</p>
+<p *ngIf='talk.codeLink'>See the code behind the talk on <a [href]='talk.codeLink' target='_blank'>GitHub</a>.</p>
+<a *ngIf='talk.codeLink && talk.codeImage' [href]='talk.codeLink' target='_blank'>
+  <img [alt]='talk.codeImage.alt' [src]='talk.codeImage.path'></a>
 <h2>Event photos</h2>
-<p *ngIf="!talk.eventPhotos">There are no event photos currently.</p>
-<img *ngFor="let photo of talk.eventPhotos; last as isLast" [alt]="photo.alt" [src]="photo.path">
+<p *ngIf='!talk.eventPhotos'>There are no event photos currently.</p>
+<img *ngFor='let photo of talk.eventPhotos; last as isLast' [alt]='photo.alt' [src]='photo.path'>
 <h2>Promotional image</h2>
-<p *ngIf="!talk.promoImage">No promotional image exists.</p>
-<img *ngIf="talk.promoImage"
+<p *ngIf='!talk.promoImage'>No promotional image exists.</p>
+<img *ngIf='talk.promoImage'
      [alt]='talk.promoImage.alt' [src]='talk.promoImage.path'>

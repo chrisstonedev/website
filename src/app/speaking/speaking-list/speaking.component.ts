@@ -6,7 +6,7 @@ import {Title} from "@angular/platform-browser";
 @Component({
   selector: 'app-speaking',
   templateUrl: './speaking.component.html',
-  styleUrls: ['./speaking.component.scss']
+  styleUrls: ['./speaking.component.scss'],
 })
 export class SpeakingComponent implements OnInit {
   talks: Talk[] = [];

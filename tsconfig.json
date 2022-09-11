@@ -14,7 +14,7 @@
       "node_modules/@types"
     ],
     "lib": [
-      "es2017",
+      "es2019",
       "dom"
     ],
     "resolveJsonModule": true,
@@ -23,7 +23,8 @@
     "types": [
       "cypress",
       "node"
-    ]
+    ],
+    "strict": true
   },
   "angularCompilerOptions": {
     "strictTemplates": true

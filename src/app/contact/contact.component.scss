@@ -9,9 +9,8 @@ ul.contact-list {
     padding: 8px;
 
     a {
-      background: #fff4;
+      background: var(--contact-background);
       border-radius: 8px;
-      color: #fff8;
       display: block;
       font-size: large;
       height: 100%;
@@ -23,7 +22,7 @@ ul.contact-list {
       width: 100%;
 
       &:hover {
-        background: #495057 !important;
+        background: var(--contact-background-hover);
         transform: translateX(-16px);
       }
 

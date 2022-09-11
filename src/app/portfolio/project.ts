@@ -1,4 +1,4 @@
-import { ImageData } from "../speaking/talk";
+import { ImageData } from '../speaking/talk';
 
 export interface Project {
   slug: string;
@@ -14,13 +14,13 @@ export interface Project {
   availability: {
     buttonLabel: string;
     link: string;
-  };
+  } | null;
   openSourceLink: string;
   description: string;
   purpose: string;
   challenge: string;
-  netlifyBadge: Badge;
-  cypressBadge: Badge;
+  netlifyBadge: Badge | null;
+  cypressBadge: Badge | null;
 }
 
 export interface Badge {

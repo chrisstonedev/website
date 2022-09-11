@@ -1,22 +1,18 @@
-p a {
-  color: #acf;
-}
-
 .speaking-grid {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
   a {
-    background: #ffffff40;
+    background: var(--grid-card-background);
     border-radius: 20px;
-    box-shadow: 10px 5px 5px #0008;
-    color: #fffb;
+    box-shadow: 6px 4px 4px var(--grid-card-box-shadow);
+    color: var(--font-color);
     text-decoration: none;
     transition: .2s;
 
     &:hover {
-      background: #fff6;
+      background: var(--grid-card-background-hover);
       transform: scale(1.05) rotate(3deg);
     }
 
@@ -29,13 +25,13 @@ p a {
       padding: 10px;
 
       h2 {
-        color: #eef;
+        color: var(--grid-card-title);
         margin-bottom: 16px;
         margin-top: 0;
       }
 
       h3 {
-        color: #bbf;
+        color: var(--grid-card-subtitle);
         margin-bottom: 12px;
         margin-top: 0;
       }
