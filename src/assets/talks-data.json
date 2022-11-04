@@ -87,15 +87,9 @@
         "link": "https://www.atldevcon.com/"
       },
       {
-        "name": "Indy.Code() 2022",
-        "type": "In-person",
-        "date": "2022-10-19",
-        "link": "https://indycode.amegala.com/"
-      },
-      {
         "name": "Connect.Tech 2022",
         "type": "In-person",
-        "date": "2022-11-08",
+        "date": "2022-11-09",
         "link": "https://2022.connect.tech/"
       }
     ],
@@ -115,20 +109,7 @@
     "slug": "cypress-vs-playwright",
     "title": "Cypress Vs. Playwright: The Great Test Framework Debate",
     "subtitle": "Cypress Vs. Playwright",
-    "conferences": [
-      {
-        "name": "TDevConf 2022",
-        "type": "Virtual",
-        "date": "2022-09-30",
-        "link": "https://tdevconf.com/"
-      },
-      {
-        "name": "Indy.Code() 2022",
-        "type": "In-person",
-        "date": "2022-10-19",
-        "link": "https://indycode.amegala.com/"
-      }
-    ],
+    "conferences": [],
     "coverImage": null,
     "eventPhotos": null,
     "abstract": "Cypress and Playwright are two excellent popular modern frameworks for testing web applications. They are open source, frequently updated, and have dedicated communities with excellent support. But when it comes time to choose one for your project, which one should you select? Which trade-offs are better for your situation? Do you need very fast performance? Do you need to be able to test on multiple browsers? Do you need a tool that will help you write multiple levels of tests (i.e. at the component level in addition to end-to-end)?\n\nIn this talk, I will demonstrate the best features offered in the very latest version of each testing library and share a fair comparison. I will even show what it takes to set up new projects and run actual tests. And even though both have their advantages, I will share which one was a better fit for our team when we tried both hands-on, and we will poll to see which testing tool is able to win more hearts and minds.",
